@@ -1,12 +1,12 @@
 # Unlocking Observability: Your Gateway to OpenTelemetry
 
-|           |                               |
-| --------- | ----------------------------- |
-| Event     | Cloud Native Luxembourg Meetu |
-| Where     | Online, 🇱🇺                    |
-| When      | May 9, 2023                   |
-| Recording | None                          |
-| Slides    | [PDF](slides.pdf)             |
+|           |                                |
+| --------- | ------------------------------ |
+| Event     | Cloud Native Luxembourg Meetup |
+| Where     | Online, 🇱🇺                     |
+| When      | May 9, 2023                    |
+| Recording | None                           |
+| Slides    | [PDF](slides.pdf)              |
 
 ## Abstract
 
