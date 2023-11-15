@@ -1,12 +1,13 @@
 # Unlocking Observability: Your Gateway to OpenTelemetry
 
-|           |                                |
-| --------- | ------------------------------ |
-| Event     | Cloud Native Luxembourg Meetup |
-| Where     | Online, 🇱🇺                     |
-| When      | May 9, 2023                    |
-| Recording | None                           |
-| Slides    | [PDF](slides.pdf)              |
+|           |                                                                                                                                  |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Event     | Cloud Native Luxembourg Meetup                                                                                                   |
+| Where     | Online, 🇱🇺                                                                                                                       |
+| When      | May 9, 2023                                                                                                                      |
+| Recording | None                                                                                                                             |
+| Slides    | [PDF](slides.pdf)                                                                                                                |
+| Link      | [Link](https://community.cncf.io/events/details/cncf-luxembourg-presents-unlocking-observability-your-gateway-to-opentelemetry/) |
 
 ## Abstract
 

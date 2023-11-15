@@ -1,12 +1,13 @@
 # Dissecando rastreamento distribuído
 
-|           |                    |
-| --------- | ------------------ |
-| Event     | DevOpsDays Aracaju |
-| Where     | Aracaju, SE, 🇧🇷    |
-| When      | May 6, 2023        |
-| Recording | None               |
-| Slides    | [PDF](slides.pdf)  |
+|           |                                                                          |
+| --------- | ------------------------------------------------------------------------ |
+| Event     | DevOpsDays Aracaju                                                       |
+| Where     | Aracaju, SE, 🇧🇷                                                          |
+| When      | May 6, 2023                                                              |
+| Recording | None                                                                     |
+| Slides    | [PDF](slides.pdf)                                                        |
+| Link      | [Link](https://devopsdays.org/events/2023-aracaju/program/juraci-paixao) |
 
 ## Abstract
 
