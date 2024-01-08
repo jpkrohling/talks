@@ -2,7 +2,7 @@
 
 |           |                                           |
 | --------- | ----------------------------------------- |
-| Event     | Obsersability Day                         |
+| Event     | Observability Day                         |
 | Where     | Amsterdam, 🇳🇱                             |
 | When      | Apr 18, 2023                              |
 | Recording | [Recording](https://youtu.be/B-4kYdN-6-w) |

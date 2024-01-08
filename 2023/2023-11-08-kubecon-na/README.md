@@ -1,13 +1,13 @@
 # 🚨 Contribfest: OpenTelemetry Contribfest
 
-|           |                                |
-| --------- | ------------------------------ |
-| Event     | KubeCon NA 2023                |
-| Where     | Chicago, IL, 🇺🇸                |
-| When      | November 8, 2023               |
-| Recording | None                           |
-| Slides    | [PDF](slides.pdf)              |
-| Link      | [Link](https://sched.co/1R2rQ) |
+|           |                                             |
+| --------- | --------------------------------------------|
+| Event     | KubeCon + CloudNativeCon North America 2023 |
+| Where     | Chicago, IL, 🇺🇸                             |
+| When      | November 8, 2023                            |
+| Recording | None                                        |
+| Slides    | [PDF](slides.pdf)                           |
+| Link      | [Link](https://sched.co/1R2rQ)              |
 
 ## Abstract
 
