@@ -1,0 +1,32 @@
+apiVersion: opentelemetry.io/v1beta1
+kind: OpenTelemetryCollector
+metadata:
+  name: consome-da-mensageria
+spec:
+  image: ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.101.0
+  config:
+    receivers:
+      kafka:
+        protocol_version: 2.0.0
+        brokers: mensageria-do-collector-kafka-brokers.kafka.svc.cluster.local:9092
+        topic: otlp-spans
+
+    processors:
+      transform:
+        error_mode: ignore
+        trace_statements:
+          - context: span
+            statements:
+              - set(attributes["consumed_at"], UnixMilli(Now()))
+
+    exporters:
+      debug:
+        verbosity: detailed
+
+    service:
+      pipelines:
+        traces:
+          receivers:  [ kafka ]
+          processors: [ transform ]
+          exporters:  [ debug ]
+
