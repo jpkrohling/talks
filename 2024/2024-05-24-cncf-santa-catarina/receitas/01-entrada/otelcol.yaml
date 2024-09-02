@@ -28,4 +28,4 @@ service:
                 endpoint: https://otlp-gateway-prod-us-central-0.grafana.net/otlp/v1/traces
                 protocol: http/protobuf
                 headers:
-                  Authorization: "Basic ..."
+                  Authorization: "Basic MjM5MjM3OmdsY19leUp2SWpvaU5USTVNemN4SWl3aWJpSTZJbk4wWVdOckxUSXpPVEl6TnkxdmRHeHdMWGR5YVhSbExXTnVZMll0YzJNdE1qQXlOQzB3TlMweU5DSXNJbXNpT2lJNU5FYzJOa3hTU0ZCeE1qTmlSMXBKTWpVemJrZzRaVU1pTENKdElqcDdJbklpT2lKMWN5SjlmUT09"
