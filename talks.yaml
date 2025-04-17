@@ -1,0 +1,514 @@
+- id: 2024-kubecon-na-project-update
+  date: '2024-11-04'
+  title: OpenTelemetry Project Update
+  description: >
+    This is the official OpenTelemetry session at Kubecon. OpenTelemetry started with distributed traces and metrics, but the
+    project's vision has always been to provide whatever signals are needed from infrastructure, services, and more. This
+    session will focus on what's coming next, including new signals and sources. Join to learn about OpenTelemetry's new
+    logging functionality, including its two logging paths, the benefits of each, and real-world production examples. We'll
+    show the power of the next wave of OpenTelemetry enhancements, including profiling and the insights that this unlocks in
+    combination with distributed traces, and how we're extending your observability to client applications. We'll wrap up with
+    a Q&A of 10+ project maintainers, who can speak to these topics and more.
+  location: "Salt Lake City, UT, 🇺🇸"
+  recording: https://youtu.be/rX7gKt4QlTk
+  slides: /2024/2024-11-04-kubecon-na/slides.pdf
+
+- id: 2024-kcd-austria
+  date: '2024-10-10'
+  title: Kubernetes Community Day Austria
+  description: >
+    As cloud native technologies become increasingly prevalent, the need for robustness, scalability, and efficiency in these
+    systems is more critical than ever. Observability serves as a cornerstone in meeting these demands by offering profound
+    insights into the behavior of applications and their underlying infrastructure. This keynote will delve into the essential
+    elements of observability within cloud native environments, emphasizing the comprehensive visibility it affords into
+    complex and dynamic systems. We will also explore the cultural shifts encouraged by observability, highlighting how it
+    fosters a proactive approach to system management and optimization. Join us to uncover how deep observability can transform
+    your cloud native strategy, ensuring your infrastructure not only meets current demands but is also primed for future
+    challenges.
+  location: "Vienna, 🇦🇹"
+  slides: /2024/2024-10-10-kcd-austria/slides.pdf
+
+- id: 2024-you-choose
+  date: '2024-10-08'
+  title: You Choose - Data Pipelines
+  description: ''
+  location: "Online, 🌍"
+  recording: https://youtu.be/fhIuylaJ1xA
+
+- id: 2024-otel-community-day
+  date: '2024-06-25'
+  title: OpenTelemetry Governance Panel
+  description: >
+    PANEL: OpenTelemetry Governance Panel - Reese Lee, New Relic; Juraci Paixao Krohling, Grafana Labs; Alolita Sharma, Apple;
+    Daniel Dyla, Dynatrace
+  location: "Seattle, WA, 🇺🇸"
+  recording: https://youtu.be/Mfh_0Qn_1zo
+
+- id: 2024-cncf-duesseldorf
+  date: '2024-06-06'
+  title: Demystifying Sampling
+  description: >
+    Juraci Kröhling - Principal Engineer at Grafana Labs Labs and OpenTelemetry Governing Board Member and CNCF Ambassador, will
+    be demystifying sampling and looking at concepts and practices for sampling logs, metrics and traces.
+  location: "Düsseldorf, 🇩🇪"
+  slides: /2024/2024-06-06-cncf-duesseldorf/slides.pdf
+
+- id: 2024-cncf-santa-catarina
+  date: '2024-05-24'
+  title: "Menu de Degustação para OTel Collector"
+  description: >
+    Hoje vamos fazer algo diferente: vou transmitir ao vivo em conjunto com o grupo da CNCF de Santa Catarina. Vou oferecer um
+    menu de degustação para OTel Collector, mostrando como fazer coisas bem específicas, do começo ao fim.
+  location: "Online, 🇧🇷"
+  recording: https://youtu.be/o7CYHjZuykM
+  slides: /2024/2024-05-24-cncf-santa-catarina/slides.pdf
+
+- id: 2024-observability-day
+  date: '2024-03-19'
+  title: "Real-World Sampling – Lessons Learned After Reducing ~80% of Our O11y Costs"
+  description: >
+    Application observability tools play a crucial role in the optimization of application performance. However, it can be costly
+    when a good instrumentation strategy isn't in place. Without carefully selecting which data to keep, it can become a
+    financial problem. With this in mind, Pismo considered some types of sampling, from vendor-specific solutions to open-source
+    ones, and ended up landing at OpenTelemetry's Tail Sampling processor due to the flexibility of the policies that can be
+    used, as well as its performance, reliability, and vendor neutrality. In this presentation, Juraci will talk about strategies
+    to achieve a highly available tail-sampling setup, while Alexandre will show what his team did at Pismo to reduce their
+    application observability costs by about 80% while keeping enough data to observe their applications adequately. At the end
+    of this session, you'll learn why sampling is needed, what tail-sampling is, and the trade-offs to consider when planning
+    its usage.
+  location: "Paris, 🇫🇷"
+  recording: https://youtu.be/S1K26-2wG8w
+  slides: /2024/2024-03-19-observability-day/slides.pdf
+
+- id: 2024-rejekts-europe
+  date: '2024-03-18'
+  title: Building Resilient Observability Pipelines in Kubernetes with OpenTelemetry Collector
+  description: >
+    Deploying OpenTelemetry Collector on Kubernetes is straightforward with Helm charts and the Operator. However, achieving a
+    robust and production-quality observability pipeline requires thoughtful configuration and experimentation.
+  location: "Paris, 🇫🇷"
+  recording: https://youtu.be/1mHlsWinfTE
+  slides: /2024/2024-03-18-rejekts/slides.pdf
+
+- id: 2024-kcd-sp
+  date: '2024-02-23'
+  title: "Estado da Arte na Observabilidade 🇧🇷"
+  description: >
+    Nessa apresentação neutra, Juraci Paixão Kröhling examinará as melhores ferramentas de código livre na vanguarda da
+    obsevabilidade. Serão abordados os pontos fortes e fracos de ferramentas nas áreas de instrumentação, coleta, e
+    armazenamento de dados de telemetria, como logs, rastros, e métricas. Este exame profundo sobre o estado atual da
+    obsevabilidade oferecerá uma visão equilibrada de desafios e soluções, moldando o futuro da observabilidade com código livre.
+  location: "Online, 🌍"
+  slides: /2024/2024-02-23-kcd-sp/slides.pdf
+
+- id: 2023-humans-of-otel
+  date: '2023-12-20'
+  title: The Humans of OTel - KubeCon NA 2023
+  description: >
+    We caught up with some of the contributors, maintainers, and practitioners of OpenTelemetry at the OpenTelemetry Observatory
+    for KubeCon NA in Chicago. They share their thoughts on OTel, Observability, and more!
+  location: "Online, 🌍"
+  recording: https://youtu.be/coPrhP_7lVU
+
+- id: 2023-grafana-office-hours
+  date: '2023-12-08'
+  title: 'Getting started with OpenTelemetry, with Juraci Paixão Kröhling (Grafana Office Hours #23)'
+  description: >
+    Principal Engineer Juraci Paixão Kröhling talks to us about getting started with OpenTelemetry: what it is, why everyone's
+    talking about it, and how to instrument your systems and improve their reliability and observability. Juraci is a contributor
+    to open source projects like Jaeger and OpenTelemetry.
+  location: "Online, 🌍"
+  recording: https://youtu.be/Xhh9V7uRP88
+
+- id: 2023-grafana-and-friends
+  date: '2023-12-06'
+  title: 'Encore: Best practices in Observability and OpenTelemetry at Deutsche Bank'
+  description: >
+    Join us for a second meetup at Deutsche Bank Berlin Technology Centre featuring presentations from Andrey Tyulenev, SRE Lead,
+    Deutsche Bank Berlin Technology Centre, and Juraci Paixão Kröhling, Software Engineer at Grafana Labs and a Governance
+    Committee member for the OpenTelemetry project.
+  location: "Berlin, 🇩🇪"
+  slides: /2023/2023-12-06-grafana-and-friends/slides.pdf
+
+- id: 2023-geeking-out
+  date: '2023-11-21'
+  title: E11 - The One Where We Geek Out on OpenTelemetry with Juraci Paixão Kröhling of Grafana Labs
+  description: >
+    Juraci Paixão Kröhling of Grafana Labs geeks out with Adriana Villela on all things OpenTelemetry! As an early contributor to
+    OpenTelemetry haling from the pre-OTel days of OpenTracing, Juraci reflects on how much the project has changed and evolved.
+    He also talks about his role on the OpenTelemetry Governance Committee (GC) and how the GC serves the OTel community at
+    large, and about his continued involvement in the OpenTelemetry Collector. Juraci closes by sharing his passion for
+    contributing to diversity in tech through Outreachy, highlighting his commitment to enriching the technology community.
+  location: "Online, 🌍"
+  recording: https://youtu.be/u5oXMGQd1Oc
+
+- id: 2023-kubecon-na-contribfest
+  date: '2023-11-08'
+  title: "🚨 Contribfest: OpenTelemetry Contribfest"
+  description: >
+    Join the OpenTelemetry maintainers in making OpenTelemetry better for everyone. OpenTelemetry will have several opportunities
+    to contribute. The OpenTelemetry Collector is vendor-agnostic implementation for receiving, processing and exporting telemetry
+    data. The Collector is a large ecosystem, including individual components, a telemetry transformation language, helm charts,
+    and a Kubernetes operator. Join the Collector maintainers and help fix bugs, add new features, and add new transformation
+    functions. OpenTelemetry JavaScript is an OTel client written in typescript which supports traces, metrics, and logs, but an
+    observability client is only as good as the telemetry it collects. Help the OTel JS maintainers update the instrumentation
+    libraries and ensure they are outputting semantic convention-compliant telemetry data.
+  location: "Chicago, IL, 🇺🇸"
+  slides: /2023/2023-11-08-kubecon-na/slides.pdf
+
+- id: 2023-linuxtips
+  date: '2023-09-29'
+  title: "O fantástico mundo da observabilidade"
+  description: >
+    Nessa sessão, Juraci Paixão Kröhling fala sobre porquê precisamos de observabilidade, qual a diferença entre observabilidade e
+    monitoramento, onde entra a telemetria nessa história toda, assim como os principais tipos de telemetria, quando usá-los e
+    quando NÃO usá-los.
+  location: "Online, 🇧🇷"
+  slides: /2023/2023-09-29-linuxtips/slides.pdf
+
+- id: 2023-cncf-luxembourg
+  date: '2023-05-09'
+  title: 'Unlocking Observability: Your Gateway to OpenTelemetry'
+  description: >
+    Discover the power of observability with OpenTelemetry: your one-stop solution for unified, efficient, and seamless
+    monitoring of applications and infrastructure. Empower your teams to gain insights, optimize performance, and enhance
+    reliability with this meetup about OpenTelemetry.
+  location: "Online, 🇱🇺"
+  slides: /2023/2023-05-09-cncf-luxembourg/slides.pdf
+
+- id: 2023-devopsdays-aracaju
+  date: '2023-05-06'
+  title: "Dissecando rastreamento distribuído"
+  description: >
+    Nessa apresentação, Juraci Paixão Kröhling vai mostrar todos os aspectos do rastreamento distribuído, para que você possa
+    entender de uma vez por todas como funciona e como implementar nos seus projetos!
+  location: "Aracaju, SE, 🇧🇷"
+  slides: /2023/2023-05-06-devopsdays-aracaju/slides.pdf
+
+- id: 2023-kubecon-eu
+  date: '2023-04-18'
+  title: 'Panel Discussion: The Present and Future of Open Source Observability'
+  description: >
+    In this panel discussion, maintainers and end-users come together to discuss the recent advances in the open source
+    observability ecosystem, and talk about the challenges and opportunities for the community in the future.
+  location: "Amsterdam, 🇳🇱"
+  recording: https://youtu.be/B-4kYdN-6-w
+
+- id: 2023-is-it-observable
+  date: '2023-03-22'
+  title: Observable Lightning Talks March 2023
+  description: >
+    Looking for tips from thought leaders of the observability industry?
+
+    Observable lighting talks open the stage to three speakers sharing their experiences, recommendations, best practices, and
+    more.
+
+    This 2sd edition of the Lighting  talks covered :
+  location: "Online, 🌍"
+  recording: https://youtu.be/1p_Cm2kkZu8
+
+- id: 2023-grafana
+  date: '2023-02-01'
+  title: "Observabilidade com Grafana OpenSource e Rastreamento Distribuído"
+  description: >
+    A sessão terá uma hora de duração e tratará da jornada de Observabilidade com o Grafana Open Source, bem como, Rastreamento
+    Distribuído.
+  location: "Online, 🌍"
+
+- id: 2022-devopsdays-recife
+  date: '2022-12-10'
+  title: "Tudo o que SREs PRECISAM saber sobre OpenTelemetry"
+  description: >
+    O projeto OpenTelemetry é relativamente novo mas já é o segundo projeto mais ativo da Cloud Native Computing Foundation. Isso
+    reflete tanto o tamanho atual do projeto quanto sua velocidade. Nessa sessão, Juraci Paixão Kröhling vai dar uma introdução
+    ao projeto, falando dos aspectos que você precisa saber pra começar com o projeto. Você vai sair dessa sessão tendo uma boa
+    compreensão de todos os componentes do projeto, conseguindo determinar quais são importantes para seu dia a dia como SRE.
+  location: "Recife, PE, 🇧🇷"
+  slides: /2022/2022-12-10-devopsdays-recife/slides.pdf
+
+- id: 2022-devopsdays-fortaleza
+  date: '2022-10-08'
+  title: "Tudo o que SREs PRECISAM saber sobre OpenTelemetry"
+  description: >
+    Todo mundo está falando sobre OpenTelemetry, mas é difícil saber o que é realmente relevante para nossa rotina de trabalho e o
+    que pode ser seguramente ignorado. Essa apresentação pensada para SREs vai resolver isso, deixando claro o que as pessoas
+    SREs precisam saber.
+  location: "Fortaleza, CE, 🇧🇷"
+  slides: /2022/2022-10-08-devopsdays-fortaleza/slides.pdf
+
+- id: 2022-kcd-brasil
+  date: '2022-01-18'
+  title: "Tudo o que você PRECISA saber sobre OpenTelemetry"
+  description: >
+    OpenTelemetry é um dos projetos mais recentes da CNCF (Cloud Native Computing Foundation) na área de observabilidade e já é o
+    segundo mais ativo. Nessa sessão, Juraci Paixão Kröhling vai falar sobre os diferentes sub-projetos e como dar os primeiros
+    passos com eles. Ainda que você já tenha ouvido falar sobre OpenTelemetry antes, você vai deixar essa sessão com um
+    entendimento ainda melhor sobre o que é OpenTelemetry, quais são as peças neste quebra-cabeças e como utilizá-las com
+    eficácia em seus projetos.
+  location: "Virtual, 🇧🇷"
+  recording: https://youtu.be/BVQpM01CZPI
+  slides: /2022/2022-01-18-kcd-brasil/slides.pdf
+
+- id: 2021-devoops
+  date: '2021-11-10'
+  title: OpenTelemetry Collector deep dive
+  description: >
+    The OpenTelemetry Collector is a highly versatile software, able to process not only traces but also metrics and logs. It
+    can be deployed in a variety of ways, with features like authentication, routing, load balancing, tail-based sampling, and
+    so on. The tooling around the collector is also extensive, with extra modules and distributions as part of the "contrib"
+    package as well as a CLI tool allowing you to build your own distribution, possibly with your custom components.
+  location: "Virtual, St. Petersburg, 🇷🇺"
+  recording: https://youtu.be/ZAsyfivg4iA
+  slides: /2021/2021-11-10-devoops/slides.pdf
+
+- id: 2021-kubecon-na
+  date: '2021-10-13'
+  title: OpenTelemetry Collector Deployment Patterns
+  description: >
+    The OpenTelemetry Collector is a versatile piece of software and can be deployed in numerous ways. In this talk, we'll explore
+    some of these patterns, starting with the classic "agent and collector" and landing at "scalable tail-based sampling,"
+    talking about "multi-tenancy" along the way. We'll see how they look in theory and practice with live demos on a real
+    Kubernetes cluster. You'll leave this session with knowledge about some of the essential processors for the OpenTelemetry
+    Collector, how to employ them individually, and as part of a vaster deployment topology.
+  location: "Virtual, Los Angeles, 🇺🇸"
+  recording: https://youtu.be/WhRrwSHDBFs
+  slides: /2021/2021-10-13-kubecon-na/slides.pdf
+
+- id: 2021-o11yfest
+  date: '2021-05-17'
+  title: Sampling in Distributed Tracing
+  description: >
+    Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number
+    of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving
+    you all the knowledge required to master the sampling techniques: we'll talk about head and tail-based sampling, as well as
+    adaptive sampling, and we'll wrap it up with a bonus discussion on trace aggregation. You'll leave this session ready to
+    implement scenarios, from the simple "probabilistic head-sampling" up to the complex "scalable tail-based sampling" using
+    open source tools like OpenTelemetry Collector.
+  location: "Online, 🌍"
+
+- id: 2021-open-observability
+  date: '2021-04-30'
+  title: "Diving deep into Jaeger and OpenTelemetry with Juraci Paixão Kröhling"
+  description: >
+    We are thrilled to have Juraci Kröhling a Software Engineer at Red Hat; CNCF, Maintainer for Jaeger, and OpenTelemetry. He
+    will be live and in-person this month on the podcast in a discussion with Jonah Kowall who is the CTO at logz.io and
+    contributor to Jaeger, OpenTelemetry, and OpenSearch.
+  location: "Online, 🌍"
+  recording: https://youtu.be/lSY6yDw0Kmc
+
+- id: 2021-cncf-linz
+  date: '2021-04-27'
+  title: All you need to know about OpenTelemetry
+  description: >
+    OpenTelemetry is one of the newest projects in the realm of Observability at the CNCF and is already the second most active
+    project there. In this session, Juraci Paixão Kröhling will talk about the different subprojects and how to get started using
+    them. Even if you heard about OpenTelemetry before, you'll leave this session with a better understanding of what this is all
+    about, the several faces of OpenTelemetry, and what you can do to make your projects more observable.
+  location: "Online, Linz, 🇦🇹"
+  recording: https://youtu.be/bh0v6k6eLRw
+  slides: /2021/2021-04-27-cncf-linz/slides.pdf
+
+- id: 2020-devoops
+  date: '2020-12-05'
+  title: Distributed tracing deep dive
+  description: >
+    Distributed tracing has become a mandatory tool in every SRE's tool belt, but do you know enough to effectively use and
+    manage a distributed tracing architecture? This talk will guide you through the components required to have a production-
+    quality distributed tracing setup, including a quick demo showing what we want our tracing solution to tell us, followed by a
+    discussion on the architecture of one of the most popular open source tracing solutions: Jaeger. We'll see how we can deploy
+    it on bare metal and Kubernetes with Helm Charts, as well as with the Jaeger Operator, wrapping up with how we can observe
+    our Jaeger instance by looking at the metrics it exposes. You'll leave this session knowing how to set up a world-class
+    tracing solution.
+  location: "Virtual, St. Petersburg, 🇷🇺"
+  recording: https://youtu.be/6rzzE_MACME
+  slides: /2020/2020-12-05-devoops/slides.pdf
+
+- id: 2020-fosdem
+  date: '2020-02-02'
+  title: Distributed Tracing for beginners
+  description: >
+    Distributed tracing is a tool that belongs to every developer's tool belt, but what it actually can do remains a mystery to
+    most developers.
+  location: "Brussels, 🇧🇪"
+
+- id: 2019-devoxx
+  date: '2019-11-06'
+  title: 'Observing chaos: how distributed tracing brings observability to a service mess'
+  description: >
+    Service mesh tools, such as Istio and Linkerd, are being used to remove some of the networking complexity from our
+    microservices' code. In exchange for that, we give up some of the ability to observe the networking decisions being made,
+    turning our service mesh into an apparent chaos.
+  location: "Antwerp, 🇧🇪"
+  recording: https://youtu.be/FJ_YuUgIt8E
+
+- id: 2019-kubecon-eu
+  date: '2019-05-23'
+  title: 'Intro + Deep Dive: Jaeger'
+  description: >
+    Jaeger is a distributed tracing platform, providing a way to monitor and troubleshoot transactions in complex distributed
+    systems. In the first part, we'll introduce you to Jaeger, showing what it is capable of. We'll deploy a few microservices
+    into a Kubernetes cluster and use distributed tracing to help us see what's going on. After this brief demo, you'll learn how
+    to engage with the community and how to make your first contribution to the project. In the second part of this talk, we'll
+    explain in details what are all the moving pieces and how they work together. You'll also learn about the different
+    deployment strategies and advanced configuration options. And finally, we'll have a Q&A session at the end with project
+    maintainers.
+  location: "Barcelona, 🇪🇸"
+  recording: https://youtu.be/Edy2vd7bh5U
+
+- id: 2019-redhat-summit
+  date: '2019-05-09'
+  title: What are my microservices doing?
+  description: >
+    Jaeger is a distributed tracing platform, providing a way to monitor and troubleshoot transactions in complex distributed
+    systems. In the first part, we'll introduce you to Jaeger, showing what it is capable of. We'll deploy a few microservices
+    into a Kubernetes cluster and use distributed tracing to help us see what's going on. After this brief demo, you'll learn how
+    to engage with the community and how to make your first contribution to the project. In the second part of this talk, we'll
+    explain in details what are all the moving pieces and how they work together. You'll also learn about the different
+    deployment strategies and advanced configuration options. And finally, we'll have a Q&A session at the end with project
+    maintainers.
+  location: "Boston, MA, 🇺🇸"
+
+- id: 2019-gids
+  date: '2019-04-25'
+  title: Advanced Distributed Tracing
+  description: ''
+  location: "Bangalore, 🇮🇳"
+
+- id: 2018-tracingsummit
+  date: '2018-10-25'
+  title: Introduction to OpenTracing
+  description: >
+    OpenTracing is a vendor neutral specification aimed to define the semantics for distributed tracing, hosted at the Cloud
+    Native Computing Foundation (CNCF). In this talk, we'll provide an introduction to the OpenTracing projects and its goals, as
+    well as an overview of the available instrumentation libraries.
+  location: "Edinburgh, 🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+  recording: https://youtu.be/OS2rAQFePeM
+  slides: /2018/2018-10-25-tracingsummit/slides.pdf
+
+- id: 2018-opensourcesummit
+  date: '2018-10-24'
+  title: What are My Microservices Doing?
+  description: >
+    Microservices have become the standard for new architectures. But the microservices architecture presents some new
+    challenges. One of them is the so-called "Observability problem", where it is hard to know which services exist, how they
+    interrelate, and how important each one is. In this talk, we'll look at an application that includes three Java
+    microservices. We'll use OpenTracing and Jaeger to help identify what they are doing and how they interrelate, following a
+    "no instrumentation" approach, a "full instrumentation" approach, as well as "something in between" using service mesh
+    instrumentation with Istio.
+  location: "Edinburgh, 🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+  slides: /2018/2018-10-24-opensourcesummit/slides.pdf
+
+- id: 2018-devnation
+  date: '2018-06-21'
+  title: Advanced Microservices Tracing with Jaeger
+  description: >
+    A significant challenge of moving from a traditional monolithic application design to a microservices-based architecture is
+    the ability to monitor the business transaction flow of events throughout your entire distributed system. Join us for the
+    next online DevNation Live on June 21st at 12pm EDT for Advanced Microservices Tracing with Jaeger, presented by Red Hat
+    software engineers Pavol Loffay and Juraci Paixão Kröhling.
+  location: "Virtual, 🌍"
+  recording: https://youtu.be/hpnLUFRY4_Y
+
+- id: 2018-soujava
+  date: '2018-05-27'
+  title: "Introdução à OpenTracing e Jaeger"
+  description: >
+    Arquitetura de microsserviços se tornou a arquitetura padrão para novas aplicações. Mas ela traz consigo novos desafios. Um
+    deles é o tão chamado "Problema de Observabilidade", representando a dificuldade em se saber quais serviços existem, como se
+    relacionam e qual a importância de cada um. Nesta apresentação, vamos dar uma olhada em três serviços bem simples em Java
+    simulando uma aplicação seguindo o modelo de microsserviços. Usaremos então as bibliotecas OpenTracing e Jaeger para
+    identificar o que nossos serviços estão fazendo e como se relacionam.
+  location: "Online, 🇧🇷"
+  recording: https://youtu.be/ARaMOdZ54mo
+
+- id: 2018-kubecon-eu-deepdive
+  date: '2018-05-03'
+  title: Jaeger Project Deep Dive
+  description: ''
+  location: "Copenhagen, 🇩🇰"
+  slides: /2018/2018-05-03-kubecon-eu-deepdive/slides.pdf
+
+- id: 2018-kubecon-eu-intro
+  date: '2018-05-02'
+  title: Jaeger Project Intro
+  description: ''
+  location: "Copenhagen, 🇩🇰"
+  slides: /2018/2018-05-02-kubecon-eu-intro/slides.pdf
+
+- id: 2018-gids
+  date: '2018-04-27'
+  title: What are my Microservices Doing?
+  description: ''
+  location: "Bangalore, 🇮🇳"
+
+- id: 2018-meetup
+  date: '2018-03-21'
+  title: Deep Dive into Java Microservices - The Observability Problem
+  description: ''
+  location: "Munich, 🇩🇪"
+
+- id: 2018-javaland
+  date: '2018-03-14'
+  title: Finding Performance Bottlenecks with Distributed Tracing
+  description: >
+    Microservices are now the standard for new architectures. Their distributed nature makes it harder to determine the causes of
+    a performance bottleneck, as one can't just watch a single process and see the big picture. In this talk, you'll learn how to
+    instrument a business application (Spring Boot, Vert.x, Wildfly Swarm) with the OpenTracing API and use a tracing backend
+    solution like Jaeger and/or a metrics solution like Prometheus to find, fix, and measure performance improvements to our
+    distributed application.
+  location: "Brühl, 🇩🇪"
+
+- id: 2017-opensourcesummit
+  date: '2017-09-11'
+  title: 'OpenTracing: One Instrumentation for Metrics, Logs and Distributed Tracing'
+  description: >
+    Understanding how your microservices based application is executing in a highly distributed and elastic cloud environment can
+    be complicated. CNCF OpenTracing is a new standard to help provide observability within such an environment. With the help
+    from Jaeger, an OpenTracing compatible distributed tracing system, we will show how instrumenting an application using the
+    OpenTracing API can provide not only tracing information, showing the path of execution through a set of cooperating
+    services, but also application metrics and contextualised logging information, to help diagnose problems in highly
+    distributed applications.
+  location: "Los Angeles, CA, 🇺🇸"
+  slides: /2017/2017-09-11-opensourcesummit/slides.pdf
+
+- id: 2017-cloudnative-night
+  date: '2017-05-23'
+  title: Operational and Business Insights from Tracing Distributed Microservices
+  description: >
+    In this talk we will present Hawkular APM, an OpenTracing-compliant community project. We will demonstrate how the project can
+    be used to monitor microservices in a cloud environment, capturing trace and business metric information, which can then be
+    presented in both aggregated and individual trace views to provide useful insight for many roles within an organisation.
+  location: "Munich, 🇩🇪"
+
+- id: 2017-microservices-meetup
+  date: '2017-05-04'
+  title: OpenTracing
+  description: >
+    Microservice architecture brings new challenges for monitoring an application state and health in production environments. One
+    of the necessary components for a successful operation is distributed tracing. In this presentation we will discuss the common
+    complications of distributed tracing while exploring the emerging implementation-agnostic API OpenTracing. We'll use a sample
+    application to extract business and operational insights based on tracing data.
+  location: "Munich, 🇩🇪"
+
+- id: 2017-lightweight-java-user-group
+  date: '2017-04-25'
+  title: Operational and Business Insights from Tracing Distributed Microservices
+  description: >
+    Microservice architecture brings new challenges for monitoring of an application state and health in production environments.
+    One of the necessary components for successful operation is distributed tracing.
+
+
+    In this presentation we will discuss the common complications of distributed tracing while exploring the emerging
+    implementation-agnostic API OpenTracing. We'll use a sample application extracting business and operational insights based on
+    tracing data.
+  location: "Munich, 🇩🇪"
+
+- id: 2017-kubecon-eu
+  date: '2017-03-29'
+  title: Operational and Business Insights from Tracing Distributed Microservices
+  description: >
+    In this talk we will present Hawkular APM, an OpenTracing-compliant community project. We will demonstrate how the project can
+    be used to monitor microservices in a cloud environment, capturing trace and business metric information, which can then be
+    presented in both aggregated and individual trace views to provide useful insight for many roles within an organisation.
+  location: "Berlin, 🇩🇪"
+  slides: /2017/2017-03-29-kubecon-eu/slides.pdf
