@@ -16,7 +16,7 @@ const Hero = ({ bio }: HeroProps) => {
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary opacity-75 blur rounded-full"></div>
             <Avatar className="h-40 w-40 md:h-56 md:w-56 border-4 border-background relative">
-              <AvatarImage src="/headshot.jpg" alt="Juraci Paixão Kröhling" />
+              <AvatarImage src="/profile.webp" alt="Juraci Paixão Kröhling" />
               <AvatarFallback className="text-4xl">JPK</AvatarFallback>
             </Avatar>
           </div>

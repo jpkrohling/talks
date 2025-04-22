@@ -1,4 +1,3 @@
-
 import { Calendar, MapPin, ExternalLink, Video } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,7 +14,7 @@ interface TalkCardProps {
 const TalkCard = ({ talk, featured = false }: TalkCardProps) => {
   return (
     <Dialog>
-      <Card className={`h-full transition-all duration-300 hover:border-primary/50 ${featured ? 'glass-card animate-fade-in' : ''}`}>
+      <Card className={`h-full flex flex-col transition-all duration-300 hover:border-primary/50 ${featured ? 'glass-card animate-fade-in' : ''}`}>
         <CardHeader>
           <div className="flex items-center gap-2 text-muted-foreground mb-2">
             <Calendar className="h-4 w-4 text-talks-date" />
@@ -27,12 +26,12 @@ const TalkCard = ({ talk, featured = false }: TalkCardProps) => {
             <span>{talk.location}</span>
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="flex-grow">
           <p className="line-clamp-3 text-sm text-muted-foreground">
             {talk.description}
           </p>
         </CardContent>
-        <CardFooter className="flex justify-between">
+        <CardFooter className="flex justify-between mt-auto">
           <div className="flex items-center gap-2">
             {talk.recording && (
               <Video className="h-4 w-4 text-talks-accent" />
