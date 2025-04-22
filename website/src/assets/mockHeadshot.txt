@@ -1,0 +1,4 @@
+
+// This is a placeholder for the headshot image
+// You can upload your actual headshot to the public directory
+// and reference it in the Hero component

@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Updated with warm yellow and golden accent colors */
+    --background: 240 10% 3.9%; /* Dark blue-gray background */
+    --foreground: 0 0% 98%; /* Off-white text */
+
+    --card: 240 11% 7%; /* Slightly lighter than background for cards */
+    --card-foreground: 0 0% 98%; /* Off-white text for cards */
+
+    --popover: 240 10% 3.9%; /* Same as background */
+    --popover-foreground: 0 0% 98%; /* Off-white text */
+
+    --primary: 47 94% 68%; /* Warm Golden Yellow */
+    --primary-foreground: 240 5.9% 10%; /* Dark background for text */
+
+    --secondary: 240 3.7% 15.9%; /* Subtle dark gray */
+    --secondary-foreground: 0 0% 98%; /* Off-white text */
+
+    --muted: 240 3.7% 15.9%; /* Subtle dark gray for muted elements */
+    --muted-foreground: 240 5% 64.9%; /* Muted gray text */
+
+    --accent: 39 100% 57%; /* Rich Amber Yellow */
+    --accent-foreground: 0 0% 98%; /* Off-white text */
+
+    --destructive: 0 62.8% 30.6%; /* Dark red */
+    --destructive-foreground: 0 0% 98%; /* Off-white text */
+
+    --border: 240 3.7% 15.9%; /* Dark border */
+    --input: 240 3.7% 15.9%; /* Dark input */
+    --ring: 47 94% 68%; /* Golden yellow ring */
+
+    --radius: 0.75rem; /* Slightly larger radius for a more modern look */
+
+    /* Sidebar styles - kept for compatibility */
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 47 94% 68%;
+    --sidebar-primary-foreground: 240 5.9% 10%;
+    --sidebar-accent: 39 100% 57%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 47 94% 68%;
+  }
+
+  /* Keep dark mode class for consistency, using updated color values */
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 11% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 47 94% 68%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 39 100% 57%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 47 94% 68%;
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 47 94% 68%;
+    --sidebar-primary-foreground: 240 5.9% 10%;
+    --sidebar-accent: 39 100% 57%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 47 94% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-primary/20 selection:text-white;
+  }
+
+  html {
+    @apply scroll-smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-sm bg-white/5 border border-white/10 shadow-lg;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+}
+
+/* Make the app full width */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
