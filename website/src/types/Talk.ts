@@ -10,7 +10,7 @@ export interface Talk {
 }
 
 export const featuredTalkIds = [
-  "2025-kubecon-eu-otel-sucks",
-  "2024-kcd-austria", 
-  "2024-observability-day", 
+  "2025-05-06-gophercon", 
+  "2025-04-03-kubecon-eu-otel-sucks",
+  "2024-03-19-observability-day", 
 ];
