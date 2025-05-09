@@ -5,7 +5,7 @@
 | Event     | Cloud_Native Rejekts                                   |
 | Where     | Paris, 🇫🇷                                              |
 | When      | March 18, 2024                                         |
-| Recording | [YouTube](https://www.youtube.com/watch?v=1mHlsWinfTE) |
+| Recording | [YouTube](https://youtu.be/S1K26-2wG8w) |
 | Slides    | [PDF](slides.pdf)                                      |
 
 ## Abstract

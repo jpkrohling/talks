@@ -3,7 +3,6 @@
   title: 'Instrumentação com OpenTelemetry: Técnicas e Boas Práticas'
   description: ""
   location: "Florianópolis, SC, 🇧🇷 (Virtual)"
-  recording: https://youtu.be/QzStkLbA7Qk
   slides: /2025/2025-05-06-gophercon/slides.pdf
   event_name: 'GopherCon LATAM 2025'
 
@@ -23,6 +22,7 @@
   recording: https://youtu.be/QzStkLbA7Qk
   slides: /2025/2025-04-03-kubecon-eu-otel-sucks/slides.pdf
   event_name: 'KubeCon + CloudNativeCon Europe 2025'
+  event_link: https://sched.co/1txHm
 
 - id: 2025-01-23-datadog-user-group
   date: '2025-01-23'
@@ -47,6 +47,12 @@
   recording: https://youtu.be/rX7gKt4QlTk
   slides: /2024/2024-11-04-kubecon-na/slides.pdf
   event_name: 'KubeCon + CloudNativeCon North America 2024'
+  event_link: https://sched.co/1hovy
+  co_speakers:
+    - Morgan Mclean, Splunk
+    - Daniel Dyla, Dynatrace
+    - Ted Young, ServiceNow
+    - Alolita Sharma, Apple
 
 - id: 2024-10-10-kcd-austria
   date: '2024-10-10'
@@ -63,6 +69,7 @@
   location: "Vienna, 🇦🇹"
   slides: /2024/2024-10-10-kcd-austria/slides.pdf
   event_name: 'Kubernetes Community Day'
+  event_link: https://kcdaustria2024.sessionize.com/session/740116
 
 - id: 2024-you-choose
   date: '2024-10-08'
@@ -171,6 +178,7 @@
   location: "Berlin, 🇩🇪"
   slides: /2023/2023-12-06-grafana-and-friends/slides.pdf
   event_name: 'Meetup: Grafana and Friends'
+  event_link: https://www.meetup.com/grafana-and-friends-berlin/events/296932045
 
 - id: 2023-geeking-out
   date: '2023-11-21'
@@ -198,6 +206,12 @@
   location: "Chicago, IL, 🇺🇸"
   slides: /2023/2023-11-08-kubecon-na/slides.pdf
   event_name: 'KubeCon + CloudNativeCon North America 2023'
+  event_link: https://sched.co/1R2rQ
+  co_speakers:
+    - Daniel Dyla, Dynatrace
+    - Tyler Helmuth, Honeycomb
+    - Alex Boten, Lightstep
+    - Anthony Mirabella, AWS
 
 - id: 2023-09-29-linuxtips
   date: '2023-09-29'
@@ -220,6 +234,7 @@
   location: "Online, 🇱🇺"
   slides: /2023/2023-05-09-cncf-luxembourg/slides.pdf
   event_name: 'Cloud Native Luxembourg Meetup'
+  event_link: https://community.cncf.io/events/details/cncf-luxembourg-presents-unlocking-observability-your-gateway-to-opentelemetry/
 
 - id: 2023-05-06-devopsdays-aracaju
   date: '2023-05-06'
@@ -230,6 +245,7 @@
   location: "Aracaju, SE, 🇧🇷"
   slides: /2023/2023-05-06-devopsdays-aracaju/slides.pdf
   event_name: 'DevOpsDays Aracaju'
+  event_link: https://devopsdays.org/events/2023-aracaju/program/juraci-paixao
 
 - id: 2023-kubecon-eu
   date: '2023-04-18'
@@ -272,6 +288,7 @@
   location: "Recife, PE, 🇧🇷"
   slides: /2022/2022-12-10-devopsdays-recife/slides.pdf
   event_name: 'DevOpsDays Recife'
+  event_link: https://devopsdays.org/events/2022-recife/program/juraci-paixao-krohling
 
 - id: 2022-10-08-devopsdays-fortaleza
   date: '2022-10-08'
@@ -283,6 +300,7 @@
   location: "Fortaleza, CE, 🇧🇷"
   slides: /2022/2022-10-08-devopsdays-fortaleza/slides.pdf
   event_name: 'DevOpsDays Fortaleza'
+  event_link: https://devopsdays.org/events/2022-fortaleza/program/juraci-paixao/
 
 - id: 2022-01-18-kcd-brasil
   date: '2022-01-18'
@@ -297,6 +315,7 @@
   recording: https://youtu.be/BVQpM01CZPI
   slides: /2022/2022-01-18-kcd-brasil/slides.pdf
   event_name: 'Kubernetes Community Days Brasil 2022'
+  event_link: https://community.cncf.io/events/details/cncf-kcd-brasil-presents-kubernetes-community-days-brasil-2022/
 
 - id: 2021-11-10-devoops
   date: '2021-11-10'
@@ -310,6 +329,7 @@
   recording: https://youtu.be/ZAsyfivg4iA
   slides: /2021/2021-11-10-devoops/slides.pdf
   event_name: 'DevOops 2021'
+  event_link: https://devoops.ru/en/persons/XL9WCCXEaOVTG909shXQf/?version=2021
 
 - id: 2021-10-13-kubecon-na
   date: '2021-10-13'
@@ -324,6 +344,7 @@
   recording: https://youtu.be/WhRrwSHDBFs
   slides: /2021/2021-10-13-kubecon-na/slides.pdf
   event_name: 'KubeCon + CloudNativeCon North America 2021'
+  event_link: https://sched.co/lV0z
 
 - id: 2021-o11yfest
   date: '2021-05-17'
@@ -359,6 +380,7 @@
   recording: https://youtu.be/bh0v6k6eLRw
   slides: /2021/2021-04-27-cncf-linz/slides.pdf
   event_name: 'Cloud Native Computing Linz meetup'
+  event_link: https://www.meetup.com/cloud-native-linz/events/277569639/
 
 - id: 2020-12-05-devoops
   date: '2020-12-05'
@@ -375,6 +397,7 @@
   recording: https://youtu.be/6rzzE_MACME
   slides: /2020/2020-12-05-devoops/slides.pdf
   event_name: 'DevOops 2020'
+  event_link: https://devoops.ru/en/talks/2BUFkIXRvoksycvOreFCOy
 
 - id: 2020-fosdem
   date: '2020-02-02'
@@ -438,6 +461,7 @@
   recording: https://youtu.be/OS2rAQFePeM
   slides: /2018/2018-10-25-tracingsummit/slides.pdf
   event_name: 'Tracing Summit'
+  event_link: https://tracingsummit.org/ts/2018/
 
 - id: 2018-10-24-opensourcesummit
   date: '2018-10-24'
@@ -452,6 +476,7 @@
   location: "Edinburgh, 🏴󠁧󠁢󠁳󠁣󠁴󠁿"
   slides: /2018/2018-10-24-opensourcesummit/slides.pdf
   event_name: 'Open Source Summit'
+  event_link: https://sched.co/MPkv
 
 - id: 2018-devnation
   date: '2018-06-21'
@@ -483,6 +508,7 @@
   location: "Copenhagen, 🇩🇰"
   slides: /2018/2018-05-03-kubecon-eu-deepdive/slides.pdf
   event_name: 'KubeCon + CloudNativeCon Europe 2018'
+  event_link: https://sched.co/Drnv
 
 - id: 2018-05-02-kubecon-eu-intro
   date: '2018-05-02'
@@ -491,6 +517,7 @@
   location: "Copenhagen, 🇩🇰"
   slides: /2018/2018-05-02-kubecon-eu-intro/slides.pdf
   event_name: 'KubeCon + CloudNativeCon Europe 2018'
+  event_link: https://sched.co/DrnB
 
 - id: 2018-gids
   date: '2018-04-27'
@@ -528,6 +555,7 @@
   location: "Los Angeles, CA, 🇺🇸"
   slides: /2017/2017-09-11-opensourcesummit/slides.pdf
   event_name: 'Open Source Summit'
+  event_link: https://sched.co/Boku
 
 - id: 2017-cloudnative-night
   date: '2017-05-23'
@@ -571,3 +599,5 @@
   location: "Berlin, 🇩🇪"
   slides: /2017/2017-03-29-kubecon-eu/slides.pdf
   event_name: 'KubeCon + CloudNativeCon Europe 2017'
+  event_link: https://sched.co/9Tbl
+  recording: https://youtu.be/dmMWaTZE5gQ

@@ -5,7 +5,7 @@
 | Event     | Observability Day                                      |
 | Where     | Paris, 🇫🇷                                              |
 | When      | March 19, 2024                                         |
-| Recording | [YouTube](https://www.youtube.com/watch?v=S1K26-2wG8w) |
+| Recording | [YouTube](https://youtu.be/1mHlsWinfTE) |
 | Slides    | [PDF](slides.pdf)                                      |
 
 ## Abstract
