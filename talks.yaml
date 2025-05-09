@@ -1,3 +1,11 @@
+- id: 2025-gophercon-latam
+  date: '2025-05-06'
+  title: 'Instrumentação com OpenTelemetry: Técnicas e Boas Práticas'
+  description: ""
+  location: "Florianópolis, SC, 🇧🇷 (Virtual)"
+  recording: https://youtu.be/QzStkLbA7Qk
+  slides: /2025/2025-05-06-gophercon/slides.pdf
+
 - id: 2025-kubecon-eu-otel-sucks
   date: '2025-04-03'
   title: OTel Sucks (But Also Rocks!)
@@ -13,6 +21,13 @@
   location: "London, 🇬🇧"
   recording: https://youtu.be/QzStkLbA7Qk
   slides: /2025/2025-04-03-kubecon-eu-otel-sucks/slides.pdf
+
+- id: 2025-datadog-user-group
+  date: '2025-01-23'
+  title: Introduction to OpenTelemetry
+  description: ""
+  location: "Berlin, 🇩🇪"
+  slides: /2025/2025-01-23-datadog-user-group/slides.pdf
 
 - id: 2024-kubecon-na-project-update
   date: '2024-11-04'
