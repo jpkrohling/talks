@@ -1,35 +1,38 @@
-- id: 2025-gophercon-latam
+- id: 2025-05-06-gophercon
   date: '2025-05-06'
   title: 'Instrumentação com OpenTelemetry: Técnicas e Boas Práticas'
   description: ""
   location: "Florianópolis, SC, 🇧🇷 (Virtual)"
   recording: https://youtu.be/QzStkLbA7Qk
   slides: /2025/2025-05-06-gophercon/slides.pdf
+  event_name: 'GopherCon LATAM 2025'
 
-- id: 2025-kubecon-eu-otel-sucks
+- id: 2025-04-03-kubecon-eu-otel-sucks
   date: '2025-04-03'
   title: OTel Sucks (But Also Rocks!)
   description: >
-    OpenTelemetry (OTel) has become a cornerstone of observability, but the journey hasn’t been without challenges. Inspired by the famous "Linux Sucks" format, this talk explores OTel’s pain points and highlights its successes.
+    OpenTelemetry (OTel) has become a cornerstone of observability, but the journey hasn't been without challenges. Inspired by the famous "Linux Sucks" format, this talk explores OTel's pain points and highlights its successes.
 
-    We’ll cover:
+    We'll cover:
     * SDK Configuration: Once complex for simple scenarios, now simplified by the Config SIG.
-    * Collector Challenges: Tail-sampling woes and Prometheus performance issues, balanced by OTel’s ability to handle multiple signals in one binary with great performance using OTLP.
+    * Collector Challenges: Tail-sampling woes and Prometheus performance issues, balanced by OTel's ability to handle multiple signals in one binary with great performance using OTLP.
     * Semantic Conventions: Painful changes, like in HTTP conventions, but with long-term benefits through unified standards.
 
-    Featuring real-world user insights, this session delivers a brutally honest yet optimistic take on OTel’s evolution. Perfect for anyone navigating OpenTelemetry’s complexities or celebrating its strengths.
+    Featuring real-world user insights, this session delivers a brutally honest yet optimistic take on OTel's evolution. Perfect for anyone navigating OpenTelemetry's complexities or celebrating its strengths.
   location: "London, 🇬🇧"
   recording: https://youtu.be/QzStkLbA7Qk
   slides: /2025/2025-04-03-kubecon-eu-otel-sucks/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon Europe 2025'
 
-- id: 2025-datadog-user-group
+- id: 2025-01-23-datadog-user-group
   date: '2025-01-23'
   title: Introduction to OpenTelemetry
   description: ""
   location: "Berlin, 🇩🇪"
   slides: /2025/2025-01-23-datadog-user-group/slides.pdf
+  event_name: 'Datadog User Group Berlin'
 
-- id: 2024-kubecon-na-project-update
+- id: 2024-11-04-kubecon-na
   date: '2024-11-04'
   title: OpenTelemetry Project Update
   description: >
@@ -43,8 +46,9 @@
   location: "Salt Lake City, UT, 🇺🇸"
   recording: https://youtu.be/rX7gKt4QlTk
   slides: /2024/2024-11-04-kubecon-na/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon North America 2024'
 
-- id: 2024-kcd-austria
+- id: 2024-10-10-kcd-austria
   date: '2024-10-10'
   title: Kubernetes Community Day Austria
   description: >
@@ -58,6 +62,7 @@
     challenges.
   location: "Vienna, 🇦🇹"
   slides: /2024/2024-10-10-kcd-austria/slides.pdf
+  event_name: 'Kubernetes Community Day'
 
 - id: 2024-you-choose
   date: '2024-10-08'
@@ -75,7 +80,7 @@
   location: "Seattle, WA, 🇺🇸"
   recording: https://youtu.be/Mfh_0Qn_1zo
 
-- id: 2024-cncf-duesseldorf
+- id: 2024-06-06-cncf-duesseldorf
   date: '2024-06-06'
   title: Demystifying Sampling
   description: >
@@ -83,8 +88,9 @@
     be demystifying sampling and looking at concepts and practices for sampling logs, metrics and traces.
   location: "Düsseldorf, 🇩🇪"
   slides: /2024/2024-06-06-cncf-duesseldorf/slides.pdf
+  event_name: 'CNCF Düsseldorf'
 
-- id: 2024-cncf-santa-catarina
+- id: 2024-05-24-cncf-santa-catarina
   date: '2024-05-24'
   title: "Menu de Degustação para OTel Collector"
   description: >
@@ -93,8 +99,9 @@
   location: "Online, 🇧🇷"
   recording: https://youtu.be/o7CYHjZuykM
   slides: /2024/2024-05-24-cncf-santa-catarina/slides.pdf
+  event_name: 'CNCF Santa Catarina'
 
-- id: 2024-observability-day
+- id: 2024-03-19-observability-day
   date: '2024-03-19'
   title: "Real-World Sampling – Lessons Learned After Reducing ~80% of Our O11y Costs"
   description: >
@@ -110,8 +117,9 @@
   location: "Paris, 🇫🇷"
   recording: https://youtu.be/1mHlsWinfTE
   slides: /2024/2024-03-19-observability-day/slides.pdf
+  event_name: 'Observability Day'
 
-- id: 2024-rejekts-europe
+- id: 2024-03-18-rejekts
   date: '2024-03-18'
   title: Building Resilient Observability Pipelines in Kubernetes with OpenTelemetry Collector
   description: >
@@ -120,8 +128,9 @@
   location: "Paris, 🇫🇷"
   recording: https://youtu.be/S1K26-2wG8w
   slides: /2024/2024-03-18-rejekts/slides.pdf
+  event_name: 'Cloud_Native Rejekts'
 
-- id: 2024-kcd-sp
+- id: 2024-02-23-kcd-sp
   date: '2024-02-23'
   title: "Estado da Arte na Observabilidade 🇧🇷"
   description: >
@@ -131,6 +140,7 @@
     obsevabilidade oferecerá uma visão equilibrada de desafios e soluções, moldando o futuro da observabilidade com código livre.
   location: "Online, 🌍"
   slides: /2024/2024-02-23-kcd-sp/slides.pdf
+  event_name: 'Kubernetes Community Days - São Paulo'
 
 - id: 2023-humans-of-otel
   date: '2023-12-20'
@@ -160,6 +170,7 @@
     Committee member for the OpenTelemetry project.
   location: "Berlin, 🇩🇪"
   slides: /2023/2023-12-06-grafana-and-friends/slides.pdf
+  event_name: 'Meetup: Grafana and Friends'
 
 - id: 2023-geeking-out
   date: '2023-11-21'
@@ -173,7 +184,7 @@
   location: "Online, 🌍"
   recording: https://youtu.be/u5oXMGQd1Oc
 
-- id: 2023-kubecon-na-contribfest
+- id: 2023-11-08-kubecon-na
   date: '2023-11-08'
   title: "🚨 Contribfest: OpenTelemetry Contribfest"
   description: >
@@ -186,8 +197,9 @@
     libraries and ensure they are outputting semantic convention-compliant telemetry data.
   location: "Chicago, IL, 🇺🇸"
   slides: /2023/2023-11-08-kubecon-na/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon North America 2023'
 
-- id: 2023-linuxtips
+- id: 2023-09-29-linuxtips
   date: '2023-09-29'
   title: "O fantástico mundo da observabilidade"
   description: >
@@ -196,8 +208,9 @@
     quando NÃO usá-los.
   location: "Online, 🇧🇷"
   slides: /2023/2023-09-29-linuxtips/slides.pdf
+  event_name: 'Aniversário da LinuxTips'
 
-- id: 2023-cncf-luxembourg
+- id: 2023-05-09-cncf-luxembourg
   date: '2023-05-09'
   title: 'Unlocking Observability: Your Gateway to OpenTelemetry'
   description: >
@@ -206,8 +219,9 @@
     reliability with this meetup about OpenTelemetry.
   location: "Online, 🇱🇺"
   slides: /2023/2023-05-09-cncf-luxembourg/slides.pdf
+  event_name: 'Cloud Native Luxembourg Meetup'
 
-- id: 2023-devopsdays-aracaju
+- id: 2023-05-06-devopsdays-aracaju
   date: '2023-05-06'
   title: "Dissecando rastreamento distribuído"
   description: >
@@ -215,6 +229,7 @@
     entender de uma vez por todas como funciona e como implementar nos seus projetos!
   location: "Aracaju, SE, 🇧🇷"
   slides: /2023/2023-05-06-devopsdays-aracaju/slides.pdf
+  event_name: 'DevOpsDays Aracaju'
 
 - id: 2023-kubecon-eu
   date: '2023-04-18'
@@ -246,7 +261,7 @@
     Distribuído.
   location: "Online, 🌍"
 
-- id: 2022-devopsdays-recife
+- id: 2022-12-10-devopsdays-recife
   date: '2022-12-10'
   title: "Tudo o que SREs PRECISAM saber sobre OpenTelemetry"
   description: >
@@ -256,8 +271,9 @@
     compreensão de todos os componentes do projeto, conseguindo determinar quais são importantes para seu dia a dia como SRE.
   location: "Recife, PE, 🇧🇷"
   slides: /2022/2022-12-10-devopsdays-recife/slides.pdf
+  event_name: 'DevOpsDays Recife'
 
-- id: 2022-devopsdays-fortaleza
+- id: 2022-10-08-devopsdays-fortaleza
   date: '2022-10-08'
   title: "Tudo o que SREs PRECISAM saber sobre OpenTelemetry"
   description: >
@@ -266,8 +282,9 @@
     SREs precisam saber.
   location: "Fortaleza, CE, 🇧🇷"
   slides: /2022/2022-10-08-devopsdays-fortaleza/slides.pdf
+  event_name: 'DevOpsDays Fortaleza'
 
-- id: 2022-kcd-brasil
+- id: 2022-01-18-kcd-brasil
   date: '2022-01-18'
   title: "Tudo o que você PRECISA saber sobre OpenTelemetry"
   description: >
@@ -279,8 +296,9 @@
   location: "Virtual, 🇧🇷"
   recording: https://youtu.be/BVQpM01CZPI
   slides: /2022/2022-01-18-kcd-brasil/slides.pdf
+  event_name: 'Kubernetes Community Days Brasil 2022'
 
-- id: 2021-devoops
+- id: 2021-11-10-devoops
   date: '2021-11-10'
   title: OpenTelemetry Collector deep dive
   description: >
@@ -291,8 +309,9 @@
   location: "Virtual, St. Petersburg, 🇷🇺"
   recording: https://youtu.be/ZAsyfivg4iA
   slides: /2021/2021-11-10-devoops/slides.pdf
+  event_name: 'DevOops 2021'
 
-- id: 2021-kubecon-na
+- id: 2021-10-13-kubecon-na
   date: '2021-10-13'
   title: OpenTelemetry Collector Deployment Patterns
   description: >
@@ -304,6 +323,7 @@
   location: "Virtual, Los Angeles, 🇺🇸"
   recording: https://youtu.be/WhRrwSHDBFs
   slides: /2021/2021-10-13-kubecon-na/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon North America 2021'
 
 - id: 2021-o11yfest
   date: '2021-05-17'
@@ -338,8 +358,9 @@
   location: "Online, Linz, 🇦🇹"
   recording: https://youtu.be/bh0v6k6eLRw
   slides: /2021/2021-04-27-cncf-linz/slides.pdf
+  event_name: 'Cloud Native Computing Linz meetup'
 
-- id: 2020-devoops
+- id: 2020-12-05-devoops
   date: '2020-12-05'
   title: Distributed tracing deep dive
   description: >
@@ -353,6 +374,7 @@
   location: "Virtual, St. Petersburg, 🇷🇺"
   recording: https://youtu.be/6rzzE_MACME
   slides: /2020/2020-12-05-devoops/slides.pdf
+  event_name: 'DevOops 2020'
 
 - id: 2020-fosdem
   date: '2020-02-02'
@@ -405,7 +427,7 @@
   description: ''
   location: "Bangalore, 🇮🇳"
 
-- id: 2018-tracingsummit
+- id: 2018-10-25-tracingsummit
   date: '2018-10-25'
   title: Introduction to OpenTracing
   description: >
@@ -415,8 +437,9 @@
   location: "Edinburgh, 🏴󠁧󠁢󠁳󠁣󠁴󠁿"
   recording: https://youtu.be/OS2rAQFePeM
   slides: /2018/2018-10-25-tracingsummit/slides.pdf
+  event_name: 'Tracing Summit'
 
-- id: 2018-opensourcesummit
+- id: 2018-10-24-opensourcesummit
   date: '2018-10-24'
   title: What are My Microservices Doing?
   description: >
@@ -428,6 +451,7 @@
     instrumentation with Istio.
   location: "Edinburgh, 🏴󠁧󠁢󠁳󠁣󠁴󠁿"
   slides: /2018/2018-10-24-opensourcesummit/slides.pdf
+  event_name: 'Open Source Summit'
 
 - id: 2018-devnation
   date: '2018-06-21'
@@ -452,19 +476,21 @@
   location: "Online, 🇧🇷"
   recording: https://youtu.be/ARaMOdZ54mo
 
-- id: 2018-kubecon-eu-deepdive
+- id: 2018-05-03-kubecon-eu-deepdive
   date: '2018-05-03'
   title: Jaeger Project Deep Dive
   description: ''
   location: "Copenhagen, 🇩🇰"
   slides: /2018/2018-05-03-kubecon-eu-deepdive/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon Europe 2018'
 
-- id: 2018-kubecon-eu-intro
+- id: 2018-05-02-kubecon-eu-intro
   date: '2018-05-02'
   title: Jaeger Project Intro
   description: ''
   location: "Copenhagen, 🇩🇰"
   slides: /2018/2018-05-02-kubecon-eu-intro/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon Europe 2018'
 
 - id: 2018-gids
   date: '2018-04-27'
@@ -489,7 +515,7 @@
     distributed application.
   location: "Brühl, 🇩🇪"
 
-- id: 2017-opensourcesummit
+- id: 2017-09-11-opensourcesummit
   date: '2017-09-11'
   title: 'OpenTracing: One Instrumentation for Metrics, Logs and Distributed Tracing'
   description: >
@@ -501,6 +527,7 @@
     distributed applications.
   location: "Los Angeles, CA, 🇺🇸"
   slides: /2017/2017-09-11-opensourcesummit/slides.pdf
+  event_name: 'Open Source Summit'
 
 - id: 2017-cloudnative-night
   date: '2017-05-23'
@@ -534,7 +561,7 @@
     tracing data.
   location: "Munich, 🇩🇪"
 
-- id: 2017-kubecon-eu
+- id: 2017-03-29-kubecon-eu
   date: '2017-03-29'
   title: Operational and Business Insights from Tracing Distributed Microservices
   description: >
@@ -543,3 +570,4 @@
     presented in both aggregated and individual trace views to provide useful insight for many roles within an organisation.
   location: "Berlin, 🇩🇪"
   slides: /2017/2017-03-29-kubecon-eu/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon Europe 2017'
