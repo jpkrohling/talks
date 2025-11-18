@@ -1,3 +1,61 @@
+- id: 2025-11-11-kubecon-na-instrumentation-score
+  date: '2025-11-11'
+  title: 'Instrumentation Score: The Difference Between Telemetry and Good Telemetry'
+  description: >
+    The session introduces an open standard for assessing OpenTelemetry data quality, consistency, and completeness. Speakers explain how the Instrumentation Score helps practitioners "collect excellent telemetry" and identifies gaps in observability practices, moving beyond mere data collection toward actionable insights.
+  location: "Atlanta, GA, 🇺🇸"
+  slides: /2025/2025-11-11-kubecon-na-instrumentation-score/slides.pdf
+  event_name: 'KubeCon + CloudNativeCon North America 2025'
+  event_link: https://sched.co/27FWx
+  co_speakers:
+    - Michele Mancioppi, Dash0
+
+- id: 2025-11-10-observability-day-bad-telemetry
+  date: '2025-11-10'
+  title: "There's a Lot of Bad Telemetry Out There"
+  description: >
+    The presentation addresses problems with poor-quality telemetry data. As described, "Much telemetry is bad: noisy, costly, and hides real signals." The speakers examine issues like auto-instrumentation noise and verbose traces, then demonstrate solutions using OpenTelemetry Collector configurations to filter and improve data quality at the pipeline level.
+  location: "Atlanta, GA, 🇺🇸"
+  slides: /2025/2025-11-10-observability-day-bad-telemetry/slides.pdf
+  event_name: 'Observability Day NA 2025'
+  event_link: https://sched.co/28D5B
+  co_speakers:
+    - Dan Gomez Blanco, New Relic
+
+- id: 2025-11-10-observability-day-panel
+  date: '2025-11-10'
+  title: 'Panel: Surviving and Thriving With OpenTelemetry: A Day 2 Operations'
+  description: >
+    The panel addresses operational challenges with OpenTelemetry Collector at scale, including "managing large fleets, ensuring config stability, controlling costs, and maintaining data quality." Speakers share strategies from real-world implementations covering fleet management, safe rollouts, problematic data handling, and the path toward stable Collector v1 releases.
+  location: "Atlanta, GA, 🇺🇸"
+  slides: /2025/2025-11-10-observability-day-panel/slides.pdf
+  event_name: 'Observability Day NA 2025'
+  event_link: https://sched.co/28D30
+  co_speakers:
+    - Myrle Krantz, Grafana Labs
+    - Joseph Knight, Capital One
+    - Vijay Samuel, eBay
+    - Panos Tsilopoulos, Nike
+
+- id: 2025-10-14-datadog-berlin
+  date: '2025-10-14'
+  title: "What's Bad Telemetry Anyway?"
+  description: >
+    Discusses how excessive telemetry often becomes "expensive, noisy, and surprisingly unhelpful" and explores strategies for meaningful observability.
+  location: "Berlin, 🇩🇪"
+  slides: /2025/2025-10-14-datadog-berlin/slides.pdf
+  event_name: 'Datadog User Group Berlin'
+  event_link: https://www.meetup.com/datadog-berlin/events/310647845/
+
+- id: 2025-07-02-cloudland
+  date: '2025-07-02'
+  title: 'Getting Started with OpenTelemetry: A Gateway to Modern Observability'
+  description: ""
+  location: "Soltau, 🇩🇪"
+  slides: /2025/2025-07-02-cloudland/slides.pdf
+  event_name: 'CloudLand 2025'
+  event_link: https://meine.doag.org/events/cloudland/2025/agenda/#agendaId.5807
+
 - id: 2025-05-06-gophercon
   date: '2025-05-06'
   title: 'Instrumentação com OpenTelemetry: Técnicas e Boas Práticas'
