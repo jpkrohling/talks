@@ -1,3 +1,46 @@
+- id: 2026-03-26-kubecon-eu-taming-wasteful-telemetry
+  date: '2026-03-26'
+  title: "Day-2 Reality Check: Taming Wasteful Telemetry"
+  description: >
+    Your observability pipeline is running and everything seems fine—until you notice the bill. High-cardinality metrics, duplicate attributes, and over-eager auto-instrumentation silently inflate costs. A developer adding user IDs as labels turned a 2k USD metric into 20k USD. .NET auto-instrumentation attaches all IPs and MACs to host attributes—data never queried. The Kubernetes processor duplicates information already captured. This talk examines sources of telemetry waste: unbounded cardinality, redundant processor data, and auto-instrumentation defaults prioritizing completeness over practicality. We'll discuss pipeline fixes using the OpenTelemetry Collector to drop attributes and transform telemetry, plus Instrumentation Score for quality assessment. We'll explore proactive approaches reducing waste at the source through opinionated auto-instrumentation. Attendees will learn to identify waste, assess cardinality, apply solutions, and reduce costs without sacrificing visibility.
+  location: "Amsterdam, Netherlands 🇳🇱"
+  event_name: 'KubeCon + CloudNativeCon Europe 2026'
+  event_link: https://sched.co/2CW6M
+  co_speakers:
+    - Elena Kovalenko, Delivery Hero
+
+- id: 2026-03-24-kubecon-eu-otel-project-update
+  date: '2026-03-24'
+  title: "OpenTelemetry Project Update and 'Ask the Experts'"
+  description: >
+    Join us for the official project update OpenTelemetry session at KubeCon+CloudNativeCon. OpenTelemetry contributors have been working hard to evolve the project to be stable by default and simplify its usage. Governance Committee members will discuss these and other exciting improvements in the project since the last update in Atlanta. This session will also be your opportunity to engage with contributors and maintainers from across the project and get your questions answered!
+  location: "Amsterdam, Netherlands 🇳🇱"
+  event_name: 'KubeCon + CloudNativeCon Europe 2026'
+  event_link: https://sched.co/2EF6i
+  co_speakers:
+    - Pablo Baeyens, Datadog
+    - Marylia Gutierrez, Grafana Labs
+    - Severin Neumann, Causely
+
+- id: 2026-03-23-observability-day-otel-gateways
+  date: '2026-03-23'
+  title: "OpenTelemetry Gateways: Enforce, Transform, Route"
+  description: >
+    Teaching every development team about telemetry best practices doesn't scale. When bad data flows through pipelines (PII leakage, misconfigured attributes, cost-inflating noise) you need a centralized control point. OpenTelemetry collector gateways provide that enforcement layer between applications and backends. This talk presents proven gateway architectures from production environments managing cloud and on-premises telemetry. We'll demonstrate validation rules enforcing semantic conventions, transformation pipelines that enrich or redact data, and routing configurations enabling backend flexibility without developer refactoring. You'll see real configurations: blocking PII, enforcing mandatory attributes, and filtering high-cardinality data before it leaves your premises. We'll cover performance at scale, security boundaries for multi-tenant environments, and managing configuration drift. Attendees leave with blueprints and configurations ready for deployment.
+  location: "Amsterdam, Netherlands 🇳🇱"
+  event_name: 'Observability Day Europe 2026'
+  event_link: https://sched.co/2DY7t
+  co_speakers:
+    - Natalie Ujuk, IG Group
+
+- id: 2026-03-23-observability-day-welcome
+  date: '2026-03-23'
+  title: "Observability Day | Welcome + Opening Remarks"
+  location: "Amsterdam, Netherlands 🇳🇱"
+  slides: /2026/2026-03-23-observability-day-welcome/slides.pdf
+  event_name: 'Observability Day Europe 2026'
+  event_link: https://sched.co/2DYMy
+
 - id: 2025-11-11-kubecon-na-instrumentation-score
   date: '2025-11-11'
   title: 'Instrumentation Score: The Difference Between Telemetry and Good Telemetry'

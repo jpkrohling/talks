@@ -86,7 +86,10 @@ npm run preview    # Preview production build
 - **Responsive:** Mobile-first design
 - **Accessibility:** WCAG-compliant components
 
-The website reads `talks.yaml` to dynamically generate the talks listing and featured talks sections.
+- **Path Alias:** `@/*` maps to `./src/*` in imports
+- **Dev Server:** Runs on port 8080
+
+**Data sync:** The website does NOT read `talks.yaml` at runtime. Instead, `website/src/data/talksData.ts` contains a hardcoded copy of the talks data. When `talks.yaml` is updated, `talksData.ts` must also be updated for changes to appear on the website. Featured talk IDs are defined in `website/src/types/Talk.ts`.
 
 ## Adding New Talks
 
