@@ -5,7 +5,7 @@
 | Event     | KubeCon + CloudNativeCon Europe 2026                             |
 | Where     | Amsterdam, Netherlands 🇳🇱                                       |
 | When      | March 26, 2026                                                   |
-| Recording | None                                                             |
+| Recording | [YouTube](https://youtu.be/cpB5NTtUdwQ)                         |
 | Slides    | [PDF](slides.pdf)                                                |
 | Link      | [Link](https://sched.co/2CW6M)                                  |
 
