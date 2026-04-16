@@ -3,6 +3,28 @@ import YAML from 'yaml';
 
 // This is sample data - in a real app, you would load this from a YAML file
 const yamlData = `
+  - id: 2026-04-16-mastering-obs-hidden-cost-bad-telemetry
+    date: '2026-04-16'
+    title: "The Hidden Cost of Bad Telemetry: Finding and Fixing What's Hurting Your Observability"
+    description: >
+      Most organizations believe they need more telemetry. The reality? They're drowning in bad telemetry: PII leaks, excessive spans, bloated resource attributes, and low-value traces that create noise, security risks, and costs without delivering observability value. Drawing from experience analyzing billions of spans across production environments, this talk reveals the most common instrumentation anti-patterns and shows practical techniques to identify and eliminate them using the OpenTelemetry Collector. Attendees will learn how to audit their telemetry quality, implement filtering and transformation pipelines, and shift from "collect everything" to "collect what matters."
+    location: "Online 🌐"
+    slides: /2026/2026-04-16-mastering-obs-hidden-cost-bad-telemetry/slides.pdf
+    event_name: 'Mastering Observability 2026'
+    event_link: https://www.mastering-obs.de/
+
+  - id: 2026-04-16-mastering-obs-weniger-sammeln
+    date: '2026-04-16'
+    title: "Weniger Sammeln, mehr Verstehen – hin zu proaktivem Reliability Engineering"
+    description: >
+      Moderne Organisationen sammeln heute riesige Mengen an Telemetriedaten – Terabytes an Logs, Metriken und Traces. Trotzdem fällt es ihnen schwerer denn je zu verstehen, warum Systeme versagen und wie sich Probleme nachhaltig beheben lassen. Das eigentliche Problem ist nicht die Datenmenge, sondern der fehlende Zweck hinter der Datenerfassung. Dieser Vortrag stellt ein systematisches, top-down orientiertes Engineering-Framework vor, das den Umgang mit Service-Reliability neu ausrichtet. Anstelle von angstgetriebenem Datensammeln nach dem Motto „erst alles erfassen, später entscheiden" beginnt der Ansatz bei dem, was tatsächlich zählt: der Fähigkeit von Nutzer:innen, ihre Ziele zuverlässig zu erreichen. Der Vortrag richtet sich an Entwickler:innen, Team-Leads und Führungskräfte und zeigt eine prinzipielle Vorgehensweise zur Auswahl von Telemetrie. Ziel ist es, Kosten zu reduzieren, Root-Cause-Analysen zu beschleunigen und belastbares Vertrauen in das Verhalten verteilter Systeme aufzubauen. Dabei wird erläutert, warum Traces das Fundament bilden sollten, wie Metriken sinnvoll eingesetzt werden und wann Logs zu belastbaren Hinweisen statt zu Rauschen werden. Das Ergebnis sind weniger Daten, schnellere Problemlösung und die Fähigkeit, kausal über verteilte Systeme nachzudenken – ein Schritt weg vom reaktiven Feuerlöschen hin zu proaktivem Reliability Engineering.
+    location: "Online 🌐"
+    slides: /2026/2026-04-16-mastering-obs-weniger-sammeln/slides.pdf
+    event_name: 'Mastering Observability 2026'
+    event_link: https://www.mastering-obs.de/
+    co_speakers:
+      - Severin Neumann, Causely
+
   - id: 2025-11-11-kubecon-na-instrumentation-score
     date: '2025-11-11'
     title: 'Instrumentation Score: The Difference Between Telemetry and Good Telemetry'
