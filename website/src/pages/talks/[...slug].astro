@@ -1,5 +1,5 @@
 ---
-import { getEntry, render } from 'astro:content';
+import { render } from 'astro:content';
 import TagPill from '../../components/TagPill.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -8,15 +8,16 @@ import { withBase } from '../../lib/url';
 
 export async function getStaticPaths() {
   const talks = await getAllTalks();
-  return talks.map((t) => ({ params: { slug: t.id }, props: { id: t.id } }));
+  return talks.map((t) => ({ params: { slug: t.id }, props: { entry: t } }));
 }
 
-const { id } = Astro.props as { id: string };
-const entry = await getEntry('talks', id);
-if (!entry) throw new Error(`Talk not found: ${id}`);
+const { entry } = Astro.props as { entry: Awaited<ReturnType<typeof getAllTalks>>[number] };
 const { Content } = await render(entry);
 const d = entry.data;
 const slidesHref = d.slides ? withBase(`/talks/${entry.id}/${d.slides}`) : null;
+const isUrlRecording = !!d.recording && /^https?:\/\//.test(d.recording);
+const localRecording =
+  d.recording && !isUrlRecording ? withBase(`/talks/${entry.id}/${d.recording}`) : null;
 ---
 <BaseLayout title={d.title} description={`${d.title} — ${d.event}`}>
   <article class="container">
@@ -31,7 +32,13 @@ const slidesHref = d.slides ? withBase(`/talks/${entry.id}/${d.slides}`) : null;
     </header>
     <div class="layout">
       <div class="main">
-        {d.recording && <YouTubeEmbed url={d.recording} title={d.title} />}
+        {isUrlRecording && <YouTubeEmbed url={d.recording!} title={d.title} />}
+        {localRecording && (
+          <video controls preload="metadata" class="local-video">
+            <source src={localRecording} />
+            <p><a href={localRecording} rel="external">Download recording</a></p>
+          </video>
+        )}
         <div class="prose abstract">
           <Content />
         </div>
@@ -92,6 +99,12 @@ const slidesHref = d.slides ? withBase(`/talks/${entry.id}/${d.slides}`) : null;
   }
   .abstract {
     margin-top: var(--space-6);
+  }
+  .local-video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: var(--radius-card);
   }
   .side {
     display: flex;
