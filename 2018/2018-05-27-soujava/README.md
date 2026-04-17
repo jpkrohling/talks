@@ -7,7 +7,9 @@ location:
   city: Online
   country: ""
   flag: 🇧🇷
-tags: []
+tags:
+  - tracing
+  - jaeger
 recording: https://www.youtube.com/watch?v=ARaMOdZ54mo
 event_link: https://sched.co/MPkv
 ---

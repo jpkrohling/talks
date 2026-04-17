@@ -7,7 +7,10 @@ location:
   city: Edinburgh
   country: ""
   flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
-tags: []
+tags:
+  - tracing
+  - instrumentation
+  - open-source
 recording: https://www.youtube.com/watch?v=OS2rAQFePeM
 slides: slides.pdf
 event_link: https://tracingsummit.org/ts/2018/

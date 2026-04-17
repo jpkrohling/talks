@@ -7,7 +7,10 @@ location:
   city: Berlin
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - tracing
+  - observability
+  - kubernetes
 recording: https://www.youtube.com/watch?v=dmMWaTZE5gQ
 slides: slides.pdf
 event_link: https://sched.co/9Tbl

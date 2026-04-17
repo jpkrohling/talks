@@ -7,7 +7,10 @@ location:
   city: Boston
   country: MA
   flag: 🇺🇸
-tags: []
+tags:
+  - jaeger
+  - tracing
+  - kubernetes
 ---
 
 ## Abstract

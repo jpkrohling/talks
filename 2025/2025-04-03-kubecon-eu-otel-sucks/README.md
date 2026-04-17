@@ -7,7 +7,10 @@ location:
   city: London
   country: ""
   flag: 🇬🇧
-tags: []
+tags:
+  - opentelemetry
+  - collector
+  - governance
 recording: https://youtu.be/QzStkLbA7Qk
 slides: slides.pdf
 event_link: https://sched.co/1txHm

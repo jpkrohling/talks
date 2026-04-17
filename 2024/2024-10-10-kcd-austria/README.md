@@ -7,7 +7,10 @@ location:
   city: Vienna
   country: ""
   flag: 🇦🇹
-tags: []
+tags:
+  - observability
+  - kubernetes
+  - keynote
 slides: slides.pdf
 event_link: https://kcdaustria2024.sessionize.com/session/740116
 ---

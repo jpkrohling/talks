@@ -7,7 +7,9 @@ location:
   city: Online
   country: ""
   flag: 🌍
-tags: []
+tags:
+  - opentelemetry
+  - collector
 recording: https://www.youtube.com/watch?v=fhIuylaJ1xA
 ---
 

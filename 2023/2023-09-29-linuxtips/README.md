@@ -7,7 +7,8 @@ location:
   city: Online
   country: ""
   flag: 🇧🇷
-tags: []
+tags:
+  - observability
 slides: slides.pdf
 ---
 

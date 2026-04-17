@@ -7,7 +7,9 @@ location:
   city: Amsterdam
   country: Netherlands
   flag: 🇳🇱
-tags: []
+tags:
+  - observability
+  - keynote
 slides: slides.pdf
 event_link: https://sched.co/2DYMy
 ---

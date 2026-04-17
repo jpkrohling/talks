@@ -7,7 +7,10 @@ location:
   city: Aracaju
   country: SE
   flag: 🇧🇷
-tags: []
+tags:
+  - tracing
+  - jaeger
+  - devops
 slides: slides.pdf
 event_link: https://devopsdays.org/events/2023-aracaju/program/juraci-paixao
 ---

@@ -7,7 +7,10 @@ location:
   city: Florianópolis
   country: SC
   flag: 🇧🇷
-tags: []
+tags:
+  - opentelemetry
+  - instrumentation
+  - go
 slides: slides.pdf
 ---
 

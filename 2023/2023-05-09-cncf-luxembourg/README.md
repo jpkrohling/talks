@@ -7,7 +7,9 @@ location:
   city: Online
   country: ""
   flag: 🇱🇺
-tags: []
+tags:
+  - opentelemetry
+  - observability
 slides: slides.pdf
 event_link: https://community.cncf.io/events/details/cncf-luxembourg-presents-unlocking-observability-your-gateway-to-opentelemetry/
 ---

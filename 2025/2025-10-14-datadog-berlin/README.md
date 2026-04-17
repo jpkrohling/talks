@@ -7,7 +7,10 @@ location:
   city: Berlin
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - opentelemetry
+  - cost
+  - observability
 slides: slides.pdf
 event_link: https://www.meetup.com/datadog-berlin/events/310647845/
 ---

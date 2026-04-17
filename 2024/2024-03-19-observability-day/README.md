@@ -7,7 +7,10 @@ location:
   city: Paris
   country: ""
   flag: 🇫🇷
-tags: []
+tags:
+  - opentelemetry
+  - cost
+  - collector
 recording: https://youtu.be/1mHlsWinfTE
 slides: slides.pdf
 ---

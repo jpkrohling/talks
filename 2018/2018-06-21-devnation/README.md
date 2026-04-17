@@ -7,7 +7,10 @@ location:
   city: Virtual
   country: ""
   flag: 🌍
-tags: []
+tags:
+  - jaeger
+  - tracing
+  - instrumentation
 recording: https://www.youtube.com/watch?v=hpnLUFRY4_Y
 event_link: https://developers.redhat.com/blog/2018/06/20/next-devnation-live-advanced-microservices-tracing-with-jaeger-june-21st-12pm-edt
 ---

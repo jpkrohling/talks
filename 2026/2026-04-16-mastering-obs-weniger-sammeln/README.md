@@ -7,7 +7,10 @@ location:
   city: Online
   country: ""
   flag: 🌐
-tags: []
+tags:
+  - observability
+  - cost
+  - tracing
 slides: slides.pdf
 event_link: https://www.mastering-obs.de/
 co_speakers:

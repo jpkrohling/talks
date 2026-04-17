@@ -7,7 +7,10 @@ location:
   city: Chicago
   country: IL
   flag: 🇺🇸
-tags: []
+tags:
+  - opentelemetry
+  - collector
+  - open-source
 slides: slides.pdf
 event_link: https://sched.co/1R2rQ
 co_speakers:

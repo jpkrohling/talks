@@ -7,7 +7,10 @@ location:
   city: Barcelona
   country: ""
   flag: 🇪🇸
-tags: []
+tags:
+  - jaeger
+  - tracing
+  - kubernetes
 recording: https://www.youtube.com/watch?v=Edy2vd7bh5U
 slides: deep-dive.pdf
 event_link: https://sched.co/MPkv

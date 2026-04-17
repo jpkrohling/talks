@@ -7,7 +7,9 @@ location:
   city: Bangalore
   country: ""
   flag: 🇮🇳
-tags: []
+tags:
+  - tracing
+  - observability
 ---
 
 

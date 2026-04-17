@@ -7,7 +7,11 @@ location:
   city: Online
   country: ""
   flag: 🌍
-tags: []
+tags:
+  - grafana
+  - opentelemetry
+  - tracing
+  - observability
 recording: https://go2.grafana.com/2023-02-01-AccountDay-SinglePaneOTel-LatAm-AMER.html
 ---
 

@@ -7,7 +7,11 @@ location:
   city: Antwerp
   country: ""
   flag: 🇧🇪
-tags: []
+tags:
+  - tracing
+  - jaeger
+  - observability
+  - kubernetes
 recording: https://www.youtube.com/watch?v=FJ_YuUgIt8E
 ---
 

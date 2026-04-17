@@ -7,7 +7,9 @@ location:
   city: Munich
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - tracing
+  - instrumentation
 event_link: https://www.meetup.com/Lightweight-Java-User-Group-Munchen/events/239006340/
 ---
 

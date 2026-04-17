@@ -7,7 +7,9 @@ location:
   city: Munich
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - tracing
+  - observability
 event_link: https://www.meetup.com/cloud-native-muc/events/239505785
 ---
 

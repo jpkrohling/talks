@@ -7,7 +7,10 @@ location:
   city: Copenhagen
   country: ""
   flag: 🇩🇰
-tags: []
+tags:
+  - jaeger
+  - tracing
+  - kubernetes
 slides: slides.pdf
 event_link: https://sched.co/Drnv
 ---

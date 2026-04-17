@@ -7,7 +7,9 @@ location:
   city: Berlin
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - opentelemetry
+  - observability
 slides: slides.pdf
 ---
 

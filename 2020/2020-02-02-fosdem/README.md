@@ -7,7 +7,9 @@ location:
   city: Brussels
   country: ""
   flag: 🇧🇪
-tags: []
+tags:
+  - tracing
+  - instrumentation
 recording: video.webm
 event_link: https://archive.fosdem.org/2020/schedule/event/tracing_beginners/
 ---

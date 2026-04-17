@@ -7,7 +7,10 @@ location:
   city: Paris
   country: ""
   flag: 🇫🇷
-tags: []
+tags:
+  - opentelemetry
+  - collector
+  - kubernetes
 recording: https://youtu.be/S1K26-2wG8w
 slides: slides.pdf
 ---

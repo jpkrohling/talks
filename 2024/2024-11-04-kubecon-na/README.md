@@ -7,7 +7,10 @@ location:
   city: Salt Lake City
   country: UT
   flag: 🇺🇸
-tags: []
+tags:
+  - opentelemetry
+  - governance
+  - logs
 recording: https://youtu.be/rX7gKt4QlTk?si=s2NryC8gPJQ1SFY1
 slides: slides.pdf
 event_link: https://sched.co/1hovy

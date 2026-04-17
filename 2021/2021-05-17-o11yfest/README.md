@@ -7,7 +7,10 @@ location:
   city: Online
   country: ""
   flag: 🌍
-tags: []
+tags:
+  - tracing
+  - collector
+  - opentelemetry
 recording: https://vi.to/hubs/o11yfest/videos/3153
 event_link: https://o11yfest.org/speakers/juraci-paixao-krohling
 ---

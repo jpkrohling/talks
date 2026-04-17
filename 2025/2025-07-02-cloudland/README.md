@@ -7,7 +7,9 @@ location:
   city: Soltau
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - opentelemetry
+  - observability
 slides: slides.pdf
 event_link: https://meine.doag.org/events/cloudland/2025/agenda/#agendaId.5807
 ---

@@ -7,7 +7,10 @@ location:
   city: Amsterdam
   country: ""
   flag: 🇳🇱
-tags: []
+tags:
+  - observability
+  - panel
+  - open-source
 recording: https://youtu.be/B-4kYdN-6-w
 event_link: https://sched.co/1Jo8f
 ---

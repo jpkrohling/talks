@@ -7,7 +7,11 @@ location:
   city: Edinburgh
   country: ""
   flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
-tags: []
+tags:
+  - tracing
+  - jaeger
+  - observability
+  - open-source
 slides: slides.pdf
 event_link: https://sched.co/MPkv
 ---

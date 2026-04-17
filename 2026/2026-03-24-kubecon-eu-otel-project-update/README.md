@@ -7,7 +7,10 @@ location:
   city: Amsterdam
   country: Netherlands
   flag: 🇳🇱
-tags: []
+tags:
+  - opentelemetry
+  - governance
+  - panel
 recording: https://youtu.be/mvSGusgcVuw
 slides: slides.pdf
 event_link: https://sched.co/2EF6i

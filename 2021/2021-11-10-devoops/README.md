@@ -7,7 +7,11 @@ location:
   city: Virtual
   country: St. Petersburg
   flag: 🇷🇺
-tags: []
+tags:
+  - opentelemetry
+  - collector
+  - go
+  - devops
 recording: https://www.youtube.com/watch?v=ZAsyfivg4iA
 slides: slides.pdf
 event_link: https://devoops.ru/en/persons/XL9WCCXEaOVTG909shXQf/?version=2021

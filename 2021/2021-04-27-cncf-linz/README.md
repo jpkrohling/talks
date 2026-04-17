@@ -7,7 +7,9 @@ location:
   city: Online
   country: Linz
   flag: 🇦🇹
-tags: []
+tags:
+  - opentelemetry
+  - observability
 recording: https://www.youtube.com/watch?v=bh0v6k6eLRw
 slides: slides.pdf
 event_link: https://www.meetup.com/cloud-native-linz/events/277569639/

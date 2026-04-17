@@ -7,7 +7,10 @@ location:
   city: Virtual
   country: Los Angeles
   flag: 🇺🇸
-tags: []
+tags:
+  - opentelemetry
+  - collector
+  - kubernetes
 recording: https://www.youtube.com/watch?v=WhRrwSHDBFs
 slides: slides.pdf
 event_link: https://sched.co/lV0z

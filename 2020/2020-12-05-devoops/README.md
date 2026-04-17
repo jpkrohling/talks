@@ -7,7 +7,11 @@ location:
   city: Virtual
   country: St. Petersburg
   flag: 🇷🇺
-tags: []
+tags:
+  - tracing
+  - jaeger
+  - kubernetes
+  - devops
 recording: https://www.youtube.com/watch?v=6rzzE_MACME
 event_link: https://devoops.ru/en/talks/2BUFkIXRvoksycvOreFCOy
 ---

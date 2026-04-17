@@ -7,7 +7,10 @@ location:
   city: Atlanta
   country: GA
   flag: 🇺🇸
-tags: []
+tags:
+  - opentelemetry
+  - collector
+  - panel
 slides: slides.pdf
 event_link: https://sched.co/28D30
 co_speakers:

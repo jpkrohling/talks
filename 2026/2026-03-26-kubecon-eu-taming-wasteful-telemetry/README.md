@@ -7,7 +7,12 @@ location:
   city: Amsterdam
   country: Netherlands
   flag: 🇳🇱
-tags: []
+tags:
+  - opentelemetry
+  - cost
+  - collector
+  - kubernetes
+featured: true
 recording: https://youtu.be/cpB5NTtUdwQ
 slides: slides.pdf
 event_link: https://sched.co/2CW6M

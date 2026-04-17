@@ -7,7 +7,10 @@ location:
   city: Virtual
   country: ""
   flag: 🇧🇷
-tags: []
+tags:
+  - opentelemetry
+  - observability
+  - kubernetes
 recording: https://www.youtube.com/watch?v=BVQpM01CZPI
 slides: slides.pdf
 event_link: https://community.cncf.io/events/details/cncf-kcd-brasil-presents-kubernetes-community-days-brasil-2022/

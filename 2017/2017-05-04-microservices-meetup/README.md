@@ -7,7 +7,9 @@ location:
   city: Munich
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - tracing
+  - instrumentation
 recording: https://www.youtube.com/watch?v=cBgL4SkoKx4
 event_link: https://www.meetup.com/Microservices-Meetup-Munich/events/238765254/
 ---

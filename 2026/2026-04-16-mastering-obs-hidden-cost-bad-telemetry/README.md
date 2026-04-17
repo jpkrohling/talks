@@ -7,7 +7,10 @@ location:
   city: Online
   country: ""
   flag: 🌐
-tags: []
+tags:
+  - opentelemetry
+  - cost
+  - collector
 slides: slides.pdf
 event_link: https://www.mastering-obs.de/
 ---

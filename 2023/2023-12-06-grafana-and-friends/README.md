@@ -7,7 +7,10 @@ location:
   city: Berlin
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - opentelemetry
+  - observability
+  - grafana
 slides: slides.pdf
 event_link: https://www.meetup.com/grafana-and-friends-berlin/events/296932045
 ---

@@ -7,7 +7,11 @@ location:
   city: Los Angeles
   country: CA
   flag: 🇺🇸
-tags: []
+tags:
+  - tracing
+  - jaeger
+  - instrumentation
+  - open-source
 slides: slides.pdf
 event_link: https://sched.co/Boku
 ---

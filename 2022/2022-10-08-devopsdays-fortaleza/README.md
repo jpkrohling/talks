@@ -7,7 +7,10 @@ location:
   city: Fortaleza
   country: CE
   flag: 🇧🇷
-tags: []
+tags:
+  - opentelemetry
+  - devops
+  - observability
 slides: slides.pdf
 event_link: https://devopsdays.org/events/2022-fortaleza/program/juraci-paixao/
 ---

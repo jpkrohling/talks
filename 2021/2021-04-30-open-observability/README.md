@@ -7,7 +7,10 @@ location:
   city: Online
   country: ""
   flag: 🌍
-tags: []
+tags:
+  - opentelemetry
+  - jaeger
+  - observability
 recording: https://www.youtube.com/live/lSY6yDw0Kmc?si=pEg4LTyMkgxy6-YC
 ---
 

@@ -7,7 +7,10 @@ location:
   city: Online
   country: ""
   flag: 🌍
-tags: []
+tags:
+  - observability
+  - open-source
+  - kubernetes
 slides: slides.pdf
 ---
 

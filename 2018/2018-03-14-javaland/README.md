@@ -7,7 +7,11 @@ location:
   city: Brühl
   country: ""
   flag: 🇩🇪
-tags: []
+tags:
+  - tracing
+  - jaeger
+  - performance
+  - instrumentation
 ---
 
 ## Abstract

@@ -7,7 +7,9 @@ location:
   city: Online
   country: ""
   flag: 🌍
-tags: []
+tags:
+  - opentelemetry
+  - governance
 recording: https://youtu.be/coPrhP_7lVU?si=7uA1Sj-5m639hUxN
 ---
 
