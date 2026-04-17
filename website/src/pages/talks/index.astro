@@ -1,0 +1,68 @@
+---
+import FilterChips from '../../components/FilterChips.astro';
+import TalkCard from '../../components/TalkCard.astro';
+import TalkRow from '../../components/TalkRow.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { allTags, getAllTalks, getFeaturedTalks, getYearGroups } from '../../lib/talks';
+
+const all = await getAllTalks();
+const featured = await getFeaturedTalks();
+const hero = featured[0];
+const rest = featured.slice(1, 3);
+const nonFeatured = all.filter((t) => !t.data.featured);
+const tags = allTags(all).slice(0, 12);
+const groups = getYearGroups(nonFeatured);
+---
+<BaseLayout title="Talks" description={`${all.length} conference talks by Juraci Paixão Kröhling.`}>
+  <div class="container">
+    <header class="pageheader">
+      <h1>Talks</h1>
+      <p class="meta">{all.length} talks · {featured.length} featured</p>
+    </header>
+    {featured.length > 0 && (
+      <section class="feat" aria-label="Featured talks">
+        <div class="feat-grid">
+          {hero && <TalkCard talk={hero} size="hero" />}
+          <div class="feat-col">
+            {rest.map((t) => <TalkCard talk={t} size="standard" />)}
+          </div>
+        </div>
+      </section>
+    )}
+    <section class="list">
+      <div class="filters">
+        <p class="eyebrow">Filter</p>
+        <FilterChips options={tags.map((t) => ({ value: t.tag, label: t.tag, count: t.count }))} />
+      </div>
+      {groups.map((g) => (
+        <div class="group">
+          <h2 class="year">{g.year}</h2>
+          <div class="rows">
+            {g.talks.map((t) => (
+              <div data-filter={t.data.tags.join(',')}>
+                <TalkRow talk={t} />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+  </div>
+</BaseLayout>
+<style>
+  .container { padding-block: var(--space-8) var(--space-16); }
+  .pageheader { margin-bottom: var(--space-8); }
+  .pageheader .meta { margin: 0; }
+  .feat { margin-bottom: var(--space-12); }
+  .feat-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: var(--space-4); }
+  .feat-col { display: grid; grid-template-rows: 1fr 1fr; gap: var(--space-4); }
+  @media (max-width: 720px) {
+    .feat-grid { grid-template-columns: 1fr; }
+    .feat-col { grid-template-rows: auto; }
+  }
+  .filters { margin-bottom: var(--space-8); }
+  .filters .eyebrow { margin-bottom: var(--space-2); }
+  .group { margin-bottom: var(--space-8); }
+  .year { font-family: var(--font-display); font-size: 1.5rem; color: var(--bordeaux-700); margin-bottom: var(--space-2); letter-spacing: 0.02em; }
+  .rows { border-top: 1px dotted var(--cream-200); }
+</style>

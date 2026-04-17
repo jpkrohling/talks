@@ -1,0 +1,33 @@
+---
+import type { Talk } from '../lib/talks';
+import { formatDate, talkUrl } from '../lib/talks';
+import TagPill from './TagPill.astro';
+interface Props {
+  talk: Talk;
+  size?: 'hero' | 'standard';
+}
+const { talk, size = 'standard' } = Astro.props;
+const href = talkUrl(talk.id);
+---
+<a class={`card ${size}`} href={href}>
+  <p class="eyebrow">★ {talk.data.event}</p>
+  <h3>{talk.data.title}</h3>
+  <p class="meta">
+    <time datetime={talk.data.date.toISOString()}>{formatDate(talk.data.date)}</time>
+    · {talk.data.location.city} {talk.data.location.flag}
+  </p>
+  {size === 'hero' && talk.data.tags.length > 0 && (
+    <div class="tags">{talk.data.tags.slice(0, 3).map((t) => <TagPill tag={t} />)}</div>
+  )}
+</a>
+<style>
+  .card { display: flex; flex-direction: column; background: var(--bordeaux-700); color: var(--cream-50); padding: var(--space-6); border-radius: var(--radius-card); text-decoration: none; min-height: 100%; transition: transform 0.18s var(--ease-out); }
+  .card:hover { transform: translateY(-2px); }
+  .card h3 { color: var(--cream-50); margin: var(--space-2) 0 var(--space-3); font-family: var(--font-display); }
+  .card .eyebrow { color: var(--cream-200); }
+  .card .meta { color: rgba(244, 237, 224, 0.8); margin: 0; font-size: 0.875rem; }
+  .card.hero h3 { font-size: clamp(1.375rem, 2vw + 0.75rem, 1.875rem); }
+  .card.standard h3 { font-size: 1.125rem; }
+  .card .tags { margin-top: auto; padding-top: var(--space-4); display: flex; gap: var(--space-2); flex-wrap: wrap; }
+  .card.hero .tags :global(.tag) { background: rgba(244, 237, 224, 0.15); color: var(--cream-50); }
+</style>

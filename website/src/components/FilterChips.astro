@@ -1,0 +1,42 @@
+---
+interface Option {
+  value: string;
+  label: string;
+  count?: number;
+}
+interface Props {
+  options: Option[];
+  allLabel?: string;
+  dataAttr?: string;
+}
+const { options, allLabel = 'All', dataAttr = 'data-filter' } = Astro.props;
+---
+<div class="chips" role="group" aria-label="Filter talks">
+  <button type="button" class="chip is-active" data-value="__all">{allLabel}</button>
+  {options.map((o) => (
+    <button type="button" class="chip" data-value={o.value}>{o.label}{o.count ? <span class="n"> · {o.count}</span> : null}</button>
+  ))}
+</div>
+<script define:vars={{ dataAttr }}>
+  const chips = document.querySelectorAll('.chips .chip');
+  const items = document.querySelectorAll(`[${dataAttr}]`);
+  chips.forEach((c) => {
+    c.addEventListener('click', () => {
+      chips.forEach((cc) => cc.classList.remove('is-active'));
+      c.classList.add('is-active');
+      const v = c.dataset.value;
+      items.forEach((el) => {
+        const tags = (el.getAttribute(dataAttr) || '').split(',');
+        const match = v === '__all' || tags.includes(v);
+        el.style.display = match ? '' : 'none';
+      });
+    });
+  });
+</script>
+<style>
+  .chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .chip { background: transparent; border: 1px solid var(--cream-200); color: var(--ink-600); padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-size: 0.8125rem; font-weight: 600; cursor: pointer; font-family: var(--font-ui); }
+  .chip:hover { border-color: var(--bordeaux-700); color: var(--bordeaux-700); }
+  .chip.is-active { background: var(--bordeaux-700); color: var(--cream-50); border-color: var(--bordeaux-700); }
+  .chip .n { font-weight: 400; opacity: 0.7; margin-left: 2px; }
+</style>

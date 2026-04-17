@@ -1,0 +1,28 @@
+---
+import type { Talk } from '../lib/talks';
+import { formatDateShort, talkUrl } from '../lib/talks';
+interface Props {
+  talk: Talk;
+}
+const { talk } = Astro.props;
+const href = talkUrl(talk.id);
+---
+<a class="row" href={href}>
+  <span class="date">{formatDateShort(talk.data.date)}</span>
+  <span class="body">
+    <span class="title">{talk.data.title}</span>
+    <span class="ev">{talk.data.event}</span>
+  </span>
+  <span class="flag" aria-hidden="true">{talk.data.location.flag}</span>
+</a>
+<style>
+  .row { display: grid; grid-template-columns: 5rem 1fr auto; gap: var(--space-4); align-items: baseline; padding: var(--space-3) 0; border-bottom: 1px dotted var(--cream-200); color: var(--ink-900); text-decoration: none; }
+  .row:hover { background: var(--cream-50); }
+  .date { color: var(--ink-400); font-family: var(--font-body); font-style: italic; font-size: 0.875rem; }
+  .title { font-family: var(--font-display); font-weight: 650; font-size: 1rem; }
+  .ev { display: block; color: var(--ink-400); font-size: 0.8125rem; margin-top: 2px; }
+  .flag { font-size: 1.125rem; }
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 4rem 1fr auto; }
+  }
+</style>
