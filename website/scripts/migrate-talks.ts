@@ -118,7 +118,10 @@ function parseLocation(whereRaw: string): Location {
     flag = singleEmoji[0];
   }
 
-  const noFlag = flag ? trimmed.slice(0, -flag.length).trim() : trimmed;
+  let noFlag = flag ? trimmed.slice(0, -flag.length).trim() : trimmed;
+  // Strip any trailing parenthetical note that appeared *before* the flag
+  // (e.g. "Online (Virtual) 🌐" -> noFlag is "Online (Virtual)").
+  noFlag = noFlag.replace(/\s*\([^)]*\)\s*$/, '').trim();
   // Strip trailing comma if present
   const cleaned = noFlag.replace(/,\s*$/, '').trim();
   const parts = cleaned
@@ -131,7 +134,7 @@ function parseLocation(whereRaw: string): Location {
 }
 
 function extractCoSpeakers(md: string): CoSpeaker[] | undefined {
-  const m = md.match(/##\s+Co-speakers?\s*\n([\s\S]*?)(?=\n##\s|\n*$)/i);
+  const m = md.match(/(?:^|\n)##\s+Co-speakers?\s*\n([\s\S]*?)(?=\n##\s|\n*$)/i);
   if (!m) return undefined;
   const lines = m[1]
     .split('\n')
@@ -155,7 +158,7 @@ function stripLegacySections(md: string): string {
   // We match the longest contiguous run of lines starting with `|`.
   out = out.replace(/^(\|[^\n]*\n)+/m, '');
   // Remove any Co-speakers section
-  out = out.replace(/\n*##\s+Co-speakers?\s*\n[\s\S]*?(?=\n##\s|$)/i, '');
+  out = out.replace(/(?:^|\n)##\s+Co-speakers?\s*\n[\s\S]*?(?=\n##\s|$)/i, '');
   return `${out.trim()}\n`;
 }
 
