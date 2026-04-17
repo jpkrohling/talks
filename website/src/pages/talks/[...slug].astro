@@ -1,0 +1,160 @@
+---
+import { getEntry, render } from 'astro:content';
+import TagPill from '../../components/TagPill.astro';
+import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate, getAllTalks } from '../../lib/talks';
+import { withBase } from '../../lib/url';
+
+export async function getStaticPaths() {
+  const talks = await getAllTalks();
+  return talks.map((t) => ({ params: { slug: t.id }, props: { id: t.id } }));
+}
+
+const { id } = Astro.props as { id: string };
+const entry = await getEntry('talks', id);
+if (!entry) throw new Error(`Talk not found: ${id}`);
+const { Content } = await render(entry);
+const d = entry.data;
+const slidesHref = d.slides ? withBase(`/talks/${entry.id}/${d.slides}`) : null;
+---
+<BaseLayout title={d.title} description={`${d.title} — ${d.event}`}>
+  <article class="container">
+    <p class="crumb"><a href={withBase('/talks/')}>← All talks</a></p>
+    <header class="hero">
+      <p class="eyebrow">{d.event}</p>
+      <h1>{d.title}</h1>
+      <p class="meta">
+        <time datetime={d.date.toISOString()}>{formatDate(d.date)}</time>
+        · {d.location.city}{d.location.country ? `, ${d.location.country}` : ''} {d.location.flag}
+      </p>
+    </header>
+    <div class="layout">
+      <div class="main">
+        {d.recording && <YouTubeEmbed url={d.recording} title={d.title} />}
+        <div class="prose abstract">
+          <Content />
+        </div>
+      </div>
+      <aside class="side">
+        {slidesHref && (
+          <a class="dl primary" href={slidesHref}>↓ Download slides (PDF)</a>
+        )}
+        {d.event_link && (
+          <a class="dl ghost" href={d.event_link} rel="external">View event page →</a>
+        )}
+        {d.tags.length > 0 && (
+          <section>
+            <p class="label">Tags</p>
+            <div class="tags">
+              {d.tags.map((tag) => <TagPill tag={tag} href={withBase(`/topics/${tag}/`)} />)}
+            </div>
+          </section>
+        )}
+        {d.co_speakers && d.co_speakers.length > 0 && (
+          <section>
+            <p class="label">With</p>
+            <ul class="cospeakers">
+              {d.co_speakers.map((s) => <li>{s.name}{s.company ? `, ${s.company}` : ''}</li>)}
+            </ul>
+          </section>
+        )}
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
+<style>
+  .container {
+    padding-block: var(--space-8) var(--space-16);
+  }
+  .crumb {
+    font-size: 0.875rem;
+    color: var(--ink-600);
+    margin-bottom: var(--space-4);
+  }
+  .crumb a {
+    color: var(--bordeaux-700);
+    text-decoration: none;
+  }
+  .hero {
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--cream-200);
+    margin-bottom: var(--space-8);
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 16rem;
+    gap: var(--space-12);
+    align-items: start;
+  }
+  .main {
+    min-width: 0;
+  }
+  .abstract {
+    margin-top: var(--space-6);
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    font-size: 0.875rem;
+  }
+  .side .label {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bordeaux-700);
+    font-weight: 600;
+    margin: 0 0 var(--space-2);
+  }
+  .dl {
+    display: block;
+    text-align: center;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-card);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .dl.primary {
+    background: var(--bordeaux-700);
+    color: var(--cream-50);
+  }
+  .dl.primary:hover {
+    background: var(--bordeaux-900);
+    color: var(--cream-50);
+  }
+  .dl.ghost {
+    border: 1px solid var(--bordeaux-700);
+    color: var(--bordeaux-700);
+    background: transparent;
+  }
+  .dl.ghost:hover {
+    background: var(--bordeaux-700);
+    color: var(--cream-50);
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .cospeakers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--ink-600);
+  }
+  .cospeakers li {
+    padding: var(--space-1) 0;
+  }
+  @media (max-width: 960px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+    .side {
+      order: 2;
+      border-top: 1px solid var(--cream-200);
+      padding-top: var(--space-6);
+    }
+  }
+</style>

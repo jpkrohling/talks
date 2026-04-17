@@ -2,6 +2,8 @@
 dist/
 # generated types
 .astro/
+# pre-build step copies slides here from ../YYYY/*/slides.pdf
+public/talks/
 
 # dependencies
 node_modules/

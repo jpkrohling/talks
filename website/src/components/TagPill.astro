@@ -1,0 +1,25 @@
+---
+interface Props {
+  tag: string;
+  href?: string;
+}
+const { tag, href } = Astro.props;
+const Tag = href ? 'a' : 'span';
+---
+<Tag class="tag" {...(href ? { href } : {})}>{tag}</Tag>
+<style>
+  .tag {
+    display: inline-block;
+    background: var(--cream-200);
+    color: var(--bordeaux-700);
+    padding: 2px var(--space-2);
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  a.tag:hover {
+    background: var(--bordeaux-700);
+    color: var(--cream-50);
+  }
+</style>

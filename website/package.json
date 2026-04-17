@@ -12,6 +12,7 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "bun run scripts/copy-slides.ts",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
