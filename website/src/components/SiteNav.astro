@@ -1,17 +1,17 @@
 ---
 const { base = import.meta.env.BASE_URL } = Astro.props;
-const trim = (p: string) => (base.endsWith('/') ? base.slice(0, -1) : base) + p;
+const withBase = (p: string) => (base.endsWith('/') ? base.slice(0, -1) : base) + p;
 const links = [
-  { href: trim('/talks/'), label: 'Talks' },
-  { href: trim('/topics/'), label: 'Topics' },
-  { href: trim('/projects/'), label: 'Projects' },
-  { href: trim('/badges/'), label: 'Badges' },
-  { href: trim('/press/'), label: 'Press' },
+  { href: withBase('/talks/'), label: 'Talks' },
+  { href: withBase('/topics/'), label: 'Topics' },
+  { href: withBase('/projects/'), label: 'Projects' },
+  { href: withBase('/badges/'), label: 'Badges' },
+  { href: withBase('/press/'), label: 'Press' },
 ];
 ---
 <nav aria-label="Primary">
   <div class="container nav-inner">
-    <a class="mark" href={trim('/')} aria-label="Home">
+    <a class="mark" href={withBase('/')} aria-label="Home">
       <span>jpk</span>
     </a>
     <ul>
@@ -20,7 +20,7 @@ const links = [
   </div>
 </nav>
 <style>
-  nav { background: var(--cream-100); border-bottom: 1px solid var(--cream-200); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px); }
+  nav { background: rgb(244 237 224 / 0.85); border-bottom: 1px solid var(--cream-200); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px); }
   .nav-inner { display: flex; align-items: center; justify-content: space-between; padding-block: var(--space-3); }
   .mark { font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; color: var(--bordeaux-700); text-decoration: none; letter-spacing: -0.02em; }
   ul { display: flex; gap: var(--space-6); list-style: none; margin: 0; padding: 0; font-size: 0.9375rem; }
