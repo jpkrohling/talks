@@ -1,0 +1,37 @@
+:root {
+  /* Color — bordeaux + cream + warm neutrals */
+  --bordeaux-900: #4a0a12;
+  --bordeaux-700: #6d0f1a; /* primary */
+  --bordeaux-500: #8b1a2b;
+  --cream-50: #fbfaf6;
+  --cream-100: #f4ede0;
+  --cream-200: #e8dcc4;
+  --ink-900: #2a1a1a;
+  --ink-600: #5a4a4a;
+  --ink-400: #8a7560;
+
+  /* Type */
+  --font-display: "Fraunces Variable", Georgia, serif;
+  --font-body: "Source Serif 4 Variable", Georgia, serif;
+  --font-ui: "Inter Variable", system-ui, -apple-system, sans-serif;
+
+  /* Spacing — 8-pt grid */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  --radius-card: 6px;
+  --radius-pill: 100px;
+  --content-width: 72rem;
+  --text-width: 38rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

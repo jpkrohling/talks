@@ -2,6 +2,9 @@
   "name": "website",
   "version": "0.0.1",
   "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.9",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/source-serif-4": "^5.2.9",
     "astro": "^6.1.7"
   },
   "engines": {
