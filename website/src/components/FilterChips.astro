@@ -10,28 +10,36 @@ interface Props {
   dataAttr?: string;
 }
 const { options, allLabel = 'All', dataAttr = 'data-filter' } = Astro.props;
+const rootId = `fc-${Math.random().toString(36).slice(2, 10)}`;
 ---
-<div class="chips" role="group" aria-label="Filter talks">
-  <button type="button" class="chip is-active" data-value="__all">{allLabel}</button>
+<div class="chips" data-root-id={rootId} role="group" aria-label="Filter talks">
+  <button type="button" class="chip is-active" data-value="__all" aria-pressed="true">{allLabel}</button>
   {options.map((o) => (
-    <button type="button" class="chip" data-value={o.value}>{o.label}{o.count ? <span class="n"> · {o.count}</span> : null}</button>
+    <button type="button" class="chip" data-value={o.value} aria-pressed="false">{o.label}{o.count ? <span class="n"> · {o.count}</span> : null}</button>
   ))}
 </div>
-<script define:vars={{ dataAttr }}>
-  const chips = document.querySelectorAll('.chips .chip');
-  const items = document.querySelectorAll(`[${dataAttr}]`);
-  chips.forEach((c) => {
-    c.addEventListener('click', () => {
-      chips.forEach((cc) => cc.classList.remove('is-active'));
-      c.classList.add('is-active');
-      const v = c.dataset.value;
-      items.forEach((el) => {
-        const tags = (el.getAttribute(dataAttr) || '').split(',');
-        const match = v === '__all' || tags.includes(v);
-        el.style.display = match ? '' : 'none';
+<script define:vars={{ dataAttr, rootId }}>
+  const root = document.querySelector(`[data-root-id="${rootId}"]`);
+  if (root) {
+    const chips = root.querySelectorAll('.chip');
+    const items = document.querySelectorAll(`[${dataAttr}]`);
+    chips.forEach((c) => {
+      c.addEventListener('click', () => {
+        chips.forEach((cc) => {
+          cc.classList.remove('is-active');
+          cc.setAttribute('aria-pressed', 'false');
+        });
+        c.classList.add('is-active');
+        c.setAttribute('aria-pressed', 'true');
+        const v = c.dataset.value;
+        items.forEach((el) => {
+          const tags = (el.getAttribute(dataAttr) || '').split(',');
+          const match = v === '__all' || tags.includes(v);
+          el.style.display = match ? '' : 'none';
+        });
       });
     });
-  });
+  }
 </script>
 <style>
   .chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
