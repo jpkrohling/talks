@@ -1,13 +1,17 @@
-# Intro + Deep Dive: Jaeger
-
-|           |                                                          |
-| --------- | ---------------------------------------------------------|
-| Event     | KubeCon + CloudNativeCon Europe 2019                     |
-| Where     | Barcelona, 🇪🇸                                            |
-| When      | May 23, 2019                                             |
-| Recording | [Recording](https://www.youtube.com/watch?v=Edy2vd7bh5U) |
-| Slides    | [Intro](intro.pdf), [Deep Dive](deep-dive.pdf)           |
-| Link      | [Link](https://sched.co/MPkv)                            |
+---
+title: "Intro + Deep Dive: Jaeger"
+event: KubeCon + CloudNativeCon Europe 2019
+event_slug: kubecon-and-cloudnativecon-europe-2019
+date: 2019-05-23
+location:
+  city: Barcelona
+  country: ""
+  flag: 🇪🇸
+tags: []
+recording: https://www.youtube.com/watch?v=Edy2vd7bh5U
+slides: deep-dive.pdf
+event_link: https://sched.co/MPkv
+---
 
 ## Abstract
 

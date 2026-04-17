@@ -1,12 +1,15 @@
-# Diving deep into Jaeger and OpenTelemetry with Juraci Paixão Kröhling
-
-|           |                                                                          |
-| --------- | -------------------------------------------------------------------------|
-| Event     | OpenObservability Talks                                                  |
-| Where     | Online, 🌍                                                               |
-| When      | April 30, 2021                                                           |
-| Recording | [YouTube](https://www.youtube.com/live/lSY6yDw0Kmc?si=pEg4LTyMkgxy6-YC)  |
-| Slides    | None                                                                     |
+---
+title: Diving deep into Jaeger and OpenTelemetry with Juraci Paixão Kröhling
+event: OpenObservability Talks
+event_slug: openobservability-talks
+date: 2021-04-30
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://www.youtube.com/live/lSY6yDw0Kmc?si=pEg4LTyMkgxy6-YC
+---
 
 ## Abstract
 

@@ -1,9 +1,14 @@
-# Deep Dive into Java Microservices - The Observability Problem
+---
+title: Deep Dive into Java Microservices - The Observability Problem
+event: RecdoTech Meetup
+event_slug: recdotech-meetup
+date: 2018-03-21
+location:
+  city: Munich
+  country: ""
+  flag: 🇩🇪
+tags: []
+event_link: https://www.meetup.com/RecdoTech_Berlin/events/248472205/
+---
 
-|           |                                                                   |
-| --------- | ------------------------------------------------------------------|
-| Event     | RecdoTech Meetup                                                  |
-| Where     | Munich, 🇩🇪                                                        |
-| When      | March 21, 2018                                                    |
-| Link      | [Link](https://www.meetup.com/RecdoTech_Berlin/events/248472205/) |
 

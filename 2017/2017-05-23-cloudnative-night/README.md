@@ -1,11 +1,15 @@
-# Operational and Business Insights from Tracing Distributed Microservices
-
-|           |                                                                  |
-| --------- | -----------------------------------------------------------------|
-| Event     | Cloud Native Night                                               |
-| Where     | Munich, 🇩🇪                                                       |
-| When      | May 23, 2017                                                     |
-| Link      | [Link](https://www.meetup.com/cloud-native-muc/events/239505785) |
+---
+title: Operational and Business Insights from Tracing Distributed Microservices
+event: Cloud Native Night
+event_slug: cloud-native-night
+date: 2017-05-23
+location:
+  city: Munich
+  country: ""
+  flag: 🇩🇪
+tags: []
+event_link: https://www.meetup.com/cloud-native-muc/events/239505785
+---
 
 ## Abstract
 

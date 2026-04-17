@@ -1,10 +1,14 @@
-# What are my microservices doing?
-
-|           |                 |
-| --------- | ----------------|
-| Event     | Red Hat Summit  |
-| Where     | Boston, MA, 🇺🇸  |
-| When      | May 9, 2019     |
+---
+title: What are my microservices doing?
+event: Red Hat Summit
+event_slug: red-hat-summit
+date: 2019-05-09
+location:
+  city: Boston
+  country: MA
+  flag: 🇺🇸
+tags: []
+---
 
 ## Abstract
 

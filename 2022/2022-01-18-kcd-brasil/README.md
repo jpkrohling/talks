@@ -1,13 +1,17 @@
-# Tudo o que você PRECISA saber sobre OpenTelemetry
-
-|           |                                                                                                                  |
-| --------- | -----------------------------------------------------------------------------------------------------------------|
-| Event     | Kubernetes Community Days Brasil 2022                                                                            |
-| Where     | Virtual, 🇧🇷                                                                                                      |
-| When      | January 18, 2022                                                                                                 |
-| Recording | [YouTube](https://www.youtube.com/watch?v=BVQpM01CZPI)                                                           |
-| Slides    | [PDF](slides.pdf)                                                                                                |
-| Link      | [Link](https://community.cncf.io/events/details/cncf-kcd-brasil-presents-kubernetes-community-days-brasil-2022/) |
+---
+title: Tudo o que você PRECISA saber sobre OpenTelemetry
+event: Kubernetes Community Days Brasil 2022
+event_slug: kubernetes-community-days-brasil-2022
+date: 2022-01-18
+location:
+  city: Virtual
+  country: ""
+  flag: 🇧🇷
+tags: []
+recording: https://www.youtube.com/watch?v=BVQpM01CZPI
+slides: slides.pdf
+event_link: https://community.cncf.io/events/details/cncf-kcd-brasil-presents-kubernetes-community-days-brasil-2022/
+---
 
 ## Abstract
 

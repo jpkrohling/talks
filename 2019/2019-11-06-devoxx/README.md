@@ -1,11 +1,15 @@
-# Observing chaos: how distributed tracing brings observability to a service mess
-
-|           |                                                     |
-| --------- | ----------------------------------------------------|
-| Event     | Devoxx                                              |
-| Where     | Antwerp, 🇧🇪                                         |
-| When      | November 6, 2019                                    |
-| Recording | [Link](https://www.youtube.com/watch?v=FJ_YuUgIt8E) |
+---
+title: "Observing chaos: how distributed tracing brings observability to a service mess"
+event: Devoxx
+event_slug: devoxx
+date: 2019-11-06
+location:
+  city: Antwerp
+  country: ""
+  flag: 🇧🇪
+tags: []
+recording: https://www.youtube.com/watch?v=FJ_YuUgIt8E
+---
 
 ## Abstract
 

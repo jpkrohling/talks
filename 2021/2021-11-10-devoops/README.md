@@ -1,13 +1,17 @@
-# OpenTelemetry Collector deep dive
-
-|           |                                                                           |
-| --------- | --------------------------------------------------------------------------|
-| Event     | DevOops 2021                                                              |
-| Where     | Virtual, St. Petersburg, 🇷🇺                                               |
-| When      | November 10, 2021                                                         |
-| Recording | [YouTube](https://www.youtube.com/watch?v=ZAsyfivg4iA)                    |
-| Slides    | [PDF](slides.pdf)                                                         |
-| Link      | [Link](https://devoops.ru/en/persons/XL9WCCXEaOVTG909shXQf/?version=2021) |
+---
+title: OpenTelemetry Collector deep dive
+event: DevOops 2021
+event_slug: devoops-2021
+date: 2021-11-10
+location:
+  city: Virtual
+  country: St. Petersburg
+  flag: 🇷🇺
+tags: []
+recording: https://www.youtube.com/watch?v=ZAsyfivg4iA
+slides: slides.pdf
+event_link: https://devoops.ru/en/persons/XL9WCCXEaOVTG909shXQf/?version=2021
+---
 
 ## Abstract
 

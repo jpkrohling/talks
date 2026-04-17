@@ -1,13 +1,16 @@
-# What's Bad Telemetry Anyway?
-
-|           |                                                                  |
-| --------- | -----------------------------------------------------------------|
-| Event     | Datadog User Group Berlin                                        |
-| Where     | Berlin, 🇩🇪                                                       |
-| When      | October 14, 2025                                                 |
-| Recording | None                                                             |
-| Slides    | [PDF](slides.pdf)                                                |
-| Link      | [Link](https://www.meetup.com/datadog-berlin/events/310647845/) |
+---
+title: What's Bad Telemetry Anyway?
+event: Datadog User Group Berlin
+event_slug: datadog-user-group-berlin
+date: 2025-10-14
+location:
+  city: Berlin
+  country: ""
+  flag: 🇩🇪
+tags: []
+slides: slides.pdf
+event_link: https://www.meetup.com/datadog-berlin/events/310647845/
+---
 
 ## Abstract
 

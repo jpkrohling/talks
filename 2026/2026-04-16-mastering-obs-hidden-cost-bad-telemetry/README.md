@@ -1,13 +1,16 @@
-# The Hidden Cost of Bad Telemetry: Finding and Fixing What's Hurting Your Observability
-
-|           |                                                                  |
-| --------- | -----------------------------------------------------------------|
-| Event     | Mastering Observability 2026                                     |
-| Where     | Online 🌐                                                        |
-| When      | April 16, 2026                                                   |
-| Recording | None                                                             |
-| Slides    | [PDF](slides.pdf)                                                |
-| Link      | [Link](https://www.mastering-obs.de/)                            |
+---
+title: "The Hidden Cost of Bad Telemetry: Finding and Fixing What's Hurting Your Observability"
+event: Mastering Observability 2026
+event_slug: mastering-observability-2026
+date: 2026-04-16
+location:
+  city: Online
+  country: ""
+  flag: 🌐
+tags: []
+slides: slides.pdf
+event_link: https://www.mastering-obs.de/
+---
 
 ## Abstract
 

@@ -1,13 +1,17 @@
-# All you need to know about OpenTelemetry
-
-|           |                                                                    |
-| --------- | -------------------------------------------------------------------|
-| Event     | Cloud Native Computing Linz meetup                                 |
-| Where     | Online, Linz, 🇦🇹                                                   |
-| When      | April 27, 2021                                                     |
-| Recording | [YouTube](https://www.youtube.com/watch?v=bh0v6k6eLRw)             |
-| Slides    | [PDF](slides.pdf)                                                  |
-| Link      | [Link](https://www.meetup.com/cloud-native-linz/events/277569639/) |
+---
+title: All you need to know about OpenTelemetry
+event: Cloud Native Computing Linz meetup
+event_slug: cloud-native-computing-linz-meetup
+date: 2021-04-27
+location:
+  city: Online
+  country: Linz
+  flag: 🇦🇹
+tags: []
+recording: https://www.youtube.com/watch?v=bh0v6k6eLRw
+slides: slides.pdf
+event_link: https://www.meetup.com/cloud-native-linz/events/277569639/
+---
 
 ## Abstract
 

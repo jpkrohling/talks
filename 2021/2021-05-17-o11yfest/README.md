@@ -1,12 +1,16 @@
-# Sampling in Distributed Tracing
-
-|           |                                                              |
-| --------- | -------------------------------------------------------------|
-| Event     | o11yfest                                                     |
-| Where     | Online, 🌍                                                   |
-| When      | May 17, 2021                                                 |
-| Recording | [Watch](https://vi.to/hubs/o11yfest/videos/3153)             |
-| Link      | [Link](https://o11yfest.org/speakers/juraci-paixao-krohling) |
+---
+title: Sampling in Distributed Tracing
+event: o11yfest
+event_slug: o11yfest
+date: 2021-05-17
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://vi.to/hubs/o11yfest/videos/3153
+event_link: https://o11yfest.org/speakers/juraci-paixao-krohling
+---
 
 ## Abstract
 

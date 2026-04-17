@@ -1,12 +1,15 @@
-# Observable Lightning Talks March 2023
-
-|           |                                                                          |
-| --------- | -------------------------------------------------------------------------|
-| Event     | Is it Observable                                                         |
-| Where     | Online, 🌍                                                               |
-| When      | March 22, 2023                                                           |
-| Recording | [YouTube](https://www.youtube.com/live/1p_Cm2kkZu8?si=g059zv6dOyzMuNjo)  |
-| Slides    | None                                                                     |
+---
+title: Observable Lightning Talks March 2023
+event: Is it Observable
+event_slug: is-it-observable
+date: 2023-03-22
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://www.youtube.com/live/1p_Cm2kkZu8?si=g059zv6dOyzMuNjo
+---
 
 ## Abstract
 

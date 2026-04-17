@@ -1,12 +1,15 @@
-# E11 - The One Where We Geek Out on OpenTelemetry with Juraci Paixão Kröhling of Grafana Labs
-
-|           |                                          |
-| --------- | -----------------------------------------|
-| Event     | Geeking Out Podcast                      |
-| Where     | Online, 🌍                               |
-| When      | November 21, 2023                        |
-| Recording | [YouTube](https://youtu.be/u5oXMGQd1Oc)  |
-| Slides    | None                                     |
+---
+title: E11 - The One Where We Geek Out on OpenTelemetry with Juraci Paixão Kröhling of Grafana Labs
+event: Geeking Out Podcast
+event_slug: geeking-out-podcast
+date: 2023-11-21
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://youtu.be/u5oXMGQd1Oc
+---
 
 ## Abstract
 

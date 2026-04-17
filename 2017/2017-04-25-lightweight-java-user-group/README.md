@@ -1,11 +1,15 @@
-# Operational and Business Insights from Tracing Distributed Microservices
-
-|           |                                                                                      |
-| --------- | -------------------------------------------------------------------------------------|
-| Event     | Lightweight Java User Group                                                          |
-| Where     | Munich, 🇩🇪                                                                           |
-| When      | April 25, 2017                                                                       |
-| Link      | [Link](https://www.meetup.com/Lightweight-Java-User-Group-Munchen/events/239006340/) |
+---
+title: Operational and Business Insights from Tracing Distributed Microservices
+event: Lightweight Java User Group
+event_slug: lightweight-java-user-group
+date: 2017-04-25
+location:
+  city: Munich
+  country: ""
+  flag: 🇩🇪
+tags: []
+event_link: https://www.meetup.com/Lightweight-Java-User-Group-Munchen/events/239006340/
+---
 
 ## Abstract
 

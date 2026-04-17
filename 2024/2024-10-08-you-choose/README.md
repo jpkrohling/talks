@@ -1,8 +1,14 @@
-# You Choose - Data Pipelines
+---
+title: You Choose - Data Pipelines
+event: You Choose YouTube Series
+event_slug: you-choose-youtube-series
+date: 2024-10-08
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://www.youtube.com/watch?v=fhIuylaJ1xA
+---
 
-|           |                                                              |
-| --------- | -------------------------------------------------------------|
-| Event     | You Choose YouTube Series                                    |
-| Where     | Online, 🌍                                                   |
-| When      | October 8, 2024                                              |
-| Video     | [YouTube](https://www.youtube.com/watch?v=fhIuylaJ1xA)       |
+

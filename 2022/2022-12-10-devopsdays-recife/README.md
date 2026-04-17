@@ -1,13 +1,16 @@
-# Tudo o que SREs PRECISAM saber sobre OpenTelemetry
-
-|           |                                                                                  |
-| --------- | ---------------------------------------------------------------------------------|
-| Event     | DevOpsDays Recife                                                                |
-| Where     | Recife, PE, 🇧🇷                                                                   |
-| When      | December 10, 2022                                                                |
-| Recording | None                                                                             |
-| Slides    | [PDF](slides.pdf)                                                                |
-| Link      | [Link](https://devopsdays.org/events/2022-recife/program/juraci-paixao-krohling) |
+---
+title: Tudo o que SREs PRECISAM saber sobre OpenTelemetry
+event: DevOpsDays Recife
+event_slug: devopsdays-recife
+date: 2022-12-10
+location:
+  city: Recife
+  country: PE
+  flag: 🇧🇷
+tags: []
+slides: slides.pdf
+event_link: https://devopsdays.org/events/2022-recife/program/juraci-paixao-krohling
+---
 
 ## Abstract
 

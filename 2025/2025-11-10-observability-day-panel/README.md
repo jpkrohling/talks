@@ -1,20 +1,26 @@
-# Panel: Surviving and Thriving With OpenTelemetry: A Day 2 Operations
-
-|           |                                                                  |
-| --------- | -----------------------------------------------------------------|
-| Event     | Observability Day NA 2025                                        |
-| Where     | Atlanta, GA, 🇺🇸                                                  |
-| When      | November 10, 2025                                                |
-| Recording | None                                                             |
-| Slides    | [PDF](slides.pdf)                                                |
-| Link      | [Link](https://sched.co/28D30)                                   |
+---
+title: "Panel: Surviving and Thriving With OpenTelemetry: A Day 2 Operations"
+event: Observability Day NA 2025
+event_slug: observability-day-na-2025
+date: 2025-11-10
+location:
+  city: Atlanta
+  country: GA
+  flag: 🇺🇸
+tags: []
+slides: slides.pdf
+event_link: https://sched.co/28D30
+co_speakers:
+  - name: Myrle Krantz
+    company: Grafana Labs
+  - name: Joseph Knight
+    company: Capital One
+  - name: Vijay Samuel
+    company: eBay
+  - name: Panos Tsilopoulos
+    company: Nike
+---
 
 ## Abstract
 
 The panel addresses operational challenges with OpenTelemetry Collector at scale, including "managing large fleets, ensuring config stability, controlling costs, and maintaining data quality." Speakers share strategies from real-world implementations covering fleet management, safe rollouts, problematic data handling, and the path toward stable Collector v1 releases.
-
-## Co-speakers
-* Myrle Krantz, Grafana Labs
-* Joseph Knight, Capital One
-* Vijay Samuel, eBay
-* Panos Tsilopoulos, Nike

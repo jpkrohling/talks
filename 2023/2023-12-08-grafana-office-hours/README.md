@@ -1,12 +1,15 @@
-# Getting started with OpenTelemetry, with Juraci Paixão Kröhling (Grafana Office Hours #23)
-
-|           |                                                                         |
-| --------- | ------------------------------------------------------------------------|
-| Event     | Grafana Office Hours                                                    |
-| Where     | Online, 🌍                                                              |
-| When      | December 8, 2023                                                        |
-| Recording | [YouTube](https://www.youtube.com/live/Xhh9V7uRP88?si=DZ4hZM1gk-Sfs_-j) |
-| Slides    | None                                                                    |
+---
+title: "Getting started with OpenTelemetry, with Juraci Paixão Kröhling (Grafana Office Hours #23)"
+event: Grafana Office Hours
+event_slug: grafana-office-hours
+date: 2023-12-08
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://www.youtube.com/live/Xhh9V7uRP88?si=DZ4hZM1gk-Sfs_-j
+---
 
 ## Abstract
 

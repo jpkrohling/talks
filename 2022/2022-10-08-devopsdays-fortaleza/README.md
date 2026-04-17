@@ -1,13 +1,16 @@
-# Tudo o que SREs PRECISAM saber sobre OpenTelemetry
-
-|           |                                                                                  |
-| --------- | ---------------------------------------------------------------------------------|
-| Event     | DevOpsDays Fortaleza                                                             |
-| Where     | Fortaleza, CE, 🇧🇷                                                                |
-| When      | October 8, 2022                                                                  |
-| Recording | None                                                                             |
-| Slides    | [PDF](slides.pdf)                                                                |
-| Link      | [Link](https://devopsdays.org/events/2022-fortaleza/program/juraci-paixao/)      |
+---
+title: Tudo o que SREs PRECISAM saber sobre OpenTelemetry
+event: DevOpsDays Fortaleza
+event_slug: devopsdays-fortaleza
+date: 2022-10-08
+location:
+  city: Fortaleza
+  country: CE
+  flag: 🇧🇷
+tags: []
+slides: slides.pdf
+event_link: https://devopsdays.org/events/2022-fortaleza/program/juraci-paixao/
+---
 
 ## Abstract
 

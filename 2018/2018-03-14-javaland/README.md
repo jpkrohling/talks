@@ -1,10 +1,14 @@
-# Finding Performance Bottlenecks with Distributed Tracing
-
-|           |                |
-| --------- | ---------------|
-| Event     | JavaLand       |
-| Where     | Brühl, 🇩🇪      |
-| When      | March 14, 2018 |
+---
+title: Finding Performance Bottlenecks with Distributed Tracing
+event: JavaLand
+event_slug: javaland
+date: 2018-03-14
+location:
+  city: Brühl
+  country: ""
+  flag: 🇩🇪
+tags: []
+---
 
 ## Abstract
 

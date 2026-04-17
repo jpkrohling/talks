@@ -17,10 +17,15 @@
     "astro": "astro",
     "check": "astro check",
     "lint": "biome check .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "migrate:talks": "bun run scripts/migrate-talks.ts",
+    "migrate:talks:dry": "bun run scripts/migrate-talks.ts --dry",
+    "test": "bun test"
   },
   "type": "module",
   "devDependencies": {
-    "@biomejs/biome": "1.9.4"
+    "@biomejs/biome": "1.9.4",
+    "gray-matter": "^4.0.3",
+    "yaml": "^2.8.3"
   }
 }

@@ -1,12 +1,16 @@
-# Advanced Microservices Tracing with Jaeger
-
-|           |                                                                                                                                         |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------|
-| Event     | DevNation Live                                                                                                                          |
-| Where     | Virtual, 🌍                                                                                                                             |
-| When      | June 21, 2018                                                                                                                           |
-| Link      | [Link](https://developers.redhat.com/blog/2018/06/20/next-devnation-live-advanced-microservices-tracing-with-jaeger-june-21st-12pm-edt) |
-| Recording | [YouTube](https://www.youtube.com/watch?v=hpnLUFRY4_Y)                                                                                  |
+---
+title: Advanced Microservices Tracing with Jaeger
+event: DevNation Live
+event_slug: devnation-live
+date: 2018-06-21
+location:
+  city: Virtual
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://www.youtube.com/watch?v=hpnLUFRY4_Y
+event_link: https://developers.redhat.com/blog/2018/06/20/next-devnation-live-advanced-microservices-tracing-with-jaeger-june-21st-12pm-edt
+---
 
 ## Abstract
 

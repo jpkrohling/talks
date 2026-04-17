@@ -1,13 +1,17 @@
-# OpenTelemetry Collector Deployment Patterns
-
-|           |                                                          |
-| --------- | ---------------------------------------------------------|
-| Event     | KubeCon + CloudNativeCon North America 2021              |
-| Where     | Virtual, Los Angeles, 🇺🇸                                 |
-| When      | October 13, 2021                                         |
-| Recording | [Recording](https://www.youtube.com/watch?v=WhRrwSHDBFs) |
-| Slides    | [PDF](slides.pdf)                                        |
-| Link      | [Link](https://sched.co/lV0z)                            |
+---
+title: OpenTelemetry Collector Deployment Patterns
+event: KubeCon + CloudNativeCon North America 2021
+event_slug: kubecon-and-cloudnativecon-north-america-2021
+date: 2021-10-13
+location:
+  city: Virtual
+  country: Los Angeles
+  flag: 🇺🇸
+tags: []
+recording: https://www.youtube.com/watch?v=WhRrwSHDBFs
+slides: slides.pdf
+event_link: https://sched.co/lV0z
+---
 
 ## Abstract
 

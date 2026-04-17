@@ -1,12 +1,16 @@
-# OpenTelemetry Governance Panel
-
-|           |                                                             |
-| --------- | ------------------------------------------------------------|
-| Event     | OTel Community Day                                          |
-| Where     | Seattle, WA, 🇺🇸                                             |
-| When      | June 25, 2024                                               |
-| Recording | [YouTube](https://youtu.be/Mfh_0Qn_1zo?si=cM1bPARLloXKYFY0) |
-| Link      | [Link](https://sched.co/1d0QZ)                              |
+---
+title: OpenTelemetry Governance Panel
+event: OTel Community Day
+event_slug: otel-community-day
+date: 2024-06-25
+location:
+  city: Seattle
+  country: WA
+  flag: 🇺🇸
+tags: []
+recording: https://youtu.be/Mfh_0Qn_1zo?si=cM1bPARLloXKYFY0
+event_link: https://sched.co/1d0QZ
+---
 
 ## Abstract
 

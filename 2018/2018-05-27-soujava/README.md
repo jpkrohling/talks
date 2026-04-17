@@ -1,12 +1,16 @@
-# Introdução à OpenTracing e Jaeger
-
-|           |                                                          |
-| --------- | ---------------------------------------------------------|
-| Event     | SouJava Webinar                                          |
-| Where     | Online, 🇧🇷                                               |
-| When      | May 27, 2018                                             |
-| Recording | [Recording](https://www.youtube.com/watch?v=ARaMOdZ54mo) |
-| Link      | [Link](https://sched.co/MPkv)                            |
+---
+title: Introdução à OpenTracing e Jaeger
+event: SouJava Webinar
+event_slug: soujava-webinar
+date: 2018-05-27
+location:
+  city: Online
+  country: ""
+  flag: 🇧🇷
+tags: []
+recording: https://www.youtube.com/watch?v=ARaMOdZ54mo
+event_link: https://sched.co/MPkv
+---
 
 ## Abstract
 

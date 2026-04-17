@@ -1,12 +1,15 @@
-# Estado da Arte na Observabilidade 🇧🇷
-
-|           |                                                 |
-| --------- | ------------------------------------------------|
-| Event     | Kubernetes Community Days - São Paulo           |
-| Where     | Online, 🌍                                      |
-| When      | February 23, 2024                               |
-| Recording | None                                            |
-| Slides    | [PDF](slides.pdf)                               |
+---
+title: Estado da Arte na Observabilidade 🇧🇷
+event: Kubernetes Community Days - São Paulo
+event_slug: kubernetes-community-days---so-paulo
+date: 2024-02-23
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+slides: slides.pdf
+---
 
 ## Abstract
 

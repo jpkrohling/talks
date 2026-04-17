@@ -1,10 +1,15 @@
-# Jaeger Project Intro
+---
+title: Jaeger Project Intro
+event: KubeCon + CloudNativeCon Europe 2018
+event_slug: kubecon-and-cloudnativecon-europe-2018
+date: 2018-05-02
+location:
+  city: Copenhagen
+  country: ""
+  flag: 🇩🇰
+tags: []
+slides: slides.pdf
+event_link: https://sched.co/DrnB
+---
 
-|           |                                      |
-| --------- | -------------------------------------|
-| Event     | KubeCon + CloudNativeCon Europe 2018 |
-| Where     | Copenhagen, 🇩🇰                       |
-| When      | May 2, 2018                          |
-| Slides    | [PDF](slides.pdf)                    |
-| Link      | [Link](https://sched.co/DrnB)        |
 

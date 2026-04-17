@@ -1,12 +1,15 @@
-# Observabilidade com Grafana OpenSource e Rastreamento Distribuído
-
-|           |                                |
-| --------- | ------------------------------ |
-| Event     | Grafana Account Day            |
-| Where     | Online, 🌍                     |
-| When      | February 1st, 2023             |
-| Recording | [Link](https://go2.grafana.com/2023-02-01-AccountDay-SinglePaneOTel-LatAm-AMER.html)                           |
-| Slides    | None                           |
+---
+title: Observabilidade com Grafana OpenSource e Rastreamento Distribuído
+event: Grafana Account Day
+event_slug: grafana-account-day
+date: 2023-02-01
+location:
+  city: Online
+  country: ""
+  flag: 🌍
+tags: []
+recording: https://go2.grafana.com/2023-02-01-AccountDay-SinglePaneOTel-LatAm-AMER.html
+---
 
 ## Abstract
 

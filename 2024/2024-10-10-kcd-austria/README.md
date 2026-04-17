@@ -1,12 +1,16 @@
-# Kubernetes Community Day Austria
-
-|           |                                                              |
-| --------- | -------------------------------------------------------------|
-| Event     | Kubernetes Community Day                                     |
-| Where     | Vienna, 🇦🇹                                                   |
-| When      | October 10, 2024                                             |
-| Link      | [Link](https://kcdaustria2024.sessionize.com/session/740116) |
-| Slides    | [PDF](slides.pdf)                                            |
+---
+title: Kubernetes Community Day Austria
+event: Kubernetes Community Day
+event_slug: kubernetes-community-day
+date: 2024-10-10
+location:
+  city: Vienna
+  country: ""
+  flag: 🇦🇹
+tags: []
+slides: slides.pdf
+event_link: https://kcdaustria2024.sessionize.com/session/740116
+---
 
 ## Abstract
 

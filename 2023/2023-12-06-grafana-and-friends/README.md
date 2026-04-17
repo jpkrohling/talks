@@ -1,13 +1,16 @@
-# Encore: Best practices in Observability and OpenTelemetry at Deutsche Bank
-
-|           |                                                                            |
-| --------- | ---------------------------------------------------------------------------|
-| Event     | Meetup: Grafana and Friends                                                |
-| Where     | Berlin, 🇩🇪                                                                 |
-| When      | December 6, 2023                                                           |
-| Recording | None                                                                       |
-| Slides    | [PDF](slides.pdf)                                                          |
-| Link      | [Link](https://www.meetup.com/grafana-and-friends-berlin/events/296932045) |
+---
+title: "Encore: Best practices in Observability and OpenTelemetry at Deutsche Bank"
+event: "Meetup: Grafana and Friends"
+event_slug: meetup-grafana-and-friends
+date: 2023-12-06
+location:
+  city: Berlin
+  country: ""
+  flag: 🇩🇪
+tags: []
+slides: slides.pdf
+event_link: https://www.meetup.com/grafana-and-friends-berlin/events/296932045
+---
 
 ## Abstract
 

@@ -1,13 +1,16 @@
-# Panel Discussion: The Present and Future of Open Source Observability
-
-|           |                                           |
-| --------- | ----------------------------------------- |
-| Event     | Observability Day                         |
-| Where     | Amsterdam, 🇳🇱                             |
-| When      | Apr 18, 2023                              |
-| Recording | [Recording](https://youtu.be/B-4kYdN-6-w) |
-| Slides    | None                                      |
-| Link      | [Link](https://sched.co/1Jo8f)            |
+---
+title: "Panel Discussion: The Present and Future of Open Source Observability"
+event: Observability Day
+event_slug: observability-day
+date: 2023-04-18
+location:
+  city: Amsterdam
+  country: ""
+  flag: 🇳🇱
+tags: []
+recording: https://youtu.be/B-4kYdN-6-w
+event_link: https://sched.co/1Jo8f
+---
 
 ## Abstract
 

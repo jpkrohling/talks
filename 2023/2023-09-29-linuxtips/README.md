@@ -1,13 +1,15 @@
-# O fantástico mundo da observabilidade
-
-|           |                          |
-| --------- | ------------------------ |
-| Event     | Aniversário da LinuxTips |
-| Where     | Online, 🇧🇷               |
-| When      | September 29, 2023       |
-| Recording | None                     |
-| Slides    | [PDF](slides.pdf)        |
-| Link      | None                     |
+---
+title: O fantástico mundo da observabilidade
+event: Aniversário da LinuxTips
+event_slug: aniversrio-da-linuxtips
+date: 2023-09-29
+location:
+  city: Online
+  country: ""
+  flag: 🇧🇷
+tags: []
+slides: slides.pdf
+---
 
 ## Abstract
 

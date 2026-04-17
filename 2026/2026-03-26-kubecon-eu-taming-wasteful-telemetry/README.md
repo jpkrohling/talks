@@ -1,13 +1,20 @@
-# Day-2 Reality Check: Taming Wasteful Telemetry
-
-|           |                                                                  |
-| --------- | -----------------------------------------------------------------|
-| Event     | KubeCon + CloudNativeCon Europe 2026                             |
-| Where     | Amsterdam, Netherlands 🇳🇱                                       |
-| When      | March 26, 2026                                                   |
-| Recording | [YouTube](https://youtu.be/cpB5NTtUdwQ)                         |
-| Slides    | [PDF](slides.pdf)                                                |
-| Link      | [Link](https://sched.co/2CW6M)                                  |
+---
+title: "Day-2 Reality Check: Taming Wasteful Telemetry"
+event: KubeCon + CloudNativeCon Europe 2026
+event_slug: kubecon-and-cloudnativecon-europe-2026
+date: 2026-03-26
+location:
+  city: Amsterdam
+  country: Netherlands
+  flag: 🇳🇱
+tags: []
+recording: https://youtu.be/cpB5NTtUdwQ
+slides: slides.pdf
+event_link: https://sched.co/2CW6M
+co_speakers:
+  - name: Elena Kovalenko
+    company: Delivery Hero
+---
 
 ## Abstract
 
@@ -16,6 +23,3 @@ Your observability pipeline is running and everything seems fine—until you not
 This talk examines sources of telemetry waste: unbounded cardinality, redundant processor data, and auto-instrumentation defaults prioritizing completeness over practicality. We'll discuss pipeline fixes using the OpenTelemetry Collector to drop attributes and transform telemetry, plus Instrumentation Score for quality assessment. We'll explore proactive approaches reducing waste at the source through opinionated auto-instrumentation.
 
 Attendees will learn to identify waste, assess cardinality, apply solutions, and reduce costs without sacrificing visibility.
-
-## Co-speakers
-* Elena Kovalenko, Delivery Hero

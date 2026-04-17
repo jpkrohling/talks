@@ -1,13 +1,17 @@
-# OTel Sucks (But Also Rocks!)
-
-|           |                                                             |
-| --------- | ------------------------------------------------------------|
-| Event     | KubeCon + CloudNativeCon Europe 2025                        |
-| Where     | London, 🇬🇧                                                  |
-| When      | April 03, 2025                                              |
-| Recording | [YouTube](https://youtu.be/QzStkLbA7Qk)                     |
-| Slides    | [PDF](slides.pdf)                                           |
-| Link      | [Link](https://sched.co/1txHm)                              |
+---
+title: OTel Sucks (But Also Rocks!)
+event: KubeCon + CloudNativeCon Europe 2025
+event_slug: kubecon-and-cloudnativecon-europe-2025
+date: 2025-04-03
+location:
+  city: London
+  country: ""
+  flag: 🇬🇧
+tags: []
+recording: https://youtu.be/QzStkLbA7Qk
+slides: slides.pdf
+event_link: https://sched.co/1txHm
+---
 
 ## Abstract
 

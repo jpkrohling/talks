@@ -1,13 +1,16 @@
-# Getting Started with OpenTelemetry: A Gateway to Modern Observability
-
-|           |                                                                  |
-| --------- | -----------------------------------------------------------------|
-| Event     | CloudLand 2025                                                   |
-| Where     | Soltau, 🇩🇪                                                       |
-| When      | July 02, 2025                                                    |
-| Recording | None                                                             |
-| Slides    | [PDF](slides.pdf)                                                |
-| Link      | [Link](https://meine.doag.org/events/cloudland/2025/agenda/#agendaId.5807) |
+---
+title: "Getting Started with OpenTelemetry: A Gateway to Modern Observability"
+event: CloudLand 2025
+event_slug: cloudland-2025
+date: 2025-07-02
+location:
+  city: Soltau
+  country: ""
+  flag: 🇩🇪
+tags: []
+slides: slides.pdf
+event_link: https://meine.doag.org/events/cloudland/2025/agenda/#agendaId.5807
+---
 
 ## Abstract
 

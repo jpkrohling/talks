@@ -1,12 +1,16 @@
-# What are My Microservices Doing?
-
-|           |                               |
-| --------- | ------------------------------|
-| Event     | Open Source Summit            |
-| Where     | Edinburgh, 🏴󠁧󠁢󠁳󠁣󠁴󠁿                 |
-| When      | October 24, 2018              |
-| Slides    | [Slides](slides.pdf)          |
-| Link      | [Link](https://sched.co/MPkv) |
+---
+title: What are My Microservices Doing?
+event: Open Source Summit
+event_slug: open-source-summit
+date: 2018-10-24
+location:
+  city: Edinburgh
+  country: ""
+  flag: 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+tags: []
+slides: slides.pdf
+event_link: https://sched.co/MPkv
+---
 
 ## Abstract
 

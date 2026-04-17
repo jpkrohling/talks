@@ -1,13 +1,17 @@
-# Operational and Business Insights from Tracing Distributed Microservices
-
-|           |                                                          |
-| --------- | ---------------------------------------------------------|
-| Event     | KubeCon + CloudNativeCon Europe 2017                     |
-| Where     | Berlin, 🇩🇪                                               |
-| When      | March 29, 2017                                           |
-| Recording | [Recording](https://www.youtube.com/watch?v=dmMWaTZE5gQ) |
-| Slides    | [PDF](slides.pdf)                                        |
-| Link      | [Link](https://sched.co/9Tbl)                            |
+---
+title: Operational and Business Insights from Tracing Distributed Microservices
+event: KubeCon + CloudNativeCon Europe 2017
+event_slug: kubecon-and-cloudnativecon-europe-2017
+date: 2017-03-29
+location:
+  city: Berlin
+  country: ""
+  flag: 🇩🇪
+tags: []
+recording: https://www.youtube.com/watch?v=dmMWaTZE5gQ
+slides: slides.pdf
+event_link: https://sched.co/9Tbl
+---
 
 ## Abstract
 

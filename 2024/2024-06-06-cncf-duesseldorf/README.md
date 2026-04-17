@@ -1,11 +1,15 @@
-# Demystifying Sampling
-
-|           |                                                        |
-| --------- | -------------------------------------------------------|
-| Event     | CNCF Düsseldorf                                        |
-| Where     | Düsseldorf, 🇩🇪                                         |
-| When      | June 06, 2024                                          |
-| Slides    | [PDF](slides.pdf)                                      |
+---
+title: Demystifying Sampling
+event: CNCF Düsseldorf
+event_slug: cncf-dsseldorf
+date: 2024-06-06
+location:
+  city: Düsseldorf
+  country: ""
+  flag: 🇩🇪
+tags: []
+slides: slides.pdf
+---
 
 ## Abstract
 

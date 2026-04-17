@@ -1,13 +1,19 @@
-# Weniger Sammeln, mehr Verstehen – hin zu proaktivem Reliability Engineering
-
-|           |                                                                  |
-| --------- | -----------------------------------------------------------------|
-| Event     | Mastering Observability 2026                                     |
-| Where     | Online 🌐                                                        |
-| When      | April 16, 2026                                                   |
-| Recording | None                                                             |
-| Slides    | [PDF](slides.pdf)                                                |
-| Link      | [Link](https://www.mastering-obs.de/)                            |
+---
+title: Weniger Sammeln, mehr Verstehen – hin zu proaktivem Reliability Engineering
+event: Mastering Observability 2026
+event_slug: mastering-observability-2026
+date: 2026-04-16
+location:
+  city: Online
+  country: ""
+  flag: 🌐
+tags: []
+slides: slides.pdf
+event_link: https://www.mastering-obs.de/
+co_speakers:
+  - name: Severin Neumann
+    company: Causely
+---
 
 ## Abstract
 
@@ -18,6 +24,3 @@ Dieser Vortrag stellt ein systematisches, top-down orientiertes Engineering-Fram
 Der Vortrag richtet sich an Entwickler:innen, Team-Leads und Führungskräfte und zeigt eine prinzipielle Vorgehensweise zur Auswahl von Telemetrie. Ziel ist es, Kosten zu reduzieren, Root-Cause-Analysen zu beschleunigen und belastbares Vertrauen in das Verhalten verteilter Systeme aufzubauen. Dabei wird erläutert, warum Traces das Fundament bilden sollten, wie Metriken sinnvoll eingesetzt werden und wann Logs zu belastbaren Hinweisen statt zu Rauschen werden.
 
 Das Ergebnis sind weniger Daten, schnellere Problemlösung und die Fähigkeit, kausal über verteilte Systeme nachzudenken – ein Schritt weg vom reaktiven Feuerlöschen hin zu proaktivem Reliability Engineering.
-
-## Co-speakers
-* Severin Neumann, Causely

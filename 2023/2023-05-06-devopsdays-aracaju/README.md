@@ -1,13 +1,16 @@
-# Dissecando rastreamento distribuído
-
-|           |                                                                          |
-| --------- | ------------------------------------------------------------------------ |
-| Event     | DevOpsDays Aracaju                                                       |
-| Where     | Aracaju, SE, 🇧🇷                                                          |
-| When      | May 6, 2023                                                              |
-| Recording | None                                                                     |
-| Slides    | [PDF](slides.pdf)                                                        |
-| Link      | [Link](https://devopsdays.org/events/2023-aracaju/program/juraci-paixao) |
+---
+title: Dissecando rastreamento distribuído
+event: DevOpsDays Aracaju
+event_slug: devopsdays-aracaju
+date: 2023-05-06
+location:
+  city: Aracaju
+  country: SE
+  flag: 🇧🇷
+tags: []
+slides: slides.pdf
+event_link: https://devopsdays.org/events/2023-aracaju/program/juraci-paixao
+---
 
 ## Abstract
 
@@ -18,4 +21,3 @@ Rastreamento distribuído é uma ferramenta fundamental para entender tudo o que
 Nessa apresentação, Juraci Paixão Kröhling vai falar sobre a história, as diversas partes que compõe uma solução de rastreamento distribuído e como elas se relacionam: dapper, Zipkin, Jaeger, propagação de contexto, bagagem, W3C Trace Context e muito mais!
 
 Você sairá dessa apresentação sabendo quais as peças necessárias para alcançar os benefícios que o rastreamento distribuído traz.
-
