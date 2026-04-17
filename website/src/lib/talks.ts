@@ -1,5 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
+import { withBase } from './url';
 
 export type Talk = CollectionEntry<'talks'>;
 
@@ -16,7 +17,7 @@ export async function getFeaturedTalks(): Promise<Talk[]> {
 export function getYearGroups(talks: Talk[]): Array<{ year: number; talks: Talk[] }> {
   const groups = new Map<number, Talk[]>();
   for (const t of talks) {
-    const y = t.data.date.getFullYear();
+    const y = t.data.date.getUTCFullYear();
     if (!groups.has(y)) groups.set(y, []);
     groups.get(y)!.push(t);
   }
@@ -26,10 +27,7 @@ export function getYearGroups(talks: Talk[]): Array<{ year: number; talks: Talk[
 }
 
 export function talkUrl(slug: string): string {
-  const base = import.meta.env.BASE_URL.endsWith('/')
-    ? import.meta.env.BASE_URL
-    : `${import.meta.env.BASE_URL}/`;
-  return `${base}talks/${slug}/`;
+  return withBase(`/talks/${slug}/`);
 }
 
 export function allTags(talks: Talk[]): Array<{ tag: string; count: number }> {
