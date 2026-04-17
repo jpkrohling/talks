@@ -7,7 +7,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This repository maintains a portfolio of conference talks given by Juraci Paixão Kröhling. It contains:
 - A YAML database of all talks (`talks.yaml`)
 - PDF slides organized by year and event
-- A React/Vite-based portfolio website in the `website/` directory
 - Biographical information in multiple languages (English, German, Portuguese)
 - Professional headshots
 
@@ -15,7 +14,7 @@ This repository maintains a portfolio of conference talks given by Juraci Paixã
 
 ### talks.yaml
 
-The central data file that powers the website. Each talk entry follows this structure:
+The central data file listing all talks. Each talk entry follows this structure:
 
 ```yaml
 - id: YYYY-MM-DD-event-name
@@ -50,46 +49,8 @@ The central data file that powers the website. Each talk entry follows this stru
 │       ├── slides.pdf
 │       └── README.md
 ├── headshots/          # Professional photos
-├── website/            # React/TypeScript portfolio site
-│   ├── src/
-│   ├── public/
-│   └── package.json
 └── README.md           # Bio and contact info
 ```
-
-## Website Development
-
-The website is a React + TypeScript + Vite application using:
-- **UI Framework:** shadcn/ui (Radix UI components)
-- **Styling:** Tailwind CSS with dark theme and yellow accents
-- **Build Tool:** Vite
-- **Package Manager:** Multiple lock files present (npm, pnpm, bun) - use npm by default
-
-### Common Commands
-
-All website commands must be run from the `website/` directory:
-
-```bash
-cd website/
-npm run dev        # Start development server
-npm run build      # Build for production
-npm run build:dev  # Build in development mode
-npm run lint       # Run ESLint
-npm run preview    # Preview production build
-```
-
-### Design System
-
-- **Theme:** Dark mode with yellow accent color
-- **Typography:** Inter font family
-- **Components:** Built with shadcn/ui and Radix UI primitives
-- **Responsive:** Mobile-first design
-- **Accessibility:** WCAG-compliant components
-
-- **Path Alias:** `@/*` maps to `./src/*` in imports
-- **Dev Server:** Runs on port 8080
-
-**Data sync:** The website does NOT read `talks.yaml` at runtime. Instead, `website/src/data/talksData.ts` contains a hardcoded copy of the talks data. When `talks.yaml` is updated, `talksData.ts` must also be updated for changes to appear on the website. Featured talk IDs are defined in `website/src/types/Talk.ts`.
 
 ## Adding New Talks
 

@@ -1,6 +1,6 @@
 ---
 name: add-talk
-description: Add new conference talks to the talks portfolio repository. Handles fetching metadata from sched.co URLs or manual input, creating YAML entries in talks.yaml, generating talk directories with README.md files, fuzzy-matching slide PDFs from ~/Downloads/, syncing website/src/data/talksData.ts, and staging all changes. Use when user says "add talk", "new talk", "add these talks", provides sched.co URLs, or mentions adding a presentation or conference entry.
+description: Add new conference talks to the talks portfolio repository. Handles fetching metadata from sched.co URLs or manual input, creating YAML entries in talks.yaml, generating talk directories with README.md files, fuzzy-matching slide PDFs from ~/Downloads/, and staging all changes. Use when user says "add talk", "new talk", "add these talks", provides sched.co URLs, or mentions adding a presentation or conference entry.
 ---
 
 ## Workflow
@@ -61,20 +61,12 @@ The event slug should be a short, descriptive kebab-case name derived from the e
 4. If no match is found, inform the user which talks are missing slides
 5. Add the `slides` field to the talks.yaml entry for talks that have slides
 
-## Step 5: Sync talksData.ts
-
-The website embeds talk data in `website/src/data/talksData.ts` as a YAML string inside a template literal. This file must be kept in sync with `talks.yaml`.
-
-1. Read `website/src/data/talksData.ts`
-2. Add the new talk entries to the YAML string at the top (same order as talks.yaml)
-3. The format inside talksData.ts matches talks.yaml exactly, with 4-space indentation inside the template literal
-
-## Step 6: Stage changes
+## Step 5: Stage changes
 
 Stage all new and modified files:
 
 ```bash
-git add talks.yaml website/src/data/talksData.ts YYYY/
+git add talks.yaml YYYY/
 ```
 
 Never commit — only stage for review.
