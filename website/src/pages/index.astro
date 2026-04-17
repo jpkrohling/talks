@@ -1,7 +1,7 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSplit from '../components/HeroSplit.astro';
-import { getAllTalks, getFeaturedTalks, allTags } from '../lib/talks';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { allTags, getAllTalks, getFeaturedTalks } from '../lib/talks';
 import { withBase } from '../lib/url';
 
 const all = await getAllTalks();

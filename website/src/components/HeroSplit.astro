@@ -1,8 +1,16 @@
 ---
-import TalkRow from './TalkRow.astro';
 import type { Talk } from '../lib/talks';
-interface Props { featured: Talk[]; tagline?: string; chips?: string[]; }
-const { featured, tagline = 'Observability is a garden.', chips = ['OpenTelemetry', 'Distributed Tracing', 'Governance'] } = Astro.props;
+import TalkRow from './TalkRow.astro';
+interface Props {
+  featured: Talk[];
+  tagline?: string;
+  chips?: string[];
+}
+const {
+  featured,
+  tagline = 'Observability is a garden.',
+  chips = ['OpenTelemetry', 'Distributed Tracing', 'Governance'],
+} = Astro.props;
 ---
 <section class="hero">
   <div class="panel">
