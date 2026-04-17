@@ -5,45 +5,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Overview
 
 This repository maintains a portfolio of conference talks given by Juraci Paixão Kröhling. It contains:
-- A YAML database of all talks (`talks.yaml`)
-- PDF slides organized by year and event
+- PDF slides and READMEs organized by year and event
 - Biographical information in multiple languages (English, German, Portuguese)
 - Professional headshots
 
-## Core Data Structure
-
-### talks.yaml
-
-The central data file listing all talks. Each talk entry follows this structure:
-
-```yaml
-- id: YYYY-MM-DD-event-name
-  date: 'YYYY-MM-DD'
-  title: "Talk Title"
-  description: >
-    Multi-line description (optional)
-  location: "City, Country, Flag-Emoji"
-  slides: /YYYY/YYYY-MM-DD-event-name/slides.pdf
-  recording: https://youtu.be/... (optional)
-  event_name: 'Event Name' (optional)
-  event_link: https://... (optional)
-  co_speakers: (optional)
-    - Name, Company
-```
-
-**Important conventions:**
-- IDs use the format: `YYYY-MM-DD-event-name-slug`
-- Dates are in ISO format: `YYYY-MM-DD`
-- Slides are stored in year-based directories: `YYYY/YYYY-MM-DD-event-name/slides.pdf`
-- Entries are sorted in reverse chronological order (newest first)
-- Location format includes city, country/state, and flag emoji
-- YouTube recordings use the short `youtu.be` format
-
-### Directory Structure
+## Directory Structure
 
 ```
 .
-├── talks.yaml           # Main database of all talks
 ├── YYYY/               # Year-based directories
 │   └── YYYY-MM-DD-event-name/
 │       ├── slides.pdf
@@ -56,14 +25,13 @@ The central data file listing all talks. Each talk entry follows this structure:
 
 When adding new presentations:
 
-1. Add the entry to `talks.yaml` in reverse chronological order (newest at top)
-2. Create the year directory if needed: `mkdir -p YYYY/YYYY-MM-DD-event-name/`
-3. Copy the PDF slides: `cp ~/path/to/slides.pdf YYYY/YYYY-MM-DD-event-name/slides.pdf`
-4. Create a README.md file in the talk directory following the standard format (see below)
-5. Include co-speakers if it's a panel or co-presented talk
-6. Add `event_link` pointing to the sched.co or official event page
-7. Add `recording` URL when YouTube video becomes available
-8. Follow the location format with flag emoji
+1. Create the year directory if needed: `mkdir -p YYYY/YYYY-MM-DD-event-name/`
+2. Copy the PDF slides: `cp ~/path/to/slides.pdf YYYY/YYYY-MM-DD-event-name/slides.pdf`
+3. Create a README.md file in the talk directory following the standard format (see below)
+4. Include co-speakers if it's a panel or co-presented talk
+5. Add `event_link` pointing to the sched.co or official event page
+6. Add `recording` URL when YouTube video becomes available
+7. Follow the location format with flag emoji
 
 ### Talk README.md Format
 
@@ -83,7 +51,7 @@ Each talk directory should contain a README.md file with this structure:
 
 ## Abstract
 
-[Full description from talks.yaml]
+[Full description of the talk]
 
 ## Co-speakers (if applicable)
 * Name, Company
@@ -94,6 +62,8 @@ Each talk directory should contain a README.md file with this structure:
 - The "When" field uses full month name (e.g., "November 11, 2025")
 - Recording shows "None" if not yet available
 - Co-speakers section is only included for panels or co-presented talks
+- YouTube recording URLs use the short `youtu.be` format
+- Location format always includes a flag emoji (e.g., "Amsterdam, Netherlands 🇳🇱")
 
 ## Content Languages
 
