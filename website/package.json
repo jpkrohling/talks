@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "dependencies": {
+    "astro": "^6.1.7"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}
