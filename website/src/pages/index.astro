@@ -1,9 +1,43 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSplit from '../components/HeroSplit.astro';
+import { getAllTalks, getFeaturedTalks, allTags } from '../lib/talks';
+import { withBase } from '../lib/url';
+
+const all = await getAllTalks();
+const featured = await getFeaturedTalks();
+const tags = allTags(all).slice(0, 8);
 ---
 <BaseLayout title="Juraci Paixão Kröhling">
-  <div class="container" style="padding-block: var(--space-12);">
-    <h1>Juraci Paixão Kröhling</h1>
-    <p class="meta">Homepage coming in Task 7.</p>
+  <div class="container">
+    <HeroSplit featured={featured} />
+    <section class="section">
+      <h2>About</h2>
+      <div class="prose">
+        <p>Juraci Paixão Kröhling is a software engineer, a Governance Committee member for the OpenTelemetry project, and an emeritus maintainer of the Jaeger project. With a deep expertise in observability and open-source development, he has spoken at leading conferences including KubeCon EU, KubeCon NA, OpenSource Summit, Devoxx Belgium, FOSDEM, and multiple DevOpsDays events.</p>
+        <p>Passionate about distributed tracing and observability, he helps software engineers build reliable observability pipelines. As co-founder of <a href="https://ollygarden.com" rel="external">OllyGarden</a>, he continues to shape the future of observability tools while actively contributing to the open-source community.</p>
+      </div>
+      <p><a class="readmore" href={withBase('/press/')}>Full bio & media kit →</a></p>
+    </section>
+    <section class="section">
+      <h2>Topics I speak about</h2>
+      <ul class="chipstrip">
+        {tags.map((t) => <li><a href={withBase(`/topics/${t.tag}/`)}>{t.tag} <span class="n">· {t.count}</span></a></li>)}
+      </ul>
+    </section>
+    <section class="section">
+      <h2>Projects & affiliations</h2>
+      <p class="meta"><a href={withBase('/projects/')}>See all projects →</a></p>
+    </section>
   </div>
 </BaseLayout>
+<style>
+  .container { padding-block: 0 var(--space-16); }
+  .section { padding-block: var(--space-8); border-top: 1px solid var(--cream-200); }
+  .section h2 { font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem); }
+  .readmore { font-weight: 600; }
+  .chipstrip { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .chipstrip a { background: var(--cream-200); color: var(--bordeaux-700); padding: var(--space-2) var(--space-3); border-radius: var(--radius-pill); text-decoration: none; font-size: 0.9375rem; font-weight: 600; }
+  .chipstrip a:hover { background: var(--bordeaux-700); color: var(--cream-50); }
+  .chipstrip .n { opacity: 0.7; font-weight: 400; }
+</style>

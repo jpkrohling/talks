@@ -1,0 +1,44 @@
+---
+import TalkRow from './TalkRow.astro';
+import type { Talk } from '../lib/talks';
+interface Props { featured: Talk[]; tagline?: string; chips?: string[]; }
+const { featured, tagline = 'Observability is a garden.', chips = ['OpenTelemetry', 'Distributed Tracing', 'Governance'] } = Astro.props;
+---
+<section class="hero">
+  <div class="panel">
+    <p class="eyebrow-light">Speaker · Engineer</p>
+    <h1>Juraci Paixão Kröhling</h1>
+    <p class="tagline">{tagline}</p>
+    <p class="bio">
+      OpenTelemetry Governance Committee member.
+      Co-founder of <a href="https://ollygarden.com" rel="external">OllyGarden</a>.
+      Jaeger emeritus maintainer.
+    </p>
+    <ul class="chips">
+      {chips.map((c) => <li>{c}</li>)}
+    </ul>
+  </div>
+  <div class="right">
+    <p class="eyebrow">★ Featured talks</p>
+    <div class="rows">
+      {featured.slice(0, 3).map((t) => <TalkRow talk={t} />)}
+    </div>
+  </div>
+</section>
+<style>
+  .hero { display: grid; grid-template-columns: 1.25fr 1fr; gap: var(--space-6); align-items: stretch; padding-block: var(--space-8) var(--space-12); }
+  .panel { background: linear-gradient(135deg, var(--bordeaux-700), var(--bordeaux-900)); color: var(--cream-50); padding: var(--space-8); border-radius: var(--radius-card); display: flex; flex-direction: column; gap: var(--space-3); }
+  .panel h1 { color: var(--cream-50); font-size: clamp(2.25rem, 4vw + 1rem, 3rem); margin-bottom: 0; }
+  .panel .eyebrow-light { font-family: var(--font-ui); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream-200); font-weight: 600; margin: 0; }
+  .panel .tagline { font-family: var(--font-display); font-style: italic; font-size: 1.125rem; color: var(--cream-200); margin: 0; }
+  .panel .bio { font-size: 1rem; color: rgba(244,237,224,0.85); margin: var(--space-4) 0 0; }
+  .panel .bio a { color: var(--cream-50); text-decoration-color: rgba(244,237,224,0.5); }
+  .panel .chips { list-style: none; margin: auto 0 0; padding: var(--space-6) 0 0; display: flex; gap: var(--space-2); flex-wrap: wrap; }
+  .panel .chips li { background: rgba(244,237,224,0.12); color: var(--cream-50); padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-size: 0.8125rem; font-weight: 600; }
+  .right { background: var(--cream-50); border: 1px solid var(--cream-200); padding: var(--space-6); border-radius: var(--radius-card); }
+  .right .eyebrow { margin-bottom: var(--space-3); }
+  .rows { display: flex; flex-direction: column; }
+  @media (max-width: 960px) {
+    .hero { grid-template-columns: 1fr; }
+  }
+</style>
