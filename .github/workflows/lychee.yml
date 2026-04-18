@@ -1,0 +1,18 @@
+name: Lychee link check
+
+on:
+  schedule:
+    - cron: '0 7 * * 2' # Tuesdays 07:00 UTC
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress './website/src/**/*.astro' './website/src/**/*.ts' './[0-9][0-9][0-9][0-9]/**/README.md' 'README.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
