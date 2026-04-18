@@ -33,6 +33,12 @@ jobs:
       - name: Build
         working-directory: website
         run: bun run build
+      - name: Install Playwright browsers
+        working-directory: website
+        run: bunx playwright install --with-deps chromium
+      - name: Smoke tests
+        working-directory: website
+        run: bun run test:e2e
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

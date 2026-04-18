@@ -24,11 +24,13 @@
     "migrate:talks": "bun run scripts/migrate-talks.ts",
     "migrate:talks:dry": "bun run scripts/migrate-talks.ts --dry",
     "sync:credly": "bun run scripts/fetch-credly.ts",
-    "test": "bun test"
+    "test": "bun test",
+    "test:e2e": "playwright test"
   },
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@playwright/test": "^1.59.1",
     "@resvg/resvg-js": "^2.6.2",
     "gray-matter": "^4.0.3",
     "satori": "^0.26.0",
