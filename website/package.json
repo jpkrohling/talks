@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "bun run scripts/copy-talk-assets.ts && bun run scripts/copy-headshots.ts && bun run scripts/fetch-credly.ts",
+    "prebuild": "bun run scripts/copy-talk-assets.ts && bun run scripts/copy-headshots.ts && bun run scripts/fetch-credly.ts && bun run scripts/generate-og.ts",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -29,7 +29,9 @@
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@resvg/resvg-js": "^2.6.2",
     "gray-matter": "^4.0.3",
+    "satori": "^0.26.0",
     "yaml": "^2.8.3"
   }
 }

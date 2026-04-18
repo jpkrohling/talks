@@ -5,6 +5,7 @@ import TagPill from '../../components/TagPill.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { talkJsonLd } from '../../lib/jsonld';
+import { talkOgUrl } from '../../lib/og-url';
 import { formatDate, getAllTalks } from '../../lib/talks';
 import { withBase } from '../../lib/url';
 
@@ -21,8 +22,9 @@ const isUrlRecording = !!d.recording && /^https?:\/\//.test(d.recording);
 const localRecording =
   d.recording && !isUrlRecording ? withBase(`/talks/${entry.id}/${d.recording}`) : null;
 const talkLd = talkJsonLd(entry, Astro.site!);
+const ogImage = talkOgUrl(entry.id, Astro.site!);
 ---
-<BaseLayout title={d.title} description={`${d.title} — ${d.event}`}>
+<BaseLayout title={d.title} description={`${d.title} — ${d.event}`} ogImage={ogImage}>
   <article class="container">
     <JsonLd data={talkLd} />
     <p class="crumb"><a href={withBase('/talks/')}>← All talks</a></p>

@@ -26,3 +26,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# generated OG images (keep default.png committed)
+public/og/*.png
+!public/og/default.png
+public/og/.cache.json

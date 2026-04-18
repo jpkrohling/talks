@@ -4,6 +4,7 @@ import JsonLd from '../components/JsonLd.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteNav from '../components/SiteNav.astro';
 import { personJsonLd } from '../lib/jsonld';
+import { siteOgUrl } from '../lib/og-url';
 
 interface Props {
   title: string;
@@ -14,7 +15,7 @@ interface Props {
 const {
   title,
   description = 'Juraci Paixão Kröhling — speaker, engineer, OpenTelemetry Governance, co-founder of OllyGarden.',
-  ogImage,
+  ogImage = siteOgUrl(Astro.site!),
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const siteTitle = title === 'Juraci Paixão Kröhling' ? title : `${title} · Juraci Paixão Kröhling`;
@@ -34,7 +35,7 @@ const person = personJsonLd(Astro.site!);
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
-    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <JsonLd data={person} />
   </head>
