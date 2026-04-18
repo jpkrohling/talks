@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const entries = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
 const rendered = await Promise.all(
   entries.map(async (p) => ({ p, Content: (await render(p)).Content })),
