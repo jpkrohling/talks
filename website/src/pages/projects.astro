@@ -1,38 +1,84 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+type Category = 'current' | 'started' | 'emeritus';
+const SECTIONS: Array<{ key: Category; title: string; blurb: string }> = [
+  { key: 'current', title: 'Current', blurb: 'Where I spend my days.' },
+  {
+    key: 'started',
+    title: 'Projects I started',
+    blurb: 'Open-source projects I kicked off and maintained.',
+  },
+  {
+    key: 'emeritus',
+    title: 'Emeritus',
+    blurb: 'Maintainer roles I stepped back from while staying in the community.',
+  },
+];
+
 const entries = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
 const rendered = await Promise.all(
   entries.map(async (p) => ({ p, Content: (await render(p)).Content })),
 );
+
+function group(cat: Category) {
+  return rendered.filter(({ p }) => p.data.category === cat);
+}
 ---
 <BaseLayout title="Projects & Affiliations" description="Projects and affiliations of Juraci Paixão Kröhling.">
   <div class="container">
     <header class="pageheader">
       <h1>Projects & Affiliations</h1>
     </header>
-    <ul class="list">
-      {rendered.map(({ p, Content }) => (
-        <li class="proj">
-          <div class="head">
-            <h2>{p.data.name}</h2>
-            {p.data.url && <a class="ext" href={p.data.url} rel="external">{p.data.url.replace(/^https?:\/\//, '')} →</a>}
-          </div>
-          <p class="meta">{p.data.role}{p.data.period ? ` · ${p.data.period}` : ''}</p>
-          <div class="prose"><Content /></div>
-        </li>
-      ))}
-    </ul>
+
+    {SECTIONS.map((s) => {
+      const items = group(s.key);
+      if (items.length === 0) return null;
+      return (
+        <section class="section">
+          <header class="section-head">
+            <h2>{s.title}</h2>
+            <p class="meta">{s.blurb}</p>
+          </header>
+          <ul class="list">
+            {items.map(({ p, Content }) => (
+              <li class="proj">
+                <div class="head">
+                  <h3>{p.data.name}</h3>
+                  {p.data.url && (
+                    <a class="ext" href={p.data.url} rel="external">
+                      {p.data.url.replace(/^https?:\/\//, '')} →
+                    </a>
+                  )}
+                </div>
+                <p class="meta role">
+                  {p.data.role}
+                  {p.data.period ? ` · ${p.data.period}` : ''}
+                </p>
+                <div class="prose">
+                  <Content />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+    })}
   </div>
 </BaseLayout>
 <style>
   .container { padding-block: var(--space-8) var(--space-16); }
   .pageheader { margin-bottom: var(--space-8); }
-  .list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-8); }
-  .proj { padding-top: var(--space-6); border-top: 1px solid var(--cream-200); }
+  .section { padding-block: var(--space-8); border-top: 1px solid var(--cream-200); }
+  .section:first-of-type { border-top: none; padding-top: 0; }
+  .section-head h2 { margin-bottom: var(--space-1); }
+  .section-head .meta { margin: 0 0 var(--space-6); }
+  .list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-6); }
+  .proj { padding-top: var(--space-4); border-top: 1px dotted var(--cream-200); }
   .proj:first-child { border-top: none; padding-top: 0; }
   .head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-4); flex-wrap: wrap; }
-  .proj h2 { margin-bottom: var(--space-1); }
+  .proj h3 { margin-bottom: 0; font-size: 1.25rem; }
   .ext { font-family: var(--font-ui); font-size: 0.875rem; }
-  .proj .meta { margin-top: 0; margin-bottom: var(--space-3); }
+  .role { margin-top: 0; margin-bottom: var(--space-3); }
 </style>

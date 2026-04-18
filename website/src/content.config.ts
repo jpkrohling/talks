@@ -44,6 +44,11 @@ const projects = defineCollection({
     url: z.string().url().optional(),
     period: z.string().optional(),
     order: z.number().default(100),
+    // Groups the entry on the Projects page.
+    //   current  — active roles
+    //   started  — open-source projects Juraci created or kicked off
+    //   emeritus — retired maintainer roles
+    category: z.enum(['current', 'started', 'emeritus']).default('current'),
   }),
 });
 

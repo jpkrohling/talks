@@ -11,7 +11,6 @@ tags:
   - opentelemetry
   - instrumentation
   - observability
-featured: true
 slides: slides.pdf
 event_link: https://sched.co/27FWx
 co_speakers:

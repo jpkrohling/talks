@@ -7,13 +7,11 @@ export function personJsonLd(site: URL) {
     '@type': 'Person',
     name: 'Juraci Paixão Kröhling',
     url: origin,
-    jobTitle: 'Software Engineer',
-    worksFor: { '@type': 'Organization', name: 'OllyGarden' },
+    jobTitle: 'CEO',
+    worksFor: { '@type': 'Organization', name: 'OllyGarden', url: 'https://ollygarden.com' },
     sameAs: [
-      'https://linktr.ee/jpkroehling',
       'https://github.com/jpkrohling',
       'https://www.linkedin.com/in/jpkroehling',
-      'https://speakerdeck.com/jpkroehling',
       'https://www.credly.com/users/juraci-paixao-krohling',
     ],
   };

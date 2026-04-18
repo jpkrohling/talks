@@ -12,14 +12,16 @@ export async function GET(context: APIContext) {
   lines.push('# Juraci Paixão Kröhling');
   lines.push('');
   lines.push(
-    '> Software engineer, OpenTelemetry Governance Committee member, co-founder of OllyGarden, Jaeger emeritus maintainer. Speaker on observability, distributed tracing, and related open-source topics.',
+    '> CEO of OllyGarden, OpenTelemetry Governance Committee member, emeritus maintainer of the OpenTelemetry Collector and Jaeger. Creator of the Jaeger Operator, OpenTelemetry Operator, OpenTelemetry Collector Builder (OCB), and load-balancing exporter. Co-host of the Telemetry Drops podcast. Speaker on observability, distributed tracing, and related open-source topics.',
   );
   lines.push('');
   lines.push('## Key pages');
   lines.push(`- [Home](${origin}/): identity, featured talks, projects`);
   lines.push(`- [Talks archive](${origin}/talks/): ${talks.length} conference talks`);
   lines.push(`- [Topics](${origin}/topics/): ${tags.length} speaking topics`);
-  lines.push(`- [Projects](${origin}/projects/): OllyGarden, OpenTelemetry, Jaeger`);
+  lines.push(
+    `- [Projects](${origin}/projects/): OllyGarden, OpenTelemetry, Telemetry Drops, Jaeger Operator, OTel Operator, OCB, load-balancing exporter; emeritus: OTel Collector, Jaeger`,
+  );
   lines.push(`- [Press / media kit](${origin}/press/): 3-language bios, headshots`);
   lines.push(`- [Credly badges](${origin}/badges/): verified credentials`);
   lines.push('');

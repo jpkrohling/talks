@@ -11,7 +11,8 @@ const links = [
 <nav aria-label="Primary">
   <div class="container nav-inner">
     <a class="mark" href={withBase('/')} aria-label="Home">
-      <span>jpk</span>
+      <img src={withBase('/press-assets/profile-small.png')} alt="" width="36" height="36" />
+      <span>Juraci Paixão Kröhling</span>
     </a>
     <ul>
       {links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
@@ -21,7 +22,9 @@ const links = [
 <style>
   nav { background: rgb(244 237 224 / 0.85); border-bottom: 1px solid var(--cream-200); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px); }
   .nav-inner { display: flex; align-items: center; justify-content: space-between; padding-block: var(--space-3); }
-  .mark { font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; color: var(--bordeaux-700); text-decoration: none; letter-spacing: -0.02em; }
+  .mark { display: inline-flex; align-items: center; gap: var(--space-3); font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--bordeaux-700); text-decoration: none; letter-spacing: -0.02em; }
+  .mark img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--bordeaux-700); background: var(--cream-50); display: block; }
+  @media (max-width: 640px) { .mark span { display: none; } }
   ul { display: flex; gap: var(--space-6); list-style: none; margin: 0; padding: 0; font-size: 0.9375rem; }
   ul a { color: var(--ink-900); text-decoration: none; }
   ul a:hover { color: var(--bordeaux-700); }
