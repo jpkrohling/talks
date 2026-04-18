@@ -18,6 +18,17 @@
     "formatter": { "quoteStyle": "single", "trailingCommas": "all" }
   },
   "files": {
-    "ignore": ["dist/**", "node_modules/**", ".astro/**", "public/**/*.png"]
+    "ignore": [
+      "dist/**",
+      "node_modules/**",
+      ".astro/**",
+      "public/**/*.png",
+      "public/og/**",
+      "public/talks/**",
+      "public/press-assets/**",
+      "data/credly/**",
+      "test-results/**",
+      "playwright-report/**"
+    ]
   }
 }

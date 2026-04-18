@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 // baseURL in playwright.config.ts is 'http://localhost:4321/talks/' (the Astro
 // `base`). Paths below are relative to that base so they resolve to the real
