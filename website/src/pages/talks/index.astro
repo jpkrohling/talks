@@ -1,8 +1,10 @@
 ---
 import FilterChips from '../../components/FilterChips.astro';
+import JsonLd from '../../components/JsonLd.astro';
 import TalkCard from '../../components/TalkCard.astro';
 import TalkRow from '../../components/TalkRow.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { talkListJsonLd } from '../../lib/jsonld';
 import { allTags, getAllTalks, getFeaturedTalks, getYearGroups } from '../../lib/talks';
 
 const all = await getAllTalks();
@@ -12,9 +14,11 @@ const rest = featured.slice(1, 3);
 const nonFeatured = all.filter((t) => !t.data.featured);
 const tags = allTags(all).slice(0, 12);
 const groups = getYearGroups(nonFeatured);
+const listLd = talkListJsonLd(all, Astro.site!);
 ---
 <BaseLayout title="Talks" description={`${all.length} conference talks by Juraci Paixão Kröhling.`}>
   <div class="container">
+    <JsonLd data={listLd} />
     <header class="pageheader">
       <h1>Talks</h1>
       <p class="meta">{all.length} talks · {featured.length} featured</p>

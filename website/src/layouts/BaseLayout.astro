@@ -1,7 +1,9 @@
 ---
 import '../styles/global.css';
+import JsonLd from '../components/JsonLd.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteNav from '../components/SiteNav.astro';
+import { personJsonLd } from '../lib/jsonld';
 
 interface Props {
   title: string;
@@ -16,6 +18,7 @@ const {
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const siteTitle = title === 'Juraci Paixão Kröhling' ? title : `${title} · Juraci Paixão Kröhling`;
+const person = personJsonLd(Astro.site!);
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +36,7 @@ const siteTitle = title === 'Juraci Paixão Kröhling' ? title : `${title} · Ju
     <meta property="og:url" content={canonical} />
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta name="twitter:card" content="summary_large_image" />
+    <JsonLd data={person} />
   </head>
   <body>
     <a class="skip-to-content" href="#main">Skip to content</a>
