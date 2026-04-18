@@ -1,0 +1,25 @@
+---
+---
+<div class="toggle" role="tablist" aria-label="Bio language">
+  <button type="button" role="tab" aria-selected="true" data-lang="en">🇺🇸 English</button>
+  <button type="button" role="tab" aria-selected="false" data-lang="de">🇩🇪 Deutsch</button>
+  <button type="button" role="tab" aria-selected="false" data-lang="pt">🇧🇷 Português</button>
+</div>
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.toggle [data-lang]');
+  const panels = document.querySelectorAll<HTMLElement>('[data-bio-lang]');
+  buttons.forEach((b) => {
+    b.addEventListener('click', () => {
+      const lang = b.dataset.lang!;
+      buttons.forEach((bb) => bb.setAttribute('aria-selected', String(bb.dataset.lang === lang)));
+      panels.forEach((p) => {
+        p.hidden = p.dataset.bioLang !== lang;
+      });
+    });
+  });
+</script>
+<style>
+  .toggle { display: inline-flex; gap: var(--space-1); background: var(--cream-200); padding: var(--space-1); border-radius: var(--radius-pill); font-size: 0.875rem; }
+  .toggle button { background: transparent; border: 0; padding: var(--space-2) var(--space-4); border-radius: var(--radius-pill); cursor: pointer; font-weight: 600; color: var(--ink-600); font-family: var(--font-ui); }
+  .toggle button[aria-selected='true'] { background: var(--bordeaux-700); color: var(--cream-50); }
+</style>

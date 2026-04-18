@@ -4,6 +4,8 @@ dist/
 .astro/
 # pre-build step copies slides here from ../YYYY/*/slides.pdf
 public/talks/
+# pre-build step copies headshots here from ../headshots/
+public/press-assets/
 
 # dependencies
 node_modules/
