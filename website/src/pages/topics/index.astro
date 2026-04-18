@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { allTags, getAllTalks } from '../../lib/talks';
+import { withBase } from '../../lib/url';
+const all = await getAllTalks();
+const tags = allTags(all);
+---
+<BaseLayout title="Topics" description="Topics Juraci speaks about — across OpenTelemetry, distributed tracing, and observability.">
+  <div class="container">
+    <header class="pageheader">
+      <h1>Topics</h1>
+      <p class="meta">What Juraci speaks about, ranked by number of talks.</p>
+    </header>
+    <ul class="cloud">
+      {tags.map((t) => (
+        <li>
+          <a href={withBase(`/topics/${t.tag}/`)} style={`--size: ${Math.min(1.75, 0.85 + t.count * 0.1)}rem`}>
+            {t.tag} <span class="n">· {t.count}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+<style>
+  .container { padding-block: var(--space-8) var(--space-16); }
+  .pageheader { margin-bottom: var(--space-8); }
+  .cloud { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-3); }
+  .cloud a { font-family: var(--font-display); font-size: var(--size); background: var(--cream-50); color: var(--bordeaux-700); padding: var(--space-2) var(--space-4); border-radius: var(--radius-pill); text-decoration: none; border: 1px solid var(--cream-200); }
+  .cloud a:hover { background: var(--bordeaux-700); color: var(--cream-50); border-color: var(--bordeaux-700); }
+  .cloud .n { font-family: var(--font-ui); font-size: 0.8125rem; opacity: 0.7; font-weight: 400; }
+</style>

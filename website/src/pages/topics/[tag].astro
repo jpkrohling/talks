@@ -1,0 +1,46 @@
+---
+import TalkRow from '../../components/TalkRow.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { allTags, getAllTalks, getYearGroups } from '../../lib/talks';
+import { withBase } from '../../lib/url';
+
+export async function getStaticPaths() {
+  const all = await getAllTalks();
+  const tags = allTags(all);
+  return tags.map(({ tag }) => ({
+    params: { tag },
+    props: { tag, talks: all.filter((t) => t.data.tags.includes(tag)) },
+  }));
+}
+
+const { tag, talks } = Astro.props as {
+  tag: string;
+  talks: Awaited<ReturnType<typeof getAllTalks>>;
+};
+const groups = getYearGroups(talks);
+---
+<BaseLayout title={`Topic: ${tag}`} description={`${talks.length} talks on ${tag} by Juraci Paixão Kröhling.`}>
+  <div class="container">
+    <p class="crumb"><a href={withBase('/topics/')}>← All topics</a></p>
+    <header class="pageheader">
+      <p class="eyebrow">Topic</p>
+      <h1>{tag}</h1>
+      <p class="meta">{talks.length} talk{talks.length === 1 ? '' : 's'}</p>
+    </header>
+    {groups.map((g) => (
+      <section class="group">
+        <h2 class="year">{g.year}</h2>
+        <div class="rows">{g.talks.map((t) => <TalkRow talk={t} />)}</div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+<style>
+  .container { padding-block: var(--space-8) var(--space-16); }
+  .crumb { font-size: 0.875rem; color: var(--ink-600); margin-bottom: var(--space-4); }
+  .crumb a { color: var(--bordeaux-700); text-decoration: none; }
+  .pageheader { margin-bottom: var(--space-8); }
+  .group { margin-bottom: var(--space-8); }
+  .year { font-family: var(--font-display); font-size: 1.5rem; color: var(--bordeaux-700); margin-bottom: var(--space-2); }
+  .rows { border-top: 1px dotted var(--cream-200); }
+</style>
