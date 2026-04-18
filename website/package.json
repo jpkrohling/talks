@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "bun run scripts/copy-talk-assets.ts && bun run scripts/copy-headshots.ts",
+    "prebuild": "bun run scripts/copy-talk-assets.ts && bun run scripts/copy-headshots.ts && bun run scripts/fetch-credly.ts",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -21,6 +21,7 @@
     "format": "biome format --write .",
     "migrate:talks": "bun run scripts/migrate-talks.ts",
     "migrate:talks:dry": "bun run scripts/migrate-talks.ts --dry",
+    "sync:credly": "bun run scripts/fetch-credly.ts",
     "test": "bun test"
   },
   "type": "module",

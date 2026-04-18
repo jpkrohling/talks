@@ -1,0 +1,39 @@
+---
+import badges from '../../data/credly/badges.json';
+import featured from '../../data/credly/featured.json';
+import type { NormalizedBadge } from '../../scripts/fetch-credly';
+import CredlyBadge from '../components/CredlyBadge.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const all = badges as NormalizedBadge[];
+const order: string[] = featured.featured_order ?? [];
+const orderIndex = new Map(order.map((id, i) => [id, i]));
+
+const sorted = [...all].sort((a, b) => {
+  const ai = orderIndex.has(a.id)
+    ? (orderIndex.get(a.id) ?? Number.POSITIVE_INFINITY)
+    : Number.POSITIVE_INFINITY;
+  const bi = orderIndex.has(b.id)
+    ? (orderIndex.get(b.id) ?? Number.POSITIVE_INFINITY)
+    : Number.POSITIVE_INFINITY;
+  if (ai !== bi) return ai - bi;
+  return b.issued_at.localeCompare(a.issued_at);
+});
+const featuredSet = new Set(order);
+---
+<BaseLayout title="Badges" description={`${all.length} verified badges from Credly.`}>
+  <div class="container">
+    <header class="pageheader">
+      <h1>Badges</h1>
+      <p class="meta">{all.length} verified badges · <a href="https://www.credly.com/users/juraci-paixao-krohling">Credly profile →</a></p>
+    </header>
+    <div class="grid">
+      {sorted.map((b) => <CredlyBadge {...b} featured={featuredSet.has(b.id)} />)}
+    </div>
+  </div>
+</BaseLayout>
+<style>
+  .container { padding-block: var(--space-8) var(--space-16); }
+  .pageheader { margin-bottom: var(--space-8); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: var(--space-4); }
+</style>

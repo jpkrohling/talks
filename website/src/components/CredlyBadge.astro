@@ -1,0 +1,32 @@
+---
+interface Props {
+  name: string;
+  issuer: string;
+  image_url: string;
+  public_url: string;
+  issued_at: string;
+  featured?: boolean;
+}
+const { name, issuer, image_url, public_url, issued_at, featured = false } = Astro.props;
+---
+<a class={`badge ${featured ? 'is-featured' : ''}`} href={public_url} rel="external">
+  <div class="img"><img src={image_url} alt={`${name} badge`} loading="lazy" /></div>
+  <div class="body">
+    {featured && <span class="star" aria-label="Featured">★</span>}
+    <p class="name">{name}</p>
+    <p class="issuer">{issuer}</p>
+    <time datetime={issued_at} class="date">{new Date(issued_at).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}</time>
+  </div>
+</a>
+<style>
+  .badge { display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4); background: var(--cream-50); border: 1px solid var(--cream-200); border-radius: var(--radius-card); padding: var(--space-4); text-decoration: none; color: inherit; align-items: center; }
+  .badge:hover { border-color: var(--bordeaux-700); }
+  .badge.is-featured { border-color: var(--bordeaux-700); background: linear-gradient(180deg, var(--cream-50), #fff8ea); }
+  .img { width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; }
+  .img img { width: 64px; height: 64px; object-fit: contain; }
+  .body { min-width: 0; }
+  .star { color: var(--bordeaux-700); font-size: 0.875rem; }
+  .name { font-family: var(--font-display); font-weight: 700; font-size: 0.9375rem; color: var(--ink-900); margin: 0 0 2px; line-height: 1.2; }
+  .issuer { font-size: 0.8125rem; color: var(--ink-600); margin: 0 0 2px; }
+  .date { font-size: 0.75rem; color: var(--ink-400); }
+</style>
