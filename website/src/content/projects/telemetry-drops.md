@@ -1,10 +1,10 @@
 ---
 name: Telemetry Drops
-role: Co-host
-url: https://www.youtube.com/@TelemetryDrops
+role: Co-founder, instructor
+url: https://telemetrydrops.com
 period: 2025 — present
-order: 3
+order: 2
 category: current
 ---
 
-A weekly podcast on observability news — covering OpenTelemetry, tracing, logs, metrics, and the broader o11y ecosystem.
+OpenTelemetry training courses and workshops. Self-paced tracks and specialization programs taught by project contributors, covering the API, SDK, Collector, and instrumentation practice.

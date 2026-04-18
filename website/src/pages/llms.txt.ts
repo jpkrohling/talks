@@ -12,7 +12,7 @@ export async function GET(context: APIContext) {
   lines.push('# Juraci Paixão Kröhling');
   lines.push('');
   lines.push(
-    '> CEO of OllyGarden, OpenTelemetry Governance Committee member, emeritus maintainer of the OpenTelemetry Collector and Jaeger. Creator of the Jaeger Operator, OpenTelemetry Operator, OpenTelemetry Collector Builder (OCB), and load-balancing exporter. Co-host of the Telemetry Drops podcast. Speaker on observability, distributed tracing, and related open-source topics.',
+    '> CEO of OllyGarden, OpenTelemetry Governance Committee member, emeritus maintainer of the OpenTelemetry Collector and Jaeger. Creator of the Jaeger Operator, OpenTelemetry Operator, OpenTelemetry Collector Builder (OCB), and load-balancing exporter. Co-founder of Telemetry Drops, an OpenTelemetry training program. Speaker on observability, distributed tracing, and related open-source topics.',
   );
   lines.push('');
   lines.push('## Key pages');

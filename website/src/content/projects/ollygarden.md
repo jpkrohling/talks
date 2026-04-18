@@ -2,7 +2,7 @@
 name: OllyGarden
 role: CEO
 url: https://ollygarden.com
-period: 2024 — present
+period: 2025 — present
 order: 1
 category: current
 ---

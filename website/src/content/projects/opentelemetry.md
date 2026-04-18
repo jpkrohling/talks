@@ -3,7 +3,7 @@ name: OpenTelemetry
 role: Governance Committee member
 url: https://opentelemetry.io
 period: 2019 — present
-order: 2
+order: 3
 category: current
 ---
 
