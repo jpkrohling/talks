@@ -1,3 +1,4 @@
+import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
 // Adjust `site` if a custom domain is used (e.g. 'https://kroehling.de')
@@ -9,6 +10,7 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
+  integrations: [sitemap()],
   vite: {
     server: { watch: { ignored: ['**/.superpowers/**'] } },
   },

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jpkrohling.github.io/talks/sitemap-index.xml
