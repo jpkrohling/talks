@@ -36,4 +36,15 @@ const talks = defineCollection({
   }),
 });
 
-export const collections = { talks };
+const projects = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/projects' }),
+  schema: z.object({
+    name: z.string(),
+    role: z.string(),
+    url: z.string().url().optional(),
+    period: z.string().optional(),
+    order: z.number().default(100),
+  }),
+});
+
+export const collections = { talks, projects };

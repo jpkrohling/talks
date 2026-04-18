@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+const entries = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const rendered = await Promise.all(
+  entries.map(async (p) => ({ p, Content: (await render(p)).Content })),
+);
+---
+<BaseLayout title="Projects & Affiliations" description="Projects and affiliations of Juraci Paixão Kröhling.">
+  <div class="container">
+    <header class="pageheader">
+      <h1>Projects & Affiliations</h1>
+    </header>
+    <ul class="list">
+      {rendered.map(({ p, Content }) => (
+        <li class="proj">
+          <div class="head">
+            <h2>{p.data.name}</h2>
+            {p.data.url && <a class="ext" href={p.data.url} rel="external">{p.data.url.replace(/^https?:\/\//, '')} →</a>}
+          </div>
+          <p class="meta">{p.data.role}{p.data.period ? ` · ${p.data.period}` : ''}</p>
+          <div class="prose"><Content /></div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+<style>
+  .container { padding-block: var(--space-8) var(--space-16); }
+  .pageheader { margin-bottom: var(--space-8); }
+  .list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-8); }
+  .proj { padding-top: var(--space-6); border-top: 1px solid var(--cream-200); }
+  .proj:first-child { border-top: none; padding-top: 0; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-4); flex-wrap: wrap; }
+  .proj h2 { margin-bottom: var(--space-1); }
+  .ext { font-family: var(--font-ui); font-size: 0.875rem; }
+  .proj .meta { margin-top: 0; margin-bottom: var(--space-3); }
+</style>
