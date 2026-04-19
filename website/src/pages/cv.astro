@@ -1,0 +1,313 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const experience = (await getCollection('experience')).sort((a, b) => a.data.order - b.data.order);
+const experienceRendered = await Promise.all(
+  experience.map(async (e) => ({ e, Content: (await render(e)).Content })),
+);
+const patents = (await getCollection('patents')).sort((a, b) => a.data.order - b.data.order);
+const patentsRendered = await Promise.all(
+  patents.map(async (p) => ({ p, Content: (await render(p)).Content })),
+);
+const publications = (await getCollection('publications')).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date),
+);
+const books = (await getCollection('books')).sort((a, b) => a.data.order - b.data.order);
+
+function formatDate(yyyymm: string): string {
+  const [y, m] = yyyymm.split('-');
+  const months = [
+    '',
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+  return `${months[Number(m)]} ${y}`;
+}
+---
+<BaseLayout
+  title="CV"
+  description="Curriculum vitae of Juraci Paixão Kröhling — experience, patents, publications, education."
+>
+  <div class="container">
+    <header class="pageheader">
+      <h1>Curriculum Vitae</h1>
+      <p class="meta">
+        Juraci Paixão Kröhling — CEO of OllyGarden, OpenTelemetry Governance Committee member,
+        emeritus maintainer of the OpenTelemetry Collector and Jaeger.
+      </p>
+    </header>
+
+    <section class="section">
+      <h2>Profile</h2>
+      <div class="prose">
+        <p>
+          Software engineer with experience developing modern cloud-native applications, with a
+          primary focus on backend Go. Current interests centre on observability, telemetry
+          quality, and tools for distributed systems. Long-time contributor to
+          <a href="https://www.jaegertracing.io" rel="external">Jaeger</a>
+          and
+          <a href="https://opentelemetry.io" rel="external">OpenTelemetry</a>, and now CEO of
+          <a href="https://ollygarden.com" rel="external">OllyGarden</a>, where we build tools that
+          help teams cultivate their observability practice.
+        </p>
+        <p>
+          Alongside coding, I enjoy mentoring, writing, and speaking — having given 60+
+          conference talks across KubeCon, FOSDEM, GopherCon, DevOpsDays, Devoxx, and more.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <ul class="list">
+        {
+          experienceRendered.map(({ e, Content }) => (
+            <li class="entry">
+              <div class="entry-head">
+                <h3>
+                  {e.data.role}
+                  <span class="at">@ {e.data.company}</span>
+                </h3>
+                <span class="dates">{e.data.dates_display}</span>
+              </div>
+              {e.data.location && <p class="loc">{e.data.location}</p>}
+              {e.body && e.body.trim().length > 0 && (
+                <div class="prose">
+                  <Content />
+                </div>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Patents</h2>
+      <ul class="list">
+        {
+          patentsRendered.map(({ p, Content }) => (
+            <li class="entry">
+              <div class="entry-head">
+                <h3>
+                  <a href={p.data.url} rel="external">
+                    {p.data.title}
+                  </a>
+                </h3>
+                {p.data.number && <span class="dates mono">{p.data.number}</span>}
+              </div>
+              <div class="prose">
+                <Content />
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Publications</h2>
+      <ul class="pub-list">
+        {
+          publications.map((p) => (
+            <li>
+              <a href={p.data.url} rel="external">
+                {p.data.title}
+              </a>
+              <span class="pub-meta">
+                {p.data.publication} · {formatDate(p.data.date)}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Books — technical reviewer</h2>
+      <ul class="pub-list">
+        {
+          books.map((b) => (
+            <li>
+              <a href={b.data.url} rel="external">
+                {b.data.title}
+              </a>
+              <span class="pub-meta">
+                {b.data.publisher}
+                {b.data.isbn ? ` · ISBN ${b.data.isbn}` : ''} · {b.data.role}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="section grid">
+      <div>
+        <h2>Education</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="ed-degree">High School</span>
+            <span class="pub-meta">
+              Colégio Salesiano São Gonçalo, Cuiabá, Mato Grosso · 2000
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Languages</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="ed-degree">Portuguese</span>
+            <span class="pub-meta">Native</span>
+          </li>
+          <li>
+            <span class="ed-degree">English</span>
+            <span class="pub-meta">C1 · self-assessed</span>
+          </li>
+          <li>
+            <span class="ed-degree">German</span>
+            <span class="pub-meta">B1 · certified</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+<style>
+  .container {
+    padding-block: var(--space-8) var(--space-16);
+  }
+  .pageheader {
+    margin-bottom: var(--space-8);
+  }
+  .pageheader .meta {
+    max-width: var(--text-width);
+    margin: 0;
+  }
+  .section {
+    padding-block: var(--space-8);
+    border-top: 1px solid var(--cream-200);
+  }
+  .section.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+  @media (max-width: 640px) {
+    .section.grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  .entry {
+    padding-top: var(--space-4);
+    border-top: 1px dotted var(--cream-200);
+  }
+  .entry:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-1);
+  }
+  .entry h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: var(--font-display);
+  }
+  .entry h3 .at {
+    color: var(--ink-600);
+    font-weight: 500;
+    font-style: italic;
+  }
+  .entry .dates {
+    font-family: var(--font-body);
+    font-style: italic;
+    color: var(--ink-400);
+    font-size: 0.9375rem;
+    white-space: nowrap;
+  }
+  .entry .dates.mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-style: normal;
+    font-size: 0.8125rem;
+  }
+  .entry .loc {
+    color: var(--ink-600);
+    font-size: 0.875rem;
+    margin: 0 0 var(--space-2);
+  }
+  .entry h3 a {
+    color: var(--ink-900);
+    text-decoration: none;
+  }
+  .entry h3 a:hover {
+    color: var(--bordeaux-700);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .pub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .pub-list li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px dotted var(--cream-200);
+  }
+  .pub-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .pub-list a {
+    font-family: var(--font-display);
+    font-weight: 650;
+    color: var(--ink-900);
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .pub-list a:hover {
+    color: var(--bordeaux-700);
+  }
+  .pub-meta {
+    color: var(--ink-400);
+    font-size: 0.875rem;
+  }
+  .ed-degree {
+    font-family: var(--font-display);
+    font-weight: 650;
+    font-size: 1rem;
+  }
+</style>

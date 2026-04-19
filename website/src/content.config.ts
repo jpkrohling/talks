@@ -52,4 +52,50 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { talks, projects };
+const experience = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/experience' }),
+  schema: z.object({
+    role: z.string(),
+    company: z.string(),
+    location: z.string().optional(),
+    start: z.string(), // ISO YYYY-MM (sorting key)
+    end: z.string().default('present'), // ISO YYYY-MM or 'present'
+    dates_display: z.string(), // human-readable span, e.g. "Nov 2022 – Dec 2024"
+    order: z.number().default(100),
+  }),
+});
+
+const patents = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/patents' }),
+  schema: z.object({
+    title: z.string(),
+    url: z.string().url(),
+    number: z.string().optional(),
+    order: z.number().default(100),
+  }),
+});
+
+const publications = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/publications' }),
+  schema: z.object({
+    title: z.string(),
+    url: z.string().url(),
+    publication: z.string(),
+    date: z.string(), // YYYY-MM (sort key + display)
+  }),
+});
+
+const books = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/books' }),
+  schema: z.object({
+    title: z.string(),
+    url: z.string().url(),
+    publisher: z.string(),
+    isbn: z.string().optional(),
+    role: z.string(),
+    year: z.number().optional(),
+    order: z.number().default(100),
+  }),
+});
+
+export const collections = { talks, projects, experience, patents, publications, books };
