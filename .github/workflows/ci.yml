@@ -1,4 +1,4 @@
-name: Deploy website
+name: CI
 
 on:
   push:
@@ -7,20 +7,16 @@ on:
       - 'website/**'
       - '[0-9][0-9][0-9][0-9]/**'
       - 'headshots/**'
-      - '.github/workflows/deploy.yml'
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
+      - '.github/workflows/ci.yml'
+  pull_request:
+    paths:
+      - 'website/**'
+      - '[0-9][0-9][0-9][0-9]/**'
+      - 'headshots/**'
+      - '.github/workflows/ci.yml'
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +26,12 @@ jobs:
       - name: Install dependencies
         working-directory: website
         run: bun install --frozen-lockfile
+      - name: Lint
+        working-directory: website
+        run: bun run lint
+      - name: Unit tests
+        working-directory: website
+        run: bun run test
       - name: Build
         working-directory: website
         run: bun run build
@@ -39,17 +41,3 @@ jobs:
       - name: Smoke tests
         working-directory: website
         run: bun run test:e2e
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: website/dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
