@@ -1,6 +1,6 @@
 # Website
 
-Static site for https://jpkrohling.github.io/talks/ (or custom domain).
+Static site for https://kroehling.de/.
 
 ## Develop
 `bun install && bun run dev`

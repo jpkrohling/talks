@@ -142,7 +142,7 @@ function buildTree(talk: Talk) {
                   children: `${dateFmt} · ${talk.locationCity}, ${talk.locationCountry}`,
                 },
               },
-              { type: 'div', props: { children: 'jpkrohling.github.io/talks' } },
+              { type: 'div', props: { children: 'kroehling.de' } },
             ],
           },
         },
