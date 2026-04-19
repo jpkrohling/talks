@@ -1,11 +1,11 @@
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
-// Adjust `site` if a custom domain is used (e.g. 'https://kroehling.de')
-// If using custom domain, remove the `base` key.
+// Served from the root of https://kroehling.de (custom domain configured
+// via public/CNAME). To deploy to jpkrohling.github.io/talks/ instead,
+// set site back to 'https://jpkrohling.github.io' and add `base: '/talks'`.
 export default defineConfig({
-  site: 'https://jpkrohling.github.io',
-  base: '/talks',
+  site: 'https://kroehling.de',
   trailingSlash: 'always',
   build: {
     format: 'directory',

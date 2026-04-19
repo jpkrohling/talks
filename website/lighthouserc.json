@@ -2,10 +2,10 @@
   "ci": {
     "collect": {
       "url": [
+        "http://localhost:4321/",
         "http://localhost:4321/talks/",
-        "http://localhost:4321/talks/talks/",
-        "http://localhost:4321/talks/badges/",
-        "http://localhost:4321/talks/press/"
+        "http://localhost:4321/badges/",
+        "http://localhost:4321/press/"
       ],
       "startServerCommand": "bun run preview -- --port 4321",
       "startServerReadyPattern": "preview server listening",

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jpkrohling.github.io/talks/sitemap-index.xml
+Sitemap: https://kroehling.de/sitemap-index.xml

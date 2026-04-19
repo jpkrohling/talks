@@ -6,12 +6,12 @@ export default defineConfig({
   retries: 0,
   reporter: 'list',
   use: {
-    baseURL: 'http://localhost:4321/talks/',
+    baseURL: 'http://localhost:4321/',
     trace: 'on-first-retry',
   },
   webServer: {
     command: 'bun run preview -- --port 4321',
-    url: 'http://localhost:4321/talks/',
+    url: 'http://localhost:4321/',
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },
