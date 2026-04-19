@@ -27,7 +27,16 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# generated OG images (keep default.png committed)
+# generated OG images: per-talk PNGs are generated at build and ignored;
+# the fixed page OGs (default/home/cv/talks/projects/press/badges) are
+# produced by generate-default-og.ts and tracked so CI/dev builds don't
+# need network access to Fontsource to render them.
 public/og/*.png
 !public/og/default.png
+!public/og/home.png
+!public/og/cv.png
+!public/og/talks.png
+!public/og/projects.png
+!public/og/press.png
+!public/og/badges.png
 public/og/.cache.json

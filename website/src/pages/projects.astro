@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageOgUrl } from '../lib/og-url';
 
 type Category = 'current' | 'started' | 'emeritus';
 const SECTIONS: Array<{ key: Category; title: string; blurb: string }> = [
@@ -26,7 +27,11 @@ function group(cat: Category) {
   return rendered.filter(({ p }) => p.data.category === cat);
 }
 ---
-<BaseLayout title="Projects & Affiliations" description="Projects and affiliations of Juraci Paixão Kröhling.">
+<BaseLayout
+  title="Projects & Affiliations"
+  description="Projects and affiliations of Juraci Paixão Kröhling."
+  ogImage={pageOgUrl('projects', Astro.site!)}
+>
   <div class="container">
     <header class="pageheader">
       <h1>Projects & Affiliations</h1>

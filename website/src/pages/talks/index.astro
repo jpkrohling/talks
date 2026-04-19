@@ -5,6 +5,7 @@ import TalkCard from '../../components/TalkCard.astro';
 import TalkRow from '../../components/TalkRow.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { talkListJsonLd } from '../../lib/jsonld';
+import { pageOgUrl } from '../../lib/og-url';
 import { allTags, getAllTalks, getFeaturedTalks, getYearGroups } from '../../lib/talks';
 
 const all = await getAllTalks();
@@ -16,7 +17,11 @@ const tags = allTags(all).slice(0, 12);
 const groups = getYearGroups(nonFeatured);
 const listLd = talkListJsonLd(all, Astro.site!);
 ---
-<BaseLayout title="Talks" description={`${all.length} conference talks by Juraci Paixão Kröhling.`}>
+<BaseLayout
+  title="Talks"
+  description={`${all.length} conference talks by Juraci Paixão Kröhling.`}
+  ogImage={pageOgUrl('talks', Astro.site!)}
+>
   <div class="container">
     <JsonLd data={listLd} />
     <header class="pageheader">

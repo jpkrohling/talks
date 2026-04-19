@@ -23,6 +23,7 @@ export async function GET(context: APIContext) {
     `- [Projects](${origin}/projects/): OllyGarden, OpenTelemetry, Telemetry Drops, Jaeger Operator, OTel Operator, OCB, load-balancing exporter; emeritus: OTel Collector, Jaeger`,
   );
   lines.push(`- [Press / media kit](${origin}/press/): 3-language bios, headshots`);
+  lines.push(`- [CV](${origin}/cv/): experience, patents, publications, education`);
   lines.push(`- [Credly badges](${origin}/badges/): verified credentials`);
   lines.push('');
   lines.push('## Topics');

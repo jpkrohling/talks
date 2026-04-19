@@ -4,6 +4,7 @@ import featured from '../../data/credly/featured.json';
 import type { NormalizedBadge } from '../../scripts/fetch-credly';
 import CredlyBadge from '../components/CredlyBadge.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageOgUrl } from '../lib/og-url';
 
 const all = badges as NormalizedBadge[];
 const order: string[] = featured.featured_order ?? [];
@@ -21,7 +22,11 @@ const sorted = [...all].sort((a, b) => {
 });
 const featuredSet = new Set(order);
 ---
-<BaseLayout title="Badges" description={`${all.length} verified badges from Credly.`}>
+<BaseLayout
+  title="Badges"
+  description={`${all.length} verified badges from Credly.`}
+  ogImage={pageOgUrl('badges', Astro.site!)}
+>
   <div class="container">
     <header class="pageheader">
       <h1>Badges</h1>

@@ -1,9 +1,14 @@
 ---
 import BioLanguageToggle from '../components/BioLanguageToggle.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageOgUrl } from '../lib/og-url';
 import { withBase } from '../lib/url';
 ---
-<BaseLayout title="Press & Media Kit" description="Bio, headshots, and press materials for Juraci Paixão Kröhling.">
+<BaseLayout
+  title="Press & Media Kit"
+  description="Bio, headshots, and press materials for Juraci Paixão Kröhling."
+  ogImage={pageOgUrl('press', Astro.site!)}
+>
   <div class="container">
     <header class="pageheader">
       <h1>Press & Media Kit</h1>

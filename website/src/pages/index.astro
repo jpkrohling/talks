@@ -1,6 +1,7 @@
 ---
 import HeroSplit from '../components/HeroSplit.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageOgUrl } from '../lib/og-url';
 import { allTags, getAllTalks, getFeaturedTalks } from '../lib/talks';
 import { withBase } from '../lib/url';
 
@@ -8,7 +9,7 @@ const all = await getAllTalks();
 const featured = await getFeaturedTalks();
 const tags = allTags(all).slice(0, 8);
 ---
-<BaseLayout title="Juraci Paixão Kröhling">
+<BaseLayout title="Juraci Paixão Kröhling" ogImage={pageOgUrl('home', Astro.site!)}>
   <div class="container">
     <HeroSplit featured={featured} />
     <section class="section">

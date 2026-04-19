@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageOgUrl } from '../lib/og-url';
 
 const experience = (await getCollection('experience')).sort((a, b) => a.data.order - b.data.order);
 const experienceRendered = await Promise.all(
@@ -38,6 +39,7 @@ function formatDate(yyyymm: string): string {
 <BaseLayout
   title="CV"
   description="Curriculum vitae of Juraci Paixão Kröhling — experience, patents, publications, education."
+  ogImage={pageOgUrl('cv', Astro.site!)}
 >
   <div class="container">
     <header class="pageheader">

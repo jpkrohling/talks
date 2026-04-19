@@ -10,12 +10,18 @@ interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  ogType?: 'website' | 'article' | 'profile';
+  publishedTime?: string; // ISO date, only used when ogType === 'article'
+  tags?: string[]; // article:tag, only used when ogType === 'article'
 }
 
 const {
   title,
   description = 'Juraci Paixão Kröhling — CEO of OllyGarden, OpenTelemetry Governance, speaker on observability and distributed tracing.',
   ogImage = siteOgUrl(Astro.site!),
+  ogType = 'website',
+  publishedTime,
+  tags = [],
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const siteTitle = title === 'Juraci Paixão Kröhling' ? title : `${title} · Juraci Paixão Kröhling`;
@@ -29,14 +35,26 @@ const person = personJsonLd(Astro.site!);
     <title>{siteTitle}</title>
     <meta name="description" content={description} />
     <meta name="author" content="Juraci Paixão Kröhling" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <meta property="og:site_name" content="Juraci Paixão Kröhling" />
     <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={siteTitle} />
+    {ogType === 'article' && publishedTime && (
+      <meta property="article:published_time" content={publishedTime} />
+    )}
+    {ogType === 'article' && <meta property="article:author" content="Juraci Paixão Kröhling" />}
+    {ogType === 'article' &&
+      tags.map((t) => <meta property="article:tag" content={t} />)}
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <JsonLd data={person} />
   </head>
   <body>

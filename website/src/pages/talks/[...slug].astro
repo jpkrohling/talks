@@ -24,7 +24,14 @@ const localRecording =
 const talkLd = talkJsonLd(entry, Astro.site!);
 const ogImage = talkOgUrl(entry.id, Astro.site!);
 ---
-<BaseLayout title={d.title} description={`${d.title} — ${d.event}`} ogImage={ogImage}>
+<BaseLayout
+  title={d.title}
+  description={`${d.title} — ${d.event}`}
+  ogImage={ogImage}
+  ogType="article"
+  publishedTime={d.date.toISOString()}
+  tags={d.tags}
+>
   <article class="container">
     <JsonLd data={talkLd} />
     <p class="crumb"><a href={withBase('/talks/')}>← All talks</a></p>
