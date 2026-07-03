@@ -81,8 +81,5 @@ yarn.lock
 # Superpowers brainstorm session data
 .superpowers/
 
-# Local PC review / working notes (do not commit)
-local/
-
 # Nested standalone git repo for the WeAreDevelopers 2026 demo app
 2026/2026-07-09-wearedevelopers-otel-mistakes/demo/
