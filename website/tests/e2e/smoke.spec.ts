@@ -26,6 +26,22 @@ test('a talk detail page loads with expected metadata', async ({ page }) => {
   await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(2);
 });
 
+test('embedded YouTube player fills its video container after starting', async ({ page }) => {
+  await page.goto('talks/2026-07-09-wearedevelopers-otel-mistakes/');
+
+  const embed = page.locator('.yt');
+  await embed.locator('.cover').click();
+
+  const iframe = embed.locator('iframe.player');
+  await expect(iframe).toBeVisible();
+  const [embedBox, iframeBox] = await Promise.all([embed.boundingBox(), iframe.boundingBox()]);
+
+  expect(embedBox).not.toBeNull();
+  expect(iframeBox).not.toBeNull();
+  expect(iframeBox!.width).toBeCloseTo(embedBox!.width, 0);
+  expect(iframeBox!.height).toBeCloseTo(embedBox!.height, 0);
+});
+
 test('badges page loads', async ({ page }) => {
   await page.goto('badges/');
   await expect(page.locator('h1')).toHaveText('Badges');
