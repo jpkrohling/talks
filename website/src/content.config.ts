@@ -20,7 +20,15 @@ const talks = defineCollection({
       city: z.string().min(1),
       // Legacy READMEs predating the country field use empty strings; keep them as-is
       // rather than backfilling unreliably.
-      country: z.string().default(''),
+      country: z
+        .string()
+        .refine(
+          (v) => !/^[A-Z]{2}$/.test(v),
+          'use the full country name; put state codes in region',
+        )
+        .default(''),
+      // State or province, shown instead of the country ("Salt Lake City, UT").
+      region: z.string().default(''),
       flag: z.string().optional().default(''),
     }),
     event_link: z.string().url().optional(),

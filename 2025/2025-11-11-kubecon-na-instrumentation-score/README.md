@@ -5,7 +5,8 @@ event_slug: kubecon-and-cloudnativecon-north-america-2025
 date: 2025-11-11
 location:
   city: Atlanta
-  country: GA
+  country: United States
+  region: GA
   flag: 🇺🇸
 tags:
   - opentelemetry

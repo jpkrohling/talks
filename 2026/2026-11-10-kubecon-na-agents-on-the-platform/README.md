@@ -5,7 +5,8 @@ event_slug: kubecon-and-cloudnativecon-north-america-2026
 date: 2026-11-10
 location:
   city: Salt Lake City
-  country: UT
+  country: United States
+  region: UT
   flag: 🇺🇸
 tags:
   - ai-agents

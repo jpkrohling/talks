@@ -5,6 +5,7 @@ import { join } from 'node:path';
 import { Resvg } from '@resvg/resvg-js';
 import matter from 'gray-matter';
 import satori from 'satori';
+import { type Place, formatPlace } from '../src/lib/place';
 
 const REPO_ROOT = join(import.meta.dir, '..', '..');
 const OUT_DIR = join(import.meta.dir, '..', 'public', 'og');
@@ -15,8 +16,7 @@ interface Talk {
   title: string;
   event: string;
   date: string;
-  locationCity: string;
-  locationCountry: string;
+  place: string;
   hash: string;
 }
 
@@ -56,10 +56,7 @@ async function collectTalks(): Promise<Talk[]> {
           typeof data.date === 'string'
             ? data.date
             : new Date(data.date as Date).toISOString().slice(0, 10),
-        // biome-ignore lint/suspicious/noExplicitAny: loose shape from frontmatter
-        locationCity: (data.location as any)?.city ?? '',
-        // biome-ignore lint/suspicious/noExplicitAny: loose shape from frontmatter
-        locationCountry: (data.location as any)?.country ?? '',
+        place: formatPlace((data.location ?? {}) as Place),
         hash,
       });
     }
@@ -139,7 +136,7 @@ function buildTree(talk: Talk) {
               {
                 type: 'div',
                 props: {
-                  children: `${dateFmt} · ${talk.locationCity}, ${talk.locationCountry}`,
+                  children: `${dateFmt} · ${talk.place}`,
                 },
               },
               { type: 'div', props: { children: 'kroehling.de' } },

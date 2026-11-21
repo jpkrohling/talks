@@ -5,7 +5,8 @@ event_slug: devoops-2021
 date: 2021-11-10
 location:
   city: Virtual
-  country: St. Petersburg
+  country: Russia
+  region: St. Petersburg
   flag: 🇷🇺
 tags:
   - opentelemetry

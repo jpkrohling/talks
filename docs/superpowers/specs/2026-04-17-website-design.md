@@ -50,7 +50,8 @@ event_slug: "kubecon-eu-2026"        # stable identifier for grouping
 date: 2026-03-26                      # ISO date
 location:
   city: "Amsterdam"
-  country: "Netherlands"
+  country: "Netherlands"              # full country name, never a state code
+  region: ""                          # optional state or province (e.g. "UT"); shown instead of the country
   flag: "🇳🇱"
 event_link: "https://sched.co/2EF6i"  # optional
 recording: "https://youtu.be/..."     # optional; YouTube URL (short or long form). Other providers deferred to v2.

@@ -1,4 +1,5 @@
 import type { APIContext } from 'astro';
+import { formatPlace } from '../lib/place';
 import { allTags, formatDate, getAllTalks } from '../lib/talks';
 
 export async function GET(context: APIContext) {
@@ -34,7 +35,7 @@ export async function GET(context: APIContext) {
   lines.push('## All talks');
   for (const t of talks) {
     const date = formatDate(t.data.date);
-    const loc = `${t.data.location.city}, ${t.data.location.country}`;
+    const loc = formatPlace(t.data.location);
     lines.push(
       `- [${t.data.title}](${origin}/talks/${t.id}/) — ${t.data.event} · ${date} · ${loc}${t.data.tags.length ? ` · tags: ${t.data.tags.join(', ')}` : ''}`,
     );

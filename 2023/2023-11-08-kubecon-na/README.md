@@ -5,7 +5,8 @@ event_slug: kubecon-and-cloudnativecon-north-america-2023
 date: 2023-11-08
 location:
   city: Chicago
-  country: IL
+  country: United States
+  region: IL
   flag: 🇺🇸
 tags:
   - opentelemetry

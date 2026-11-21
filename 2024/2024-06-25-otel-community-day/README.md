@@ -5,7 +5,8 @@ event_slug: otel-community-day
 date: 2024-06-25
 location:
   city: Seattle
-  country: WA
+  country: United States
+  region: WA
   flag: 🇺🇸
 tags:
   - opentelemetry

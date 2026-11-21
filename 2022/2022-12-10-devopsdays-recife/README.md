@@ -5,7 +5,8 @@ event_slug: devopsdays-recife
 date: 2022-12-10
 location:
   city: Recife
-  country: PE
+  country: Brazil
+  region: PE
   flag: 🇧🇷
 tags:
   - opentelemetry

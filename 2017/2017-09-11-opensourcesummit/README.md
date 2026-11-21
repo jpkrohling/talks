@@ -5,7 +5,8 @@ event_slug: open-source-summit
 date: 2017-09-11
 location:
   city: Los Angeles
-  country: CA
+  country: United States
+  region: CA
   flag: 🇺🇸
 tags:
   - tracing

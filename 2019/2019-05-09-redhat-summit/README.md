@@ -5,7 +5,8 @@ event_slug: red-hat-summit
 date: 2019-05-09
 location:
   city: Boston
-  country: MA
+  country: United States
+  region: MA
   flag: 🇺🇸
 tags:
   - jaeger

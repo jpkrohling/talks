@@ -23,7 +23,7 @@ For each sched.co URL:
    - `name` → talk title (strip speaker names after the dash)
    - `startDate` → talk date (extract YYYY-MM-DD)
    - `description` → abstract (HTML, convert `<br><br>` to paragraph breaks)
-   - `location.address.streetAddress` → city/country
+   - `location.address.streetAddress` → city/country (`country` is the full country name; a state code such as `UT` goes in `region`)
    - `superEvent.name` → event name
 4. Speaker names and companies are embedded in the `name` field after a dash. Parse them to populate co-speakers (exclude Juraci Paixao Krohling from the list).
 5. The original sched.co short URL becomes the event link.

@@ -5,7 +5,8 @@ event_slug: observability-day-na-2025
 date: 2025-11-10
 location:
   city: Atlanta
-  country: GA
+  country: United States
+  region: GA
   flag: 🇺🇸
 tags:
   - opentelemetry
