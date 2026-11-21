@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import profileBackground from '../../../headshots/profile-background-small.png';
+import profile from '../../../headshots/profile-small.png';
 import BioLanguageToggle from '../components/BioLanguageToggle.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { pageOgUrl } from '../lib/og-url';
@@ -49,7 +52,7 @@ import { withBase } from '../lib/url';
       <ul class="headshots">
         <li>
           <a href={withBase('/press-assets/profile.webp')} download>
-            <img src={withBase('/press-assets/profile-small.png')} alt="Headshot, plain background" loading="lazy" />
+            <Image src={profile} alt="Headshot, plain background" width={720} />
             <span class="thumb-meta">
               <span class="thumb-name">profile</span>
               <span class="thumb-fmt">.webp · .png</span>
@@ -58,7 +61,7 @@ import { withBase } from '../lib/url';
         </li>
         <li>
           <a href={withBase('/press-assets/profile-background.webp')} download>
-            <img src={withBase('/press-assets/profile-background-small.png')} alt="Headshot with background" loading="lazy" />
+            <Image src={profileBackground} alt="Headshot with background" width={720} />
             <span class="thumb-meta">
               <span class="thumb-name">profile-background</span>
               <span class="thumb-fmt">.webp · .png</span>
