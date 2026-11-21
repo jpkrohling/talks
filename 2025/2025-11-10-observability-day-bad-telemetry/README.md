@@ -11,6 +11,7 @@ tags:
   - opentelemetry
   - cost
   - collector
+recording: https://youtu.be/06U2_PIZ0S4
 slides: slides.pdf
 event_link: https://sched.co/28D5B
 co_speakers:
