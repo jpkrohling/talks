@@ -5,7 +5,8 @@ event_slug: observability-day-na-2026
 date: 2026-11-09
 location:
   city: Salt Lake City
-  country: UT
+  country: United States
+  region: UT
   flag: 🇺🇸
 tags:
   - observability

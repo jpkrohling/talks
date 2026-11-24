@@ -5,7 +5,8 @@ event_slug: devoops-2020
 date: 2020-12-05
 location:
   city: Virtual
-  country: St. Petersburg
+  country: Russia
+  region: St. Petersburg
   flag: 🇷🇺
 tags:
   - tracing

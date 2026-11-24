@@ -1,5 +1,6 @@
 import rss from '@astrojs/rss';
 import type { APIContext } from 'astro';
+import { formatPlace } from '../lib/place';
 import { getAllTalks } from '../lib/talks';
 
 export async function GET(context: APIContext) {
@@ -11,7 +12,7 @@ export async function GET(context: APIContext) {
     items: talks.map((t) => ({
       title: t.data.title,
       pubDate: t.data.date,
-      description: `${t.data.event} · ${t.data.location.city}, ${t.data.location.country}`,
+      description: `${t.data.event} · ${formatPlace(t.data.location)}`,
       link: `/talks/${t.id}/`,
       categories: t.data.tags,
     })),

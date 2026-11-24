@@ -5,7 +5,8 @@ event_slug: devopsdays-fortaleza
 date: 2022-10-08
 location:
   city: Fortaleza
-  country: CE
+  country: Brazil
+  region: CE
   flag: 🇧🇷
 tags:
   - opentelemetry

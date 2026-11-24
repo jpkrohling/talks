@@ -5,7 +5,8 @@ event_slug: cloud-native-computing-linz-meetup
 date: 2021-04-27
 location:
   city: Online
-  country: Linz
+  country: Austria
+  region: Linz
   flag: 🇦🇹
 tags:
   - opentelemetry

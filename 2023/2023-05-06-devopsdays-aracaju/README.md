@@ -5,7 +5,8 @@ event_slug: devopsdays-aracaju
 date: 2023-05-06
 location:
   city: Aracaju
-  country: SE
+  country: Brazil
+  region: SE
   flag: 🇧🇷
 tags:
   - tracing

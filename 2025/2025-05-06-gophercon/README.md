@@ -5,7 +5,8 @@ event_slug: gophercon-latam-2025
 date: 2025-05-06
 location:
   city: Florianópolis
-  country: SC
+  country: Brazil
+  region: SC
   flag: 🇧🇷
 tags:
   - opentelemetry

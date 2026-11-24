@@ -5,7 +5,8 @@ event_slug: kubecon-and-cloudnativecon-north-america-2021
 date: 2021-10-13
 location:
   city: Virtual
-  country: Los Angeles
+  country: United States
+  region: Los Angeles
   flag: 🇺🇸
 tags:
   - opentelemetry

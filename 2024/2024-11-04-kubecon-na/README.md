@@ -5,7 +5,8 @@ event_slug: kubecon-and-cloudnativecon-north-america-2024
 date: 2024-11-13
 location:
   city: Salt Lake City
-  country: UT
+  country: United States
+  region: UT
   flag: 🇺🇸
 tags:
   - opentelemetry

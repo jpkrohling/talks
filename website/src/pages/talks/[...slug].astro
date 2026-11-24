@@ -6,6 +6,7 @@ import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { talkJsonLd } from '../../lib/jsonld';
 import { talkOgUrl } from '../../lib/og-url';
+import { formatPlace } from '../../lib/place';
 import { formatDate, getAllTalks } from '../../lib/talks';
 import { withBase } from '../../lib/url';
 
@@ -40,7 +41,7 @@ const ogImage = talkOgUrl(entry.id, Astro.site!);
       <h1>{d.title}</h1>
       <p class="meta">
         <time datetime={d.date.toISOString()}>{formatDate(d.date)}</time>
-        · {d.location.city}{d.location.country ? `, ${d.location.country}` : ''} {d.location.flag}
+        · {formatPlace(d.location)} {d.location.flag}
       </p>
     </header>
     <div class="layout">

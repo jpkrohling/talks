@@ -1,3 +1,4 @@
+import { formatPlace } from './place';
 import type { Talk } from './talks';
 
 export function personJsonLd(site: URL) {
@@ -35,11 +36,12 @@ export function talkJsonLd(talk: Talk, site: URL) {
       startDate: talk.data.date.toISOString().slice(0, 10),
       location: {
         '@type': 'Place',
-        name: `${talk.data.location.city}, ${talk.data.location.country}`,
+        name: formatPlace(talk.data.location),
         address: {
           '@type': 'PostalAddress',
           addressLocality: talk.data.location.city,
-          addressCountry: talk.data.location.country,
+          addressRegion: talk.data.location.region || undefined,
+          addressCountry: talk.data.location.country || undefined,
         },
       },
       url: talk.data.event_link,
